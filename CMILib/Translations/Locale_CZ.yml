@@ -62,7 +62,7 @@ info:
   NoPlayerPermission: '!prefix! &3[playerName] &cnemá dostatečná oprávnění pro: &3[permission]'
   Ingame: '!prefix! &cTento příkaz lze použít pouze ve hře!'
   NoInformation: '!prefix! &cŽádná informace nenalezena!'
-  Console: '&3Konzole' #TODO - Potřeba kontext použití. Nejedná se o prefix konzole? (Upraveno z &b na &3, odebrán !prefix!)
+  Console: '&3Konzole' #TODO - Jediný výskyt tohoto textu je při obdržení /msg z konzole. Možná jsou i další.
   FromConsole: '!prefix! &cTento příkaz lze použít pouze v konzoli!'
   NotOnline: '!prefix! &cTento hráč není online!'
   NobodyOnline: '!prefix! &cŽádný hráč není online!'
@@ -79,7 +79,7 @@ info:
   UseMaterial: '!prefix! &cPoužij prosím název materiálu.'
   IncorrectMaterial: '!prefix! &cNeplatný název materiálu!'
   UseInteger: '!prefix! &cPoužij pouze čísla!'
-  UseBoolean: '!prefix! &cPoužij pouze hodnoty &2True &cnebo &4False&c!' #TODO - Zachovat takhle barvy true/false ? (Ano)
+  UseBoolean: '!prefix! &cPoužij pouze hodnoty &2True &cnebo &4False&c!'
   NoLessThan: '!prefix! &cČíslo nemůže být nižší než &3[amount]&c!'
   NoMoreThan: '!prefix! &cČíslo nemůže být vyšší než &3[amount]&c!'
   NoWorld: '!prefix! &cSvět s tímto názvem nebyl nalezený!'
@@ -105,7 +105,7 @@ info:
   singleSpliter: '&e-' #TODO
   SpliterMiddle: ' &6[value] ' #TODO
   ListSpliter: ', '
-  ProgressBarFill: '&d▏'
+  ProgressBarFill: '&d▏' #Uživatel - Zde si nastav barvu baru postupu.
   ProgressBarEmpty: '&7▏' #TODO - Použití barvy &7 z důvodu, že je volná a sedne k prázdnému progress baru.
   nothingInHand: '!prefix! &cMusíš držet předmět v hlavní ruce!' #TODO - Původně se zde používal !actionbar!. Přidané přidavné jméno. Myslím, že se sekundární rukou nespolupracuje.
   nothingInHandLeather: '!prefix! &cMusíš držet kožený předmět v hlavní ruce!' #TODO - To stejné co výše, kromě !actionbar!.
@@ -182,9 +182,9 @@ info:
   nextPageOff: '&7 Další &2>>----'
   nextPageHover: '&7>>>'
   lastPageHover: '&7>|'
-  pageCount: '&2[current]&7/&2[total]'
-  pageCountHover: '&e[totalEntries] entries' #TODO - Potřeba kontext použití.
-  skullOwner: '!actionbar!&7Owner:&r [playerName]' #TODO - Potřeba kontext použití. Proč actionbar pro hlavu?
+  pageCount: '&2[current]&7/&2[total]' #TODO - Přeskočený řádek
+  pageCountHover: '&3[totalEntries] &fpoložek' #TODO - Barvy
+  skullOwner: '!actionbar!&7Owner:&r [playerName]' #TODO - Vypíše se po right-clicku na položenou hlavu. Barvy
   circle: '&3Kruh'
   square: '&5Čtverec'
   clear: '&7Clear' #TODO - Potřeba kontext použití.
