@@ -121,10 +121,9 @@ info:
   spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
     with:&r [message]'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '&8[&a+&8] &a[playerDisplayName] &7se na náš server připojil/a poprvé!
-    Vítej u nás!'
-  LogoutCustom: '&8[&c-&8] &c[playerDisplayName] &7se odpojil/a.'
-  LoginCustom: '&8[&a+&8] &a[playerDisplayName] &7se připojil/a.'
+  FirstJoin: '&eWelcome &6[playerDisplayName] &eto our server!'
+  LogoutCustom: ' &6[playerDisplayName] &eleft the game'
+  LoginCustom: ' &6[playerDisplayName] &ejoined the game'
   deathlocation: '&eYou died at x:&6[x]&e, y:&6[y]&e, z:&6[z]&e in &6[world]'
   book:
     exploit: '&cYou cant create book with more than [amount] pages'
@@ -162,7 +161,7 @@ info:
     NonEditable: '&eEdit mode disabled'
   vanishSymbolOn: '&8[&7H&8]&r'
   vanishSymbolOff: ''
-  afkSymbolOn: '&8[&cAFK&8]&r'
+  afkSymbolOn: '&8[&7Afk&8]&r'
   afkSymbolOff: ''
   beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
   pvp:
@@ -540,7 +539,7 @@ command:
       - If message starts with ! then clean message will be shown
       - Servers can be defined to broadcast messages only in those servers
     info:
-      format: '&8[&6Oznámení&8] &e[message]'
+      format: '&e[&4Broadcast&e] &2[message]'
   blockcycling:
     help:
       info: '&eCycle block states'
@@ -618,7 +617,7 @@ command:
       - If message starts with ! then clean message will be shown
       - Worlds can be defined to broadcast messages only in those worlds
     info:
-      format: '&8[&6Oznámení&8] &e[message]'
+      format: '&e[&4Broadcast&e] &2[message]'
   burn:
     help:
       info: '&eBurn a player'
