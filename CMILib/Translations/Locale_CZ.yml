@@ -55,7 +55,7 @@
 
 info:
   # Use !prefix! in any locale line to automatically include this prefix
-  prefix: '&e[&aCMI&e] '
+  prefix: '&8[&cSystém&8] '
   NoPermission: '&cYou don''t have permission!'
   CantHavePermission: '&cYou can''t have this permission!'
   WrongGroup: '&cYou are in wrong group for this!'
