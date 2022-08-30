@@ -56,56 +56,56 @@
 info:
   # Use !prefix! in any locale line to automatically include this prefix
   prefix: '&8[&cSystém&8] '
-  NoPermission: '!prefix! &cNemáš dostatečná práva!'
-  CantHavePermission: '!prefix! &cNemůžeš mít tuto permissi!'
+  NoPermission: '!prefix! &cNemáš dostatečné oprávnění!'
+  CantHavePermission: '!prefix! &cNemůžeš mít toto oprávnění!'
   WrongGroup: '!prefix! &cPro toto jsi ve špatné skupině!' #TODO - Potřeba kontext použití. Jedná se o permission group?
-  NoPlayerPermission: '!prefix! &3[playerName] &cnemá dostatečná práva pro: &3[permission]'
+  NoPlayerPermission: '!prefix! &3[playerName] &cnemá dostatečná oprávnění pro: &3[permission]'
   Ingame: '!prefix! &cTento příkaz lze použít pouze ve hře!'
   NoInformation: '!prefix! &cŽádná informace nenalezena!'
-  Console: '!prefix! &bKonzole' #TODO - Potřeba kontext použití. Nejedná se o prefix konzole?
+  Console: '&3Konzole' #TODO - Potřeba kontext použití. Nejedná se o prefix konzole? (Upraveno z &b na &3, odebrán !prefix!)
   FromConsole: '!prefix! &cTento příkaz lze použít pouze v konzoli!'
   NotOnline: '!prefix! &cTento hráč není online!'
   NobodyOnline: '!prefix! &cŽádný hráč není online!'
   NoPlayer: '!prefix! &cNelze nalézt hráče s tímto jménem!'
   NoCommand: '!prefix! &cTento příkaz neexistuje!'
-  cantFindCommand: '!prefix! &cNelze nalézt příkaz &3[%1]&c, neměl jsi na mysli &3[%2]&c?'
+  cantFindCommand: '!prefix! &cNelze nalézt příkaz &3[%1]&c, neměl/a jsi na mysli &3[%2]&c?'
   nolocation: '!prefix! &cNelze nalézt vhodnou lokaci!'
   FeatureNotEnabled: '!prefix! &cTato funkce není zapnutá!'
   ModuleNotEnabled: '!prefix! &cTento modul není zapnutý!'
   versionNotSupported: '!prefix! &cVerze serveru není podporovaná!'
-  spigotNotSupported: '!prefix! &cAby toto fungovalo, tak je zapotřebí použít větev PaperSpigotu!'
+  spigotNotSupported: '!prefix! &cAby toto fungovalo, je zapotřebí použít větev PaperSpigotu!'
   bungeeNoGo: '!prefix! &cTato funkce nebude fungovat na serverech založených na Bungee!'
   clickToTeleport: '!prefix! &bKlikni pro teleportování.'
   UseMaterial: '!prefix! &cPoužij prosím název materiálu.'
   IncorrectMaterial: '!prefix! &cNeplatný název materiálu!'
   UseInteger: '!prefix! &cPoužij pouze čísla!'
-  UseBoolean: '!prefix! &cPoužij pouze hodnoty &2True &cnebo &4False&c!' #TODO - Zachovat takhle barvy true/false ?
+  UseBoolean: '!prefix! &cPoužij pouze hodnoty &2True &cnebo &4False&c!' #TODO - Zachovat takhle barvy true/false ? (Ano)
   NoLessThan: '!prefix! &cČíslo nemůže být nižší než &3[amount]&c!'
   NoMoreThan: '!prefix! &cČíslo nemůže být vyšší než &3[amount]&c!'
   NoWorld: '!prefix! &cSvět s tímto názvem nebyl nalezený!'
   IncorrectLocation: '!prefix! &cChybně zadaná lokace!'
-  Show: '&bUkázat' #TODO - Nejsem si jistý barvou. Týká se to i následujících 9 řádků.
-  Remove: '&cOdebrat'
-  Back: '&bZpět'
-  Forward: '&bForward' #TODO - Potřeba kontext použití.
-  Update: '&bAktualizovat'
-  Save: '&aUložit'
-  Delete: '&cSmazat'
-  Click: '&bKlikni' #TODO - A nebo Klik? Ach ten overthinking.
-  Preview: '&bNáhled'
-  PasteOld: '&bVložit původní' #TODO - Původní text: Paste Old
-  ClickToPaste: '&bKlikni pro vložení do textového pole'
+  Show: '&dUkázat' #TODO - Nejsem si jistý barvou. Týká se to i následujících 9 řádků.
+  Remove: '&dOdebrat'
+  Back: '&dZpět'
+  Forward: '&dForward' #TODO - Potřeba kontext použití.
+  Update: '&dAktualizovat'
+  Save: '&dUložit'
+  Delete: '&dSmazat'
+  Click: '&dKlikni' #TODO - A nebo Klik? Ach ten overthinking.
+  Preview: '&dNáhled'
+  PasteOld: '&dVložit původní' #TODO - Původní text: Paste Old
+  ClickToPaste: '&dKlikni pro vložení do textového pole'
   CantTeleportWorld: '!prefix! &cNelze teleportovat do cílového světa!'
   CantTeleportNoWorld: '!prefix! &cCílový svět neexistuje! Teleport byl zrušený.'
   ClickToConfirmDelete: '!prefix! &bKlikni pro potvrzení smazání &3[name]'
-  teleported: '!prefix! &bByl jsi teleportovaný.'
+  teleported: '!prefix! &bByl/a jsi teleportovan/a.'
   PlayerSpliter: '&e----- &6[playerDisplayName] &e-----' #TODO - Vytvoříme pro splittery vlastní barvu?
   Spliter: '&e--------------------------------------------------' #TODO
   SpliterValue: '&e------------------ &6[value] &e------------------' #TODO
   singleSpliter: '&e-' #TODO
   SpliterMiddle: ' &6[value] ' #TODO
   ListSpliter: ', '
-  ProgressBarFill: '&a▏'
+  ProgressBarFill: '&d▏'
   ProgressBarEmpty: '&7▏' #TODO - Použití barvy &7 z důvodu, že je volná a sedne k prázdnému progress baru.
   nothingInHand: '!prefix! &cMusíš držet předmět v hlavní ruce!' #TODO - Původně se zde používal !actionbar!. Přidané přidavné jméno. Myslím, že se sekundární rukou nespolupracuje.
   nothingInHandLeather: '!prefix! &cMusíš držet kožený předmět v hlavní ruce!' #TODO - To stejné co výše, kromě !actionbar!.
