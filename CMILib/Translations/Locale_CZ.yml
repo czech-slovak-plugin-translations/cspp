@@ -52,53 +52,90 @@
 # <CC> performs command from console once
 # <CCI> performs command from console every time player clicks text
 # <URL> includes url
-
 info:
   # Use !prefix! in any locale line to automatically include this prefix
   prefix: '&8[&cSystém&8] '
-  NoPermission: '&cYou don''t have permission!'
-  CantHavePermission: '&cYou can''t have this permission!'
-  WrongGroup: '&cYou are in wrong group for this!'
-  NoPlayerPermission: '&c[playerName] doesn''t have permission for: [permission]'
-  Ingame: '&cYou can only use this in game!'
-  NoInformation: '&cNo information found!'
-  Console: '&6Server'
-  FromConsole: '&cYou can only use this in the console!'
-  NotOnline: '&cThe player is not online!'
-  NobodyOnline: '&cThere is no one online!'
-  NoPlayer: '&cCan''t find player with this name!'
-  NoCommand: '&cThere is no command by this name!'
-  cantFindCommand: '&5Couldn''t find &7[%1]&5 command, did you mean &7[%2]&5?'
-  nolocation: '&4Can''t find suitable location'
-  FeatureNotEnabled: '&cThis feature is not enabled!'
-  ModuleNotEnabled: '&cThis module is not enabled!'
-  versionNotSupported: '&cServer version is not supported for this feature'
-  spigotNotSupported: '&cYou need PaperSpigot branch type server for this to work'
-  bungeeNoGo: '&cThis feature will not work on bungee network based servers'
-  clickToTeleport: '&eClick to teleport'
-  UseMaterial: '&4Please use material names!'
+  NoPermission: '&8[&9Server&8] &7Na toto nemáš dostatečná oprávnění!'
+  CantHavePermission: '&8[&9Server&8] &7Na toto nemáš dostatečné oprávnění!'
+  WrongGroup: '&9Jste ve špatné skupině!'
+  NoPlayerPermission: '&8[&9Server&8] &7Hráč &9[playerName] &7nemá právo na &9[permission]'
+  Ingame: '&8[&9Systém&8] &7Toto musíš použít ve hřě!'
+  NoInformation: '&9Žádné informace!'
+  Console: '&aConsole'
+  FromConsole: '&8[&9Systém] &7Toto můžeš použít pouze v &9Consoli&7!'
+  NotOnline: '&8[&9Systém] &7Hráč není online!'
+  NobodyOnline: '&8[&9Systém&8] &7Nikdo není online!'
+  Same: '&9Nemůžeš otevřít svůj vlastní inventář!'
+  cantLoginWithDifCap: '&7Tvůj nick byl změněn. Starý nick: &9[oldName]&7. Tvůj nick
+    je &9[currentName]&7.'
+  Searching: '&7Hledám data uživatele. Může to zabrat nejakou chvíli!'
+  NoPlayer: '&8[&9Systém&8] &7Hráč nebyl nalezen!'
+  NoCommand: '&8[&9Systém&8] &7Tento příkaz neexistuje!'
+  NoCommandWhileSleeping: '&8[&9Systém&8] &7Nemůžeš používat žádné příkazy, když spíš!'
+  cantFindCommand: '&7Příkaz &9[%1]&7 nebyl nalezen, nemyslel jsi příkaz &9[%2]&7?'
+  nolocation: '&7Nelze najít vhodné místo'
+  PurgeNotEnabled: '&9Mazání starých dat není povolené v configu!'
+  FeatureNotEnabled: '&9Tato funkce není povolená'
+  TeamManagementDisabled: '&7Tato funkce je omezená pokud &9DisableTeamManagement
+    &7je nastavené na &9"true"&7!'
+  ModuleNotEnabled: '&9Tento modul není povolený!'
+  versionNotSupported: 9cVerze serveru nepodporuje tuto možnost!
+  bungeeNoGo: '&9Tato funkce nefunguje na BungeeCord serverech!'
+  clickToTeleport: "&7\n&9    Klikni zde pro teleport    \n&7 "
+  UseMaterial: '&9Použij jméno materiálu!'
   IncorrectMaterial: '&4Incorrect material name!'
-  UseInteger: '&4Please use numbers!'
-  UseBoolean: '&4Please use True or False!'
-  NoLessThan: '&4Number can''t be less than [amount]!'
-  NoMoreThan: '&4Value can''t be more than [amount]'
-  NoWorld: '&4Can''t find world with this name!'
-  IncorrectLocation: '&4Location defined incorrectly!'
-  Show: '&eShow'
-  Remove: '&cRemove'
-  Back: '&eBack'
-  Forward: '&eForward'
-  Update: '&eUpdate'
-  Save: '&eSave'
-  Delete: '&cDelete'
-  Click: '&eClick'
+  UseInteger: '&9Použij číslo!'
+  UseBoolean: '&7Použij &aTrue &7a nebo &cFalse&7!'
+  NoLessThan: '&9Číslo nesmí být menší než &7[amount]&c!'
+  NoMoreThan: '&9Číslo nesmí být větší než &7[amount]&c!'
+  NoGameMode: '&9Použij &7[&a0&8/&a1&8/&a2&8/&a3&7] &ca nebo &aSurvival&8/&aCreative&8/&aAdventure&8/&aSpectator
+    &ca nebo &as&8/&ac&8/&aa&8/&asp&c!'
+  NoWorld: '&9Takto pojmenovaný svět neexistuje!'
+  IncorrectLocation: '&4Lokáce je zle definovaná!'
+  NameChange: '&6[playerDisplayName] &ese připojil se jménem &6[namelist]'
+  Cooldowns: '&eOdpočet pro příkaz &6[cmd] &ezačal! Počkej &6[time]'
+  specializedCooldowns: '&eOdpočet pro tento příkaz začal! Počkej &6[time]'
+  specializedRunning: '&eCommand still running, please wait &6[time]'
+  CooldownOneTime: '&eTento příkaz můžeš použít jen jednou!'
+  WarmUp:
+    canceled: '&eVykonávání příkazu bylo zrušené z důvodu pohnutí!'
+    counter: '!actionbar!&8--> &e[time] &8<--'
+    DontMove: '!title!!subtitle!&6Nehýbej se!'
+    Boss:
+      DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
+      WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
+  Spawner: '&r[type] Spawner'
+  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
+  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
+  Elevator:
+    created: '&eVýtah vytvořený!'
+  CantPlaceSpawner: '&8[&cSystém&8] &7Nemůžeš položit spawner, tak blízko jiného spawneru.
+    &8(&e[range]&8)'
+  ChunksLoading: '&eWorld chunk data sa stále načítají. Prosím počkej a zkus to znova
+    později.'
+  ShulkerBox: Shulker Box
+  CantUseNonEncrypted: '!actionbar!&cPříkaz pro tento item není zapsaný správně. Nedá
+    se použít!'
+  CantDecode: '!actionbar!&cNepovedlo se odkódovat zprávu/příkaz. Klíč pro tento krok
+    je chybný. Informuj člena Vedení serveru!'
+  Show: '&eZobrazit'
+  Remove: '&cSmazat'
+  Back: '&eZpět'
+  Forward: '&eDále'
+  Update: '&eNačíst'
+  Save: '&eUložit'
+  Delete: '&cSmazat'
+  Click: '&cKlikni'
   Preview: '&ePreview'
-  PasteOld: '&ePaste old'
-  ClickToPaste: '&eClick to paste into chat'
-  CantTeleportWorld: '&eYou can''t teleport to this world'
+  PasteOld: '&eVložit starý'
+  ClickToPaste: '&eKlikni pro vložení do chatu'
+  CantTeleportWorld: '&eNemůžeš se teleportovat do tohoto světa.'
   CantTeleportNoWorld: '&cTarget world doesn''t exist. Teleportation canceled'
+  CantTeleport: '&eNemůžeš se teleportovat protože jsi přesáhl limit itemů. Přejdi
+    na spodek a zjisti maximální počet itemů.'
   ClickToConfirmDelete: '&eClick to confirm removal of &6[name]'
-  teleported: '&eYou have been teleported.'
+  teleported: '&8[&cSystém&8] &7Byl jsi teloportován!'
+  BlackList: '&e[material] [amount] &6Maximálně [max]'
   PlayerSpliter: '&e----- &6[playerDisplayName] &e-----'
   Spliter: '&e--------------------------------------------------'
   SpliterValue: '&e------------------ &6[value] &e------------------'
@@ -107,159 +144,63 @@ info:
   ListSpliter: ', '
   ProgressBarFill: '&2▏'
   ProgressBarEmpty: '&e▏'
-  nothingInHand: '!actionbar!&eYou need to hold item in hand'
-  nothingInHandLeather: '&eYou need to hold leather item in hand'
-  nothingToShow: '&eNothing to show'
-  noItem: '&cCan''t find item'
-  dontHaveItem: '&cYou don''t have &6[amount]x [itemName] &cin your inventory'
-  wrongWorld: '&cCan''t do this in this world'
-  differentWorld: '&cDifferent worlds'
-  HaveItem: '&cYou have &6[amount]x [itemName] &cin your inventory'
+  nothingInHand: "\n&8[&cPoužij&8] &7/recipe &8[&cjmeno itemu&8]\n&a  "
+  nothingInHandLeather: '&eMusíš držet kožený item v ruce.'
+  nothingToShow: '&eNic zde není!'
+  noItem: '&cPředmět nebyl nalezen!'
+  dontHaveItem: '&cNemáš &6[itemName] x[amount] &cv tvém inventáři.'
+  wrongWorld: '&cNemůžeš toto použít v tomto světě!'
+  wrongPortal: '&cYou are in incorrect area of effect'
+  differentWorld: '&cRozdílné světy'
+  HaveItem: '&cMáš &6[amount]x [itemName] &cv tvém inventáři.'
+  ItemWillBreak: '!actionbar!&eTvůj předmět (&6[itemName]&e) se za chvilku rozbije!
+    &e[current]&6/&e[max]'
+  ArmorWillBreak: '!actionbar!&eYour [itemName] will break soon! &e[current]&6/&e[max]'
   cantDoInGamemode: '&eYou can''t do this in this game mode'
-  cantDoForPlayer: '&eYou can''t do this to &6[playerDisplayName]'
-  cantDoForYourSelf: '&eYou can''t do this to yourself'
-  cantDetermineMobType: '&cCan''t determine mob type from &e[type] &cvariable'
-  cantRename: '!actionbar!&eYou can''t use this name'
+  cantDoForPlayer: '&eNemůžeš použít pro hráče &6[playerDisplayName]'
+  cantDoForYourSelf: '&eTento příkaz nemůžeš použít na sebe.'
+  cantDetermineMobType: '&cNemůže určit moba pro druh z &e[type] &cpřeměny.'
+  cantRename: '!actionbar!&eNemůžeš tento předmět přejmenovat na tento název!'
   confirmRedefine: '&eClick to confirm redefining'
   cantEdit: '&eYou can''t edit this'
-  wrongName: '&cWrong name'
+  wrongName: '&cŠpatné jméno!'
   unknown: unknown
-  invalidName: '&cInvalid name'
-  alreadyexist: '&4This name is taken'
-  dontexist: '&4Nothing found by this name'
-  worldDontExist: '&cTarget world can''t be accessed anymore. Can''t teleport you
-    there!'
-  notSet: not set
-  lookAtSign: '&eLook at sign'
-  lookAtBlock: '&eLook at block'
-  lookAtEntity: '&eLook at entity'
-  noSpace: '&eNot enough free space'
-  notOnGround: '&eYou can''t perform this while flying'
-  bungee:
-    Online: '&6Online'
-    Offline: '&cOffline'
-    not: '&cServer doesn''t belong to bungee network'
-    noserver: '&cCan''t find server by this name!'
-    server: '&eServer: &7[name]'
-  variables:
-    am: '&eAM'
-    pm: '&ePM'
-    Online: '&6Online'
-    Offline: '&cOffline'
-    TrueColor: '&2'
-    FalseColor: '&4'
-    'True': '&6True'
-    'False': '&cFalse'
-    Enabled: '&6Enabled'
-    Disabled: '&cDisabled'
-    survival: '&6Survival'
-    creative: '&6Creative'
-    adventure: '&6Adventure'
-    spectator: '&6Spectator'
-    flying: '&6Flying'
-    notflying: '&6Not flying'
-  Inventory:
-    Full: '&5Your inventory is full. Can''t add item'
-    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
-  TimeNotRecorded: '&e-No record-'
-  years: '&e[years] &6years '
-  oneYear: '&e[years] &6year '
-  day: '&e[days] &6days '
-  oneDay: '&e[days] &6day '
-  hour: '&e[hours] &6hours '
-  oneHour: '&e[hours] &6hour '
-  min: '&e[mins] &6min '
-  sec: '&e[secs] &6sec '
-  nextPageConsole: '&fFor next page perform &5[command]'
-  prevPage: '&2----<< &6Prev '
-  prevPageGui: '&6Previous page '
-  prevPageClean: '&6Prev '
-  prevPageOff: '&2----<< &7Prev '
-  prevPageHover: '&7<<<'
-  firstPageHover: '&7|<'
-  nextPage: '&6 Next &2>>----'
-  nextPageGui: '&6Next Page'
-  nextPageClean: '&6 Next'
-  nextPageOff: '&7 Next &2>>----'
-  nextPageHover: '&7>>>'
-  lastPageHover: '&7>|'
-  pageCount: '&2[current]&7/&2[total]'
-  pageCountHover: '&e[totalEntries] entries'
-  skullOwner: '!actionbar!&7Owner:&r [playerName]'
-  circle: '&3Circle'
-  square: '&5Square'
-  clear: '&7Clear'
-  protectedArea: '&cProtected area. Can''t do this here.'
-  valueToLong: '&eValue is too high. Max: [max]'
-  valueToShort: '&eValue is too low. Min: [min]'
-  pickIcon: '&8Pick icon'
-  # Following locale lines got moved to CMI folder and will be removed in future updates from this file. If you want to modify those lines check CMI locale directory
-  Same: '&cCan''t open your own inventory for editing!'
-  cantLoginWithDifCap: '&cCan''t login with different name capitalization! Old name:
-    &e[oldName]&c. Current: &e[currentName]'
-  Searching: '&eSearching for player data, please wait, this can take some time to
-    finish!'
-  NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
-  PurgeNotEnabled: '&cPurge function is not enabled in config file!'
-  TeamManagementDisabled: '&7This feature will have limited functionalaty while DisableTeamManagement
-    is set to true!'
-  NoGameMode: '&cPlease use 0/1/2/3 or Survival/Creative/Adventure/Spectator or s/c/a/sp!'
-  NameChange: '&6[playerDisplayName] &elogged in, also known as: &6[namelist]'
-  Cooldowns: '&eThis command is on cooldown for another &6[time]'
-  specializedCooldowns: '&eCooldown in motion for this command, please wait &6[time]'
-  specializedRunning: '&eCommand still running, please wait &6[time]'
-  CooldownOneTime: '&eThis command can only be used once!'
-  WarmUp:
-    canceled: '&eCommand was cancelled due to your movement'
-    counter: '!actionbar!&6--> Wait &e[time] &6seconds <--'
-    DontMove: '!title!&6Don''t move!!subtitle!&7Wait &c[time] &7seconds'
-    Boss:
-      DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
-      WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
-  Spawner: '&r[type] Spawner'
-  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
-  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
-  Elevator:
-    created: '&eCreated elevator sign'
-  CantPlaceSpawner: '&eCan''t place spawner so close to another spawner (&6[range]&e)'
-  ChunksLoading: '&eWorld chunk data is still being loaded. Please wait a bit and
-    try again.'
-  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. Can''t
-    use them!'
-  CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong
-    key for this task. Inform server administration about this'
-  CantTeleport: '&eYou can''t teleport because you have too many limited items. Scroll
-    over this line to see the maximum amount of items allowed.'
-  BlackList: '&e[material] [amount] &6Max: [max]'
-  wrongPortal: '&cYou are in incorrect area of effect'
-  ItemWillBreak: '!actionbar!&eYour item (&6[itemName]&e) will break soon! &e[current]&6/&e[max]'
-  ArmorWillBreak: '!actionbar!&eYour [itemName] will break soon! &e[current]&6/&e[max]'
-  flyingToHigh: '&cYou can''t fly so high, max height is &6[max]&c!'
-  specializedItemFail: '&cCan''t determine specialized item requirement by value:
-    &7[value]'
-  sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
-  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required
-    for night time speedup'
+  invalidName: '&cNeznáme jméno!'
+  alreadyexist: '&cToto jméno už je zabrané'
+  dontexist: '&cHráč s tímto jménem neexistuje!'
+  worldDontExist: '&cPožadovaný svět není dostupný. Teleport je zakázaný!'
+  flyingToHigh: '&cNemůžeš létat velmi vysoko. Maximální výška je &6[max]&c!'
+  specializedItemFail: '&cNemůžeš zvolit specifický item potřebný pro &7[value]'
+  sunSpeeding: Spí [count] z [total] [hour] hodin [speed]X rychlejší!
+  sleepersRequired: '!actionbar!&f[sleeping] &7z &f[required] &7spí &8(&7víc hráčů
+    = rychlejší průběh noci&8)'
   sunSpeedingTitle: '&7[hour]'
   skippingNight: '!title!&7Skipping entire night'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
-  repairConfirm: '&eClick to confirm &7[items] &eitem repair for &7[cost]'
-  bookDate: '&7Written at &f[date]'
-  maintenance: '&7Maintenance mode'
-  mapLimit: '&cCant go beyond 30 000 000 blocks'
-  startedEditingPainting: '&eYou started editing painting. Click any other block to
-    cancel.'
-  canceledEditingPainting: '&eYou canceled painting editing mode'
-  changedPainting: '!actionbar!&eChanged painting to &6[name] &ewith id of &6[id]'
-  noSpam: '!title!&cNo spamming!'
-  noCmdSpam: '!title!&cNo command spamming!'
-  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
-    with:&r [message]'
+  repairConfirm: '&7\n&eKlikni sem pro potvrzení opravy předmetu &7[items] &eza &7[cost]&7\n&c'
+  bookDate: '&7Napsané: &f[date]'
+  maintenance: '&7Údržba'
+  notSet: nenastavené
+  mapLimit: '&cNemůže přesahovat 30 000 000 blocků'
+  startedEditingPainting: '&eZapnul jsi editor obrazů. Klikni na jiný block pro zrušení.'
+  canceledEditingPainting: '&eZrušil si editor obrazů.'
+  changedPainting: '!actionbar!&eZměnil jsi obraz &6[name] &ez ID &6[id]'
+  noSpam: '!title!&cNespamuj!'
+  noCmdSpam: '!title!&cNespamuj příkazy!'
+  spamConsoleInform: '&cHráč (&7[playerName]&c) byl označený (&7[rules]&c) za porušení
+    pravidla:&r [message]'
+  lookAtSign: '&emusíš se dívat na cedulku!'
+  lookAtBlock: '&eMusíš se dívat na block!'
+  lookAtEntity: '&eMusíš se dívat na entitu!'
+  noSpace: '&eNot enough free space'
+  notOnGround: '&eToto nemůžeš použít během letu.'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '&eWelcome &6[playerDisplayName] &eto our server!'
-  LogoutCustom: ' &6[playerDisplayName] &eleft the game'
-  LoginCustom: ' &6[playerDisplayName] &ejoined the game'
-  deathlocation: '&eYou died at x:&6[x]&e, y:&6[y]&e, z:&6[z]&e in &6[world]'
+  FirstJoin: '&8[&cSystém&8] &7Hráč &c[playerName] &7se poprvé připojil na server!
+    Přejeme ti hodně štěstí.'
+  LogoutCustom: ''
+  LoginCustom: ''
+  deathlocation: '&eZemřel jsi na souřadnicích &cx:&6[x] &cy:&6[y] &cz:&6[z]&e ve
+    světě &6[world]'
   book:
     exploit: '&cYou cant create book with more than [amount] pages'
   combat:
@@ -268,52 +209,107 @@ info:
     CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
     bossBarPvp: '&cCombat mode [autoTimeLeft]'
     bossBarPve: '&2Combat mode [autoTimeLeft]'
-  noSchedule: '&cSchedule by this name is not found'
+  bungee:
+    Online: '&6Online'
+    Offline: '&cOffline'
+    not: '&cServer není napojený na BungeeCord.'
+    noserver: '&cServer s tímto jménem neexistuje!'
+    server: '&eServer: &7[name]'
+  variables:
+    am: '&eAM'
+    pm: '&ePM'
+    Online: '&aOnline'
+    Offline: '&cOffline'
+    TrueColor: '&2'
+    FalseColor: '&4'
+    'True': '&aZapnuté'
+    'False': '&cVypnuté'
+    Enabled: '&6Zapnuté'
+    Disabled: '&cVypnuté'
+    survival: '&cSurvival'
+    creative: '&cCreative'
+    adventure: '&cAdventure'
+    spectator: '&cSpectator'
+    flying: '&cLétá'
+    notflying: '&cNelétá'
+  noSchedule: '&cPlán s tímto jménem nebyl nalezen!'
   totem:
-    cooldown: '&eTotem cooldown: [time]'
+    cooldown: '&eTotem odpočet: [time]'
     warmup: '&eTotem effect: [time]'
-    cantConsume: '&eTotem usage was denied due to its cooldown time'
+    cantConsume: '&ePoužití Totemu bylo zamítnuté z důvodu nedokončení odpočtu!'
+  Inventory:
+    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
   InventorySave:
     info: '&8Info: &8[playerDisplayName]'
-    saved: '&e[time] &eInventory saved with id: &e[id]'
-    NoSavedInv: '&eThis player doesn''t have any saved inventories'
-    NoEntries: '&4File exists, but no inventories were found!'
-    CantFind: '&eCan''t find inventory with this id'
-    TopLine: '&e----------- &6[playerDisplayName] saved inventory &e-----------'
-    List: '&eid: &6[id]&e. &6[time]'
+    saved: '&e[time] &eInventář úložený pod ID &e[id]'
+    NoSavedInv: '&eHráč nemá žádne uložené inventáře.'
+    NoEntries: '&cSoubor existuje ale žádný inventár nebyl nálezen!'
+    CantFind: '&eInventář s tímto ID nebyl nálezen!'
+    TopLine: '&e----------- &6[playerDisplayName] Uložené inventáře &e-----------'
+    List: '&eID: &6[id]&e. &6[time]'
     KillerSymbol: '&c ☠'
-    Click: '&eClick to check ([id]) saved inventory'
-    IdDontExist: '&4This save Id doesn''t exist!'
-    Deleted: '&eSaved inventory was successfully deleted!'
-    Restored: '&eYou have restored &e[sourcename] &einventory for &e[targetname] &euser.'
-    GotRestored: '&eYour inventory was restored from &e[sourcename] &esaved inventory
-      on &e[time]'
-    LoadForSelf: '&eLoad this inventory for your self'
-    LoadForOwner: '&eLoad this inventory for owner'
-    NextInventory: '&eNext inventory'
-    PreviousInventory: '&ePrevious inventory'
-    Editable: '&eEdit mode enabled'
-    NonEditable: '&eEdit mode disabled'
-  vanishSymbolOn: '&8[&7H&8]&r'
-  vanishSymbolOff: ''
-  afkSymbolOn: '&8[&cAFK&8]&r'
-  afkSymbolOff: ''
+    Click: '&eKlikni pro zobrazení ([id]) uloženého inventáře.'
+    IdDontExist: '&cToto uložené ID neexistuje!'
+    Deleted: '&eTvůj inventář byl smazaný!'
+    Restored: '&eObnovil jsi &e[sourcename] &einventář pro hráče &e[targetname].'
+    GotRestored: '&eTvůj inventář byl obnovený z [sourcename] z uloženého času [time].'
+    LoadForSelf: '&eNačtení tohoto inventáře pro tebe.'
+    LoadForOwner: '&eNačtení tohoto inventáře pro majitele inventáře.'
+    NextInventory: '&eDalší inventář'
+    PreviousInventory: '&ePredešlý inventář'
+    Editable: '&eEdit mode &azapnutý'
+    NonEditable: '&cEdit mode &cvypnutý'
+  TimeNotRecorded: '&e-No record-'
+  years: '&e[years] &7let '
+  oneYear: '&e[years] &7rok '
+  day: '&e[days] &7dní '
+  oneDay: '&e[days] &7den '
+  hour: '&e[hours] &7hodiny '
+  oneHour: '&e[hours] &7hodina '
+  min: '&e[mins] &7minut '
+  sec: '&e[secs] &7vteřin '
+  vanishSymbolOn: '&8'
+  vanishSymbolOff: '&f'
+  afkSymbolOn: '&c&l ●'
+  afkSymbolOff: '&a&l ●'
+  nextPageConsole: '&fFor next page perform &5[command]'
+  prevPage: "\n&7     <<< &cZpět    "
+  prevPageGui: '&6Předcházející strana '
+  prevPageClean: '&6Předcházející '
+  prevPageOff: "\n&7     <<< &cZpět "
+  prevPageHover: '&7<<<'
+  firstPageHover: '&7|<'
+  nextPage: '&c Dále &7>>>'
+  nextPageGui: '&6Ďalší strana'
+  nextPageClean: '&6 Dále'
+  nextPageOff: '&c Dále &2>>----'
+  nextPageHover: '&7>>>'
+  lastPageHover: '&7>|'
+  pageCount: '&2[current]&7/&2[total]'
+  pageCountHover: '&2[totalEntries]'
+  skullOwner: '!actionbar!&7Majitel &r [playerName]'
   beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
+  circle: '&3Kruh'
+  square: '&5Čtverec'
+  clear: '&7Clear'
+  protectedArea: '&cOchranná zóna. Toto zde nemůžeš použít.'
+  valueToLong: '&eHodnota je příliš velká. Maximum: [max]'
+  valueToShort: '&eHodnota je příliš malá. Minimum: [min]'
   pvp:
     noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
-  pve:
-    noGodDamage: '!actionbar!&cYou can''t damage mobs while being immortal'
   InvEmpty:
-    armor: '&eYour armor slots should be empty!'
-    hand: '&eYour hand should be empty!'
-    maininv: '&eYour main inventory should be empty!'
-    maininvslots: '&eYour main inventory should have atleast &6[count] &eempty slots!'
-    inv: '&eYour inventory should be empty!'
-    offhand: '&eYour offhand should be empty!'
-    quickbar: '&eYour quick bar should be empty!'
-    quickbarslots: '&eYour quick bar should have atleast &6[count] &eempty slots!'
-    subinv: '&eYour sub inventory should be empty!'
-    subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!'
+    armor: '&eTvoje Armor sloty by měli být prázdné!'
+    hand: '&eTvoje ruka by měla být prázdná!'
+    maininv: '&eTvůj hlavní inventář by měl být prázdný!'
+    maininvslots: '&eTvůj hlavní inventář by měl mít alespoň &6[count] &eprázdných
+      slotů!'
+    inv: '&eTvůj inventář by měl být prázdný!'
+    offhand: '&eTvoje druhá ruka by měla být prázdná!'
+    quickbar: '&eTvůj Hotbar by měl být prázdný!'
+    quickbarslots: '&eTvůj Hotbar by měl mít alespoň &6[count] &eprázných slotů!'
+    subinv: '&eTvůj sub inventář musí být prázdný.'
+    subinvslots: '&eTvůj sub inventář musí mít alespoň &6[count] &eprázdných slotů!'
+  pickIcon: '&8Pick icon'
   DamageCause:
     block_explosion: Explosion
     contact: Block Damage
@@ -330,7 +326,6 @@ info:
     fire: Fire
     fire_tick: Fire
     fly_into_wall: Fly into wall
-    freeze: freeze
     hot_floor: Magma block
     lava: Lava
     lightning: Lightning
@@ -338,7 +333,6 @@ info:
     melting: Melting
     poison: Poison
     projectile: Projectile
-    sonic_boom: sonic boom
     starvation: Starvation
     suffocation: Suffocation
     suicide: Suicide
@@ -347,21 +341,25 @@ info:
     wither: Wither
   Biomes:
     BADLANDS: Badlands
+    BADLANDS_PLATEAU: Badlands plateau
     BAMBOO_JUNGLE: Bamboo jungle
+    BAMBOO_JUNGLE_HILLS: Bamboo jungle hills
     BASALT_DELTAS: Basalt deltas
     BEACH: Beach
     BIRCH_FOREST: Birch forest
+    BIRCH_FOREST_HILLS: Birch forest hills
     COLD_OCEAN: Cold ocean
     CRIMSON_FOREST: Crimson forest
-    CUSTOM: Custom
     DARK_FOREST: Dark forest
+    DARK_FOREST_HILLS: Dark forest hills
     DEEP_COLD_OCEAN: Deep cold ocean
-    DEEP_DARK: Deep dark
     DEEP_FROZEN_OCEAN: Deep frozen ocean
     DEEP_LUKEWARM_OCEAN: Deep lukewarm ocean
     DEEP_OCEAN: Deep ocean
+    DEEP_WARM_OCEAN: Deep warm ocean
     DESERT: Desert
-    DRIPSTONE_CAVES: Dripstone caves
+    DESERT_HILLS: Desert hills
+    DESERT_LAKES: Desert lakes
     END_BARRENS: End barrens
     END_HIGHLANDS: End highlands
     END_MIDLANDS: End midlands
@@ -369,60 +367,68 @@ info:
     FLOWER_FOREST: Flower forest
     FOREST: Forest
     FROZEN_OCEAN: Frozen ocean
-    FROZEN_PEAKS: Frozen peaks
     FROZEN_RIVER: Frozen river
-    GROVE: Grove
+    GIANT_SPRUCE_TAIGA: Giant spruce taiga
+    GIANT_SPRUCE_TAIGA_HILLS: Giant spruce taiga hills
+    GIANT_TREE_TAIGA: Giant tree taiga
+    GIANT_TREE_TAIGA_HILLS: Giant tree taiga hills
+    GRAVELLY_MOUNTAINS: Gravelly mountains
     ICE_SPIKES: Ice spikes
-    JAGGED_PEAKS: Jagged peaks
     JUNGLE: Jungle
+    JUNGLE_EDGE: Jungle edge
+    JUNGLE_HILLS: Jungle hills
     LUKEWARM_OCEAN: Lukewarm ocean
-    LUSH_CAVES: Lush caves
-    MANGROVE_SWAMP: Mangrove swamp
-    MEADOW: Meadow
+    MODIFIED_BADLANDS_PLATEAU: Modified badlands plateau
+    MODIFIED_GRAVELLY_MOUNTAINS: Modified gravelly mountains
+    MODIFIED_JUNGLE: Modified jungle
+    MODIFIED_JUNGLE_EDGE: Modified jungle edge
+    MODIFIED_WOODED_BADLANDS_PLATEAU: Modified wooded badlands plateau
+    MOUNTAINS: Mountains
+    MOUNTAIN_EDGE: Mountain edge
     MUSHROOM_FIELDS: Mushroom fields
+    MUSHROOM_FIELD_SHORE: Mushroom field shore
     NETHER_WASTES: Nether wastes
     OCEAN: Ocean
-    OLD_GROWTH_BIRCH_FOREST: Old growth birch forest
-    OLD_GROWTH_PINE_TAIGA: Old growth pine taiga
-    OLD_GROWTH_SPRUCE_TAIGA: Old growth spruce taiga
     PLAINS: Plains
     RIVER: River
     SAVANNA: Savanna
     SAVANNA_PLATEAU: Savanna plateau
+    SHATTERED_SAVANNA: Shattered savanna
+    SHATTERED_SAVANNA_PLATEAU: Shattered savanna plateau
     SMALL_END_ISLANDS: Small end islands
     SNOWY_BEACH: Snowy beach
-    SNOWY_PLAINS: Snowy plains
-    SNOWY_SLOPES: Snowy slopes
+    SNOWY_MOUNTAINS: Snowy mountains
     SNOWY_TAIGA: Snowy taiga
+    SNOWY_TAIGA_HILLS: Snowy taiga hills
+    SNOWY_TAIGA_MOUNTAINS: Snowy taiga mountains
+    SNOWY_TUNDRA: Snowy tundra
     SOUL_SAND_VALLEY: Soul sand valley
-    SPARSE_JUNGLE: Sparse jungle
-    STONY_PEAKS: Stony peaks
-    STONY_SHORE: Stony shore
+    STONE_SHORE: Stone shore
     SUNFLOWER_PLAINS: Sunflower plains
     SWAMP: Swamp
+    SWAMP_HILLS: Swamp hills
     TAIGA: Taiga
+    TAIGA_HILLS: Taiga hills
+    TAIGA_MOUNTAINS: Taiga mountains
+    TALL_BIRCH_FOREST: Tall birch forest
+    TALL_BIRCH_HILLS: Tall birch hills
     THE_END: The end
     THE_VOID: The void
     WARM_OCEAN: Warm ocean
     WARPED_FOREST: Warped forest
-    WINDSWEPT_FOREST: Windswept forest
-    WINDSWEPT_GRAVELLY_HILLS: Windswept gravelly hills
-    WINDSWEPT_HILLS: Windswept hills
-    WINDSWEPT_SAVANNA: Windswept savanna
-    WOODED_BADLANDS: Wooded badlands
+    WOODED_BADLANDS_PLATEAU: Wooded badlands plateau
+    WOODED_HILLS: Wooded hills
+    WOODED_MOUNTAINS: Wooded mountains
   EntityType:
-    allay: Allay
     area_effect_cloud: Area effect cloud
     armor_stand: Armor stand
     arrow: Arrow
-    axolotl: Axolotl
     bat: Bat
     bee: Bee
     blaze: Blaze
     boat: Boat
     cat: Cat
     cave_spider: Cave spider
-    chest_boat: Chest boat
     chicken: Chicken
     cod: Cod
     cow: Cow
@@ -448,12 +454,8 @@ info:
     firework: Firework
     fishing_hook: Fishing hook
     fox: Fox
-    frog: Frog
     ghast: Ghast
     giant: Giant
-    glow_item_frame: Glow item frame
-    glow_squid: Glow squid
-    goat: Goat
     guardian: Guardian
     hoglin: Hoglin
     horse: Horse
@@ -466,7 +468,6 @@ info:
     llama: Llama
     llama_spit: Llama spit
     magma_cube: Magma cube
-    marker: Marker
     minecart: Minecart
     minecart_chest: Minecart chest
     minecart_command: Minecart command
@@ -508,7 +509,6 @@ info:
     squid: Squid
     stray: Stray
     strider: Strider
-    tadpole: Tadpole
     thrown_exp_bottle: Thrown exp bottle
     trader_llama: Trader llama
     trident: Trident
@@ -519,7 +519,6 @@ info:
     villager: Villager
     vindicator: Vindicator
     wandering_trader: Wandering trader
-    warden: Warden
     witch: Witch
     wither: Wither
     wither_skeleton: Wither skeleton
@@ -579,8 +578,6 @@ info:
     - Smite
     multishot:
     - Multishot
-    swift_sneak:
-    - SWIFTSNEAK
     fire_aspect:
     - FireAspect
     channeling:
@@ -675,185 +672,157 @@ info:
     - Bad omen
     hero_of_the_village:
     - Hero of the village
-    darkness:
-    - Darkness
 direction:
-  n: North
-  ne: North East
-  e: East
-  se: South East
-  s: South
-  sw: South West
-  w: West
-  nw: North West
+  n: Sever
+  ne: Severo-východ
+  e: Východ
+  se: Juho-východ
+  s: Juh
+  sw: Juho-západ
+  w: Západ
+  nw: Severo-západ
 modify:
-  middlemouse: '&2Middle mouse click to edit'
-  qButtonEdit: '&2Click Q to edit'
-  newItem: '&7Place new item here'
+  middlemouse: '&2Klikni kolečem myši pro editování!'
+  newItem: '&7Polož sem nový item'
   newLine: '&2<NewLine>'
-  newLineHover: '&2Add new line'
+  newLineHover: '&2Přidat nový řádek'
   newPage: '&2<NewPage>'
-  newPageHover: '&2Create new page'
+  newPageHover: '&2Vytvořit novou stranu'
   removePage: '&c<RemovePage>'
-  removePageHover: '&cRemove page'
-  deleteSymbol: ' &c[X]'
-  deleteSymbolHover: '&cDelete &e[text]'
+  removePageHover: '&cSmazat stranu'
+  deleteSymbol: '&cX'
+  deleteSymbolHover: '&cSmazat &e[text]'
   extraEditSymbol: ' &6!'
-  addSymbol: '&2[+]'
-  addSymbolHover: '&2Add new'
+  addSymbol: ' &2+'
+  addSymbolHover: '&2Přidat nový'
   cancelSymbol: ' &7&l[X]'
-  cancelSymbolHover: '&aCancel'
-  acceptSymbol: ' &2&l[✔]'
-  acceptSymbolHover: '&aAccept'
-  denySymbol: ' &4&l[X]'
-  denySymbolHover: '&cDeny'
+  cancelSymbolHover: '&aZrušit'
+  acceptSymbol: '&8[&a✔&8]'
+  acceptSymbolHover: '&2Přijmout'
+  denySymbol: ' &8[&4X&8]'
+  denySymbolHover: '&4Zamítnout'
   enabledSymbol: '&2[+]'
   disabledSymbol: '&c[-]'
-  enabled: '&2Enabled'
-  disabled: '&cDisabled'
-  running: '&2Running'
-  paused: '&cPaused'
+  enabled: '&2Zapnuté'
+  disabled: '&cVypnuté'
+  running: '&2Běží'
+  paused: '&cPozastavené'
   editSymbol: '&e✎'
   editSymbolHover: '&eEdit &6[text]'
   editLineColor: '&f'
   listUpSymbol: '&6⇑'
-  listUpSymbolHover: '&eUp'
+  listUpSymbolHover: '&eNahoru'
   listDownSymbol: '&6⇓'
-  listDownSymbolHover: '&eDown'
+  listDownSymbolHover: '&eDolu'
   listNumbering: '&e[number]. '
   listAlign: '&80'
-  ChangeHover: '&eClick to change'
+  ChangeHover: '&eKlikni pro změnu'
   ChangeCommands: '&eCommands'
   enabledColor: '&6'
   disabledColor: '&7'
   commandTitle: ' &e--- &6[name] &e---'
   commandList: ' &e[command]  '
   emptyLine: '&7[Empty line]'
-  commandEdit: '&eEdit list'
-  nameAddInfo: '&eEnter new name. Type &6cancel &eto cancel'
-  lineAddInfo: '&eEnter new line. Type &6cancel &eto cancel'
-  commandAddInfo: '&eEnter new command. Type &6cancel &eto cancel'
-  commandAddInformationHover: "&e[playerName] can be used to get player name \n&eTo\
-    \ include delay in commands: \n&edelay! 5 \n&eSpecialized commands are supported.\
-    \ More info at \n&ehttps://www.zrips.net/cmi/commands/specialized/"
-  commandEditInfo: '&eClick to paste old text. Type &6cancel &eto cancel action'
+  commandEdit: '&eUpravit list'
+  lineAddInfo: '&eNapiš nový řádek. Napiš &6cancel &epro zrušení.'
+  commandAddInfo: '&eNapiš nový příkaz. Napiš &6cancel &epro zrušení.'
+  commandAddInformationHover: '&e[playerName] může být použité pro získání jména hráče.'
+  commandEditInfo: '&eKlikni pro vložení starého textu. Napíš &6cancel &epro zrušení.
+    Napiš &6remove &epro smazání listu.'
   listLimit: '&eList can''t be bigger than &6[amount] &eentries'
-  commandEditInfoHover: '&eClick to paste old text'
+  commandEditInfoHover: '&eKlikni pro vložení starého textu.'
+warp:
+  list: '&cPro seznam oficiálních warpů použij /warpy'
 teleportation:
-  relocation: '!actionbar!&4Your teleport location was obstructed. You have been teleported
-    to a safe location.'
+  relocation: '!actionbar!&cByl jsi teleportován!'
+afk:
+  'on': '&6AFK'
+  'off': '&7Hraje'
+  left: '&6[playerDisplayName] &eSe vrátil!'
+  MayNotRespond: '&eJe AFK'
+  MayNotRespondStaff: '&7Tento administrátor je momentálne &c&lAFK&7.'
+BossBar:
+  hpBar: '&f[victim] &e[max]&f/&e[current] &f(&c-[damage]&f)'
+Potion:
+  Effects: '&8Efekty potionu'
+  List: '&e[PotionName] [PotionAmplifier] &eTrvání: &e[LeftDuration] &esekund'
+  NoPotions: '&eŽádné'
+Information:
+  Title: '&8Informace o hráči'
+  Health: '&eŽivoty: &6[Health]/[maxHealth]'
+  Hunger: '&eJídlo: &6[Hunger]'
+  Saturation: '&eSytost: &6[Saturation]'
+  Exp: '&eXP: &6[Exp]'
+  NotEnoughExp: '&eNedostatek XP: &6[Exp]'
+  NotEnoughExpNeed: '&eNedostatek XP: &6[Exp]/[need]'
+  tooMuchExp: '&ePříliš hodně XP: &6[Exp]/[need]'
+  NotEnoughVotes: '&eNedostatek hlasů: &6[votes]'
+  TooMuchVotes: '&ePříliš hodně hlasů: &6[votes]'
+  BadGameMode: '&8[&cSystém&8] &7Toto nemůžeš dělat v daném herním módu!'
+  BadArea: '&cNemůžeš vykonat tuto akci v této oblasti.'
+  GameMode: '&eHerní mod: &c[GameMode]'
+  GodMode: '&eGod mode: &6[GodMode]'
+  Flying: '&eLétání: &6[Flying]'
+  CanFly: '&eMůže létat: &6[CanFly]'
+  Uuid: '&6[uuid]'
+  ip: '&eIP: &6[address]'
+  FirstConnection: '&ePrvé připojení: &6[time]'
+  Lastseen: '&eNaposledy online: &6[time]'
+  Onlinesince: '&eOnline čas: &6[time]'
+  Money: '&8[&cPenize&8] &7Aktuální zůstatek peněz je &e[money]&7.'
+  Group: '&eRank: &6[group]'
 econ:
-  noMoney: '&cYou have no money'
+  disabled: '&cNemůžeš použít tento příkaz během vypnuté ekonomiky.'
+  noMoney: '&8[&cPeníze&8] &7Nemáš dostatek peněz!'
   charged: '!actionbar!&fCharged: &6[amount]'
-  notEnoughMoney: '&cYou dont have enough money. Required (&6[amount]&c)'
-  tooMuchMoney: '&cYou have too much money'
-  disabled: '&cCan''t use this command while economy support is disabled'
+  notEnoughMoney: '&8[&cPeníze&8] &7Nemáš dostatek peněz! Potřebuješ (&6[amount]&c)'
+  tooMuchMoney: '&8[&cPeníze&8] &7Máš příliš hodně peněz!'
   commandCost: '&7This command cost is &6[cost] &7repeat it or click here to confirm'
+Elytra:
+  Speed: '&eRychlost: &6[speed]&ekm/h'
+  SpeedBoost: ' &2+ '
+  SpeedSuperBoost: ' &6+ '
+  CanUse: '&cNemůžeš si nasadit elytru!'
+  CantGlide: '&cCan''t use elytra here!'
+  Charging: '&eNabíjení &f[percentage]&e%'
 Selection:
-  SelectPoints: '&cSelect 2 points with selection tool! AKA: &6[tool]'
-  PrimaryPoint: '&ePlaced &6Primary &eSelection Point [point]'
-  SecondaryPoint: '&ePlaced &6Secondary &eSelection Point [point]'
+  SelectPoints: '&cOznač 2 body s &6[tool]'
+  PrimaryPoint: '&eVybraný první bod [point]'
+  SecondaryPoint: '&eVybraný druhý bod [point]'
   CoordsTop: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
   CoordsBottom: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
   Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
+NetherPortal:
+  ToHigh: '&cPortál je velmi vysoký. Maximální výška je &6[max]&c!'
+  ToWide: '&cPortál je velmi široký. Maimální šířka je &6[max]&c!'
+  Creation: '!actionbar!&7Created [height]x[width] nether portal!'
+  Disabled: '&cVytvoření portálu sa nepodařilo!'
 Location:
-  Title: '&8Players location'
-  Killer: '&eKiller: &6[killer]'
-  OneLiner: '&eLocation: &6[location]'
-  DeathReason: '&eDeath Reason: &6[reason]'
+  Title: '&8Poloha hráčů'
+  Killer: '&eVrah: &6[killer]'
+  OneLiner: '&ePoloha: &6[location]'
+  DeathReason: '&eDůvod smrti: &6[reason]'
   Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
-  World: '&eWorld: &6[world]'
+  World: '&eSvět: &6[world]'
   X: '&eX: &6[x]'
   Y: '&eY: &6[y]'
   Z: '&eZ: &6[z]'
-  Pitch: '&ePitch: &6[pitch]'
-  Yaw: '&eYaw: &6[yaw]'
-  WorldNames:
-  - world-&2World
-  - world_nether-&2World Nether
-  - world_the_end-&2World The End
-  - world_spawn-&2World Spawn
+  Pitch: '&eSklon: &6[pitch]'
+  Yaw: '&eÚhel: &6[yaw]'
 Locations: '&7Locations: '
-warp:
-  list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
-afk:
-  'off': '&7Playing'
-  MayNotRespond: '&ePlayer is AFK and may not respond'
-  MayNotRespondStaff: '&eStaff member is AFK and may not respond. Try contacting us
-    through discord'
-BossBar:
-  hpBar: '&f[victim] &e[current]&f/&e[max] &f(&c-[damage]&f)'
-Potion:
-  Effects: '&8Potion effects'
-  List: '&e[PotionName] [PotionAmplifier] &eDuration: &e[LeftDuration] &esec'
-  NoPotions: '&eNone'
-Information:
-  Title: '&8Players information'
-  Health: '&eHealth: &6[Health]/[maxHealth]'
-  Hunger: '&eHunger: &6[Hunger]'
-  Saturation: '&eSaturation: &6[Saturation]'
-  Exp: '&eExp: &6[Exp]'
-  NotEnoughExp: '&eNot enough exp: &6[Exp]'
-  NotEnoughExpNeed: '&eNot enough exp: &6[Exp]/[need]'
-  tooMuchExp: '&eToo much exp: &6[Exp]/[need]'
-  NotEnoughVotes: '&eNot enough votes: &6[votes]'
-  TooMuchVotes: '&eToo many votes: &6[votes]'
-  BadGameMode: '&cYou can''t do this in your current game mode'
-  BadArea: '&cYou can''t perform this action in this area'
-  GameMode: '&eGameMode: &6[GameMode]'
-  Flying: '&eFlying: &6[Flying]'
-  Uuid: '&6[uuid]'
-  FirstConnection: '&eFirst connection: &6[time]'
-  Lastseen: '&eLast seen: &6[time]'
-  Onlinesince: '&eOnline since: &6[time]'
-  Money: '&eBalance: &6[money]'
-  Group: '&eGroup: &6[group]'
-Elytra:
-  Speed: '&eSpeed: &6[speed]&ekm/h'
-  SpeedBoost: ' &a+ '
-  SpeedSuperBoost: ' &2+ '
-  CanUse: '&cCan''t equip elytra without permission!'
-  CantGlide: '&cCan''t use elytra here!'
-  Charging: '&eCharging &f[percentage]&e%'
-NetherPortal:
-  ToHigh: '&cPortal is to big, max height is &6[max]&c!'
-  ToWide: '&cPortal is to wide, max width is &6[max]&c!'
-  Creation: '!actionbar!&7Created [height]x[width] nether portal!'
-  Disabled: '&cPortal creation disabled!'
 Ender:
-  Title: '&7Open ender chest'
+  Title: '&7Otevřít Ender Chestu'
 Chat:
   localPrefix: ''
   shoutPrefix: '&c[S]&r'
   LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
-  shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
+  shoutDeduction: '!actionbar!&cOdpočet pro &e[amount]&c.'
   # Use \n to add new line
-  publicHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  privateHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  staffHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  helpopHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  link: '&l&4[&7LINK&4]'
-  item: '&7[%cmi_iteminhand_realname%[amount]&7]'
+  publicHover: '&ePoslaný čas: &6%server_time_hh:mm:ss%'
+  privateHover: '&ePoslaný čas: &6%server_time_hh:mm:ss%'
+  staffHover: '&ePoslaný čas: &6%server_time_hh:mm:ss%'
+  helpopHover: '&ePoslaný čas: &6%server_time_hh:mm:ss%'
+  link: '&l&4[&7ODKAZ&4]'
+  item: '&7[%cmi_iteminhand_displayname%[amount]&7]'
   itemAmount: ' x[amount]'
   itemEmpty: '&7[Mighty fist]'
-command:
-  help:
-    output:
-      usage: '&eUsage: &7%usage%'
-      cmdInfoFormat: '[command] &f- &e[description]'
-      cmdFormat: '&6/[command]&f[arguments]'
-      helpPageDescription: '&e* [description]'
-      explanation: '&e * [explanation]'
-      title: '&e------ ======= &6Help&e &e======= ------'
-  nocmd:
-    help:
-      info: '&eShows all available commands'
-      args: ''
-  reload:
-    help:
-      info: '&eReloads plugins config and locale files'
-      args: ''
-    info:
-      feedback: '&6CMIL Configs and locale files reloaded! Took [ms]ms'
-      failedConfig: '&4Failed to load config file! Check spelling!'
-      failedLocale: '&4Failed to load locale file! Check spelling!'
