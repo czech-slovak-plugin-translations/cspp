@@ -47,4 +47,4 @@ Použití závorek se týká hlavně proměnných, nacházejících se uprostře
 > !prefix! &aÚspěšně jsi prodal/a &3%quantity%x item&a! &8(&2+ %price% $&8)<br/>
 > !prefix! &aGamemode cílového hráče byl změněn na &3%gamemode%&a! &8(&3%player% │ %status%&8)<br/>
 
-*** POZOR! U posledního příkladu není barevné označení u proměnné %status%! Barevnost stavu Offline a Online je již definována v pluginu CMILib. Podobných vyjímek se v překladu může nacházet několik. ***
+*** POZOR! U posledního příkladu není barevné označení u proměnné %status%! Barevnost stavu Offline a Online je potřeba definovat v souboru překladu CMILib. Podobných vyjímek se v překladu může nacházet několik. ***
