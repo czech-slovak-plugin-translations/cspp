@@ -121,9 +121,9 @@ info:
   spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
     with:&r [message]'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '&eWelcome &6[playerDisplayName] &eto our server!'
-  LogoutCustom: ' &6[playerDisplayName] &eleft the game'
-  LoginCustom: ' &6[playerDisplayName] &ejoined the game'
+  FirstJoin: '&8[&a+&8] &a[playerDisplayName] &7se na náš server připojil/a poprvé!\nVítej u nás!'
+  LogoutCustom: '&8[&c-&8] &c[playerDisplayName] &7se odpojil/a.'
+  LoginCustom: '&8[&a+&8] &a[playerDisplayName] &7se připojil/a.'
   deathlocation: '&eYou died at x:&6[x]&e, y:&6[y]&e, z:&6[z]&e in &6[world]'
   book:
     exploit: '&cYou cant create book with more than [amount] pages'
