@@ -158,42 +158,42 @@ info:
     flying: '&2Létá'
     notflying: '&4Nelétá'
   Inventory: #TO-DO - Tady jsem skončil.
-    Full: '&5Your inventory is full. Can''t add item'
-    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
-  TimeNotRecorded: '&e-No record-'
-  years: '&e[years] &6years '
-  oneYear: '&e[years] &6year '
-  day: '&e[days] &6days '
-  oneDay: '&e[days] &6day '
-  hour: '&e[hours] &6hours '
-  oneHour: '&e[hours] &6hour '
-  min: '&e[mins] &6min '
-  sec: '&e[secs] &6sec '
-  nextPageConsole: '&fFor next page perform &5[command]'
-  prevPage: '&2----<< &6Prev '
-  prevPageGui: '&6Previous page '
-  prevPageClean: '&6Prev '
-  prevPageOff: '&2----<< &7Prev '
+    Full: '!prefix! &cTvůj inventář je plný, nelze přidat další předmět.' #TODO - Tady jsem začal.
+    FullDrop: '!prefix! &7Všechny předměty se nevešly do tvého inventáře, byly vyhozeny kolem tebe.'
+  TimeNotRecorded: '&e-Žádný záznam-'
+  years: '&e[years] &6let ' #TODO - Potřeba kontext použití.
+  oneYear: '&e[years] &6rok '
+  day: '&e[days] &6dnů ' #TODO - Potřeba kontext použití.
+  oneDay: '&e[days] &6den '
+  hour: '&e[hours] &6hodin ' #TODO - Potřeba kontext použití.
+  oneHour: '&e[hours] &6hodina ' #TODO - Potřeba kontext použití.
+  min: '&e[mins] &6minut ' #TODO - Potřeba kontext použití.
+  sec: '&e[secs] &6sekund '
+  nextPageConsole: '&fPro další stranu použij &5[command]' #TODO - Použít dvojtečku? Prefix, barvy?
+  prevPage: '&2----<< &6Zpět '
+  prevPageGui: '&6Předchozí strana '
+  prevPageClean: '&6Zpět '
+  prevPageOff: '&2----<< &7Zpět '
   prevPageHover: '&7<<<'
   firstPageHover: '&7|<'
-  nextPage: '&6 Next &2>>----'
-  nextPageGui: '&6Next Page'
-  nextPageClean: '&6 Next'
-  nextPageOff: '&7 Next &2>>----'
+  nextPage: '&6 Další &2>>----'
+  nextPageGui: '&6Další strana'
+  nextPageClean: '&6 Další'
+  nextPageOff: '&7 Další &2>>----'
   nextPageHover: '&7>>>'
   lastPageHover: '&7>|'
   pageCount: '&2[current]&7/&2[total]'
-  pageCountHover: '&e[totalEntries] entries'
-  skullOwner: '!actionbar!&7Owner:&r [playerName]'
-  circle: '&3Circle'
-  square: '&5Square'
-  clear: '&7Clear'
-  protectedArea: '&cProtected area. Can''t do this here.'
-  valueToLong: '&eValue is too high. Max: [max]'
-  valueToShort: '&eValue is too low. Min: [min]'
-  pickIcon: '&8Pick icon'
+  pageCountHover: '&e[totalEntries] entries' #TODO - Potřeba kontext použití.
+  skullOwner: '!actionbar!&7Owner:&r [playerName]' #TODO - Potřeba kontext použití. Proč actionbar pro hlavu?
+  circle: '&3Kruh'
+  square: '&5Čtverec'
+  clear: '&7Clear' #TODO - Potřeba kontext použití.
+  protectedArea: '!prefix! &cChráněná oblast, nemůžeš zde provést toto.' #TODO - Potřeba kontext použití.
+  valueToLong: '!prefix! &cHodnota je příliš vysoká. Max: &3[max]' #TODO - Potřeba kontext použití. Nechat neutrální barvu?
+  valueToShort: '!prefix! &cHodnota je příliš nízká. Min: &3[min]' #TODO - Potřeba kontext použití. Nechat neutrální barvu?
+  pickIcon: '&8Vyber ikonu'
   # Following locale lines got moved to CMI folder and will be removed in future updates from this file. If you want to modify those lines check CMI locale directory
-  Same: '&cCan''t open your own inventory for editing!'
+  Same: '&cNemůžeš si otevřít svůj vlastní inventář pro jeho úpravu!' #TODO - Tady jsem skončil
   cantLoginWithDifCap: '&cCan''t login with different name capitalization! Old name:
     &e[oldName]&c. Current: &e[currentName]'
   Searching: '&eSearching for player data, please wait, this can take some time to
