@@ -188,57 +188,48 @@ info:
   circle: '&3Kruh'
   square: '&5Čtverec'
   clear: '&7Clear' #TODO - Potřeba kontext použití.
-  protectedArea: '!prefix! &cChráněná oblast, nemůžeš zde provést toto.' #TODO - Potřeba kontext použití.
+  protectedArea: '!prefix! &cToto zde nemůžeš provést, jedná se o chráněnou oblast.' #TODO - Potřeba kontext použití.
   valueToLong: '!prefix! &cHodnota je příliš vysoká. Max: &3[max]' #TODO - Potřeba kontext použití. Nechat neutrální barvu?
   valueToShort: '!prefix! &cHodnota je příliš nízká. Min: &3[min]' #TODO - Potřeba kontext použití. Nechat neutrální barvu?
   pickIcon: '&8Vyber ikonu'
   # Following locale lines got moved to CMI folder and will be removed in future updates from this file. If you want to modify those lines check CMI locale directory
-  Same: '&cNemůžeš si otevřít svůj vlastní inventář pro jeho úpravu!' #TODO - Tady jsem skončil
-  cantLoginWithDifCap: '&cCan''t login with different name capitalization! Old name:
-    &e[oldName]&c. Current: &e[currentName]'
-  Searching: '&eSearching for player data, please wait, this can take some time to
-    finish!'
-  NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
-  PurgeNotEnabled: '&cPurge function is not enabled in config file!'
-  TeamManagementDisabled: '&7This feature will have limited functionalaty while DisableTeamManagement
-    is set to true!'
-  NoGameMode: '&cPlease use 0/1/2/3 or Survival/Creative/Adventure/Spectator or s/c/a/sp!'
-  NameChange: '&6[playerDisplayName] &elogged in, also known as: &6[namelist]'
-  Cooldowns: '&eThis command is on cooldown for another &6[time]'
-  specializedCooldowns: '&eCooldown in motion for this command, please wait &6[time]'
-  specializedRunning: '&eCommand still running, please wait &6[time]'
-  CooldownOneTime: '&eThis command can only be used once!'
+  Same: '!prefix! &cNemůžeš si otevřít svůj vlastní inventář pro jeho úpravu!' #TODO - Tady jsem skončil
+  cantLoginWithDifCap: '&cNelze se přihlásit s rozdílně velkými znaky ve jméně!/n Staré jméno: &3[oldName]&c. Povolené jméno: &3[currentName]' #TODO - Tady jsem začal | Nejedná se o kick message? Myslím, že ano, tak jsem to rozdělil na 2 řádky a nepřidával prefix.
+  Searching: '!prefix! &bProbíhá vyhledávání dat hráčů, prosím počkej, toto může chvíli trvat!'
+  NoCommandWhileSleeping: '!prefix! &cNelze použít tento příkaz, zatímco ležíš v posteli!'
+  PurgeNotEnabled: '!prefix! &cFunkce čištění není povolená!'
+  TeamManagementDisabled: '!prefix! &cTato funkce bude mít omezenou funkčnost, jelikož je povolený DisableTeamManagement.'
+  NoGameMode: '!prefix! &cPoužij prosím hodnotu &30/1/2/3 &cnebo &3Survival/Creative/Adventure/Spectator &cnebo &3s/c/a/sp&c!' #TODO - Barvy cajk?
+  NameChange: '&3[playerDisplayName] &bse přihlásil, také známý jako: &3[namelist]'
+  Cooldowns: '!prefix! &cTento příkaz je možné znovu použít za: &3[time]'
+  specializedCooldowns: '!prefix! &cTento příkaz je možné znovu použít za: &3[time]'
+  specializedRunning: '!prefix! &cPříkaz se stále vykonává. Prosím počkej: &3[time]'
+  CooldownOneTime: '!prefix! &cTento příkaz může být použitý pouze jednou!'
   WarmUp:
-    canceled: '&eCommand was cancelled due to your movement'
-    counter: '!actionbar!&6--> Wait &e[time] &6seconds <--'
-    DontMove: '!title!&6Don''t move!!subtitle!&7Wait &c[time] &7seconds'
+    canceled: '!prefix! &cPříkaz byl zrušený z důvodu pohybu!'
+    counter: '!actionbar!&6--> &bPočkej &3[time]s <--' #TODO - Barvy
+    DontMove: '!title!&cNehýbej se!subtitle!&7Vyčkej: &3[time]s' #TODO - Barvy
     Boss:
-      DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
-      WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
-  Spawner: '&r[type] Spawner'
-  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
-  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
+      DontMove: '!prefix! &cNehýbej se po dobu: &3[autoTimeLeft]s&c!' #TODO - WarmUp.Boss? O tom vůbec nevím lol
+      WaitFor: '!prefix! &cVyčkej po dobu: &3[autoTimeLeft]s&c!' #TODO - ^^
+  Spawner: '&r[type] Spawner' #TODO
+  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance' #TODO - Necháme to v ActionBaru?
+  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance' #TODO - To stejné ^^
   Elevator:
-    created: '&eCreated elevator sign'
-  CantPlaceSpawner: '&eCan''t place spawner so close to another spawner (&6[range]&e)'
-  ChunksLoading: '&eWorld chunk data is still being loaded. Please wait a bit and
-    try again.'
-  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. Can''t
-    use them!'
-  CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong
-    key for this task. Inform server administration about this'
-  CantTeleport: '&eYou can''t teleport because you have too many limited items. Scroll
-    over this line to see the maximum amount of items allowed.'
+    created: '!prefix! &aVytvořena cedulka výtahu.'
+  CantPlaceSpawner: '!prefix! &cNelze položit Spawner tak blízko jinému. &8(&3[range]&8)'
+  ChunksLoading: '!prefix! &cData chunků světa se stále načítají. Zkus to prosím znovu později.'
+  CantUseNonEncrypted: '!actionbar!&cPříkazy na tomto předmětu nejsou šifrované. Nelze je tedy použít!' #TODO - Tady jsem skončil | Chceme tady použít ActionBar?
+  CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong key for this task. Inform server administration about this'
+  CantTeleport: '&eYou can''t teleport because you have too many limited items. Scroll over this line to see the maximum amount of items allowed.'
   BlackList: '&e[material] [amount] &6Max: [max]'
   wrongPortal: '&cYou are in incorrect area of effect'
   ItemWillBreak: '!actionbar!&eYour item (&6[itemName]&e) will break soon! &e[current]&6/&e[max]'
   ArmorWillBreak: '!actionbar!&eYour [itemName] will break soon! &e[current]&6/&e[max]'
   flyingToHigh: '&cYou can''t fly so high, max height is &6[max]&c!'
-  specializedItemFail: '&cCan''t determine specialized item requirement by value:
-    &7[value]'
+  specializedItemFail: '&cCan''t determine specialized item requirement by value: &7[value]'
   sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
-  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required
-    for night time speedup'
+  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required for night time speedup'
   sunSpeedingTitle: '&7[hour]'
   skippingNight: '!title!&7Skipping entire night'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
@@ -246,14 +237,12 @@ info:
   bookDate: '&7Written at &f[date]'
   maintenance: '&7Maintenance mode'
   mapLimit: '&cCant go beyond 30 000 000 blocks'
-  startedEditingPainting: '&eYou started editing painting. Click any other block to
-    cancel.'
+  startedEditingPainting: '&eYou started editing painting. Click any other block to cancel.'
   canceledEditingPainting: '&eYou canceled painting editing mode'
   changedPainting: '!actionbar!&eChanged painting to &6[name] &ewith id of &6[id]'
   noSpam: '!title!&cNo spamming!'
   noCmdSpam: '!title!&cNo command spamming!'
-  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
-    with:&r [message]'
+  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter with:&r [message]'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
   FirstJoin: '&eWelcome &6[playerDisplayName] &eto our server!'
   LogoutCustom: ' &6[playerDisplayName] &eleft the game'
@@ -262,8 +251,7 @@ info:
   book:
     exploit: '&cYou cant create book with more than [amount] pages'
   combat:
-    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
-      Wait: [time]'
+    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player. Wait: [time]'
     CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
     bossBarPvp: '&cCombat mode [autoTimeLeft]'
     bossBarPve: '&2Combat mode [autoTimeLeft]'
@@ -285,8 +273,7 @@ info:
     IdDontExist: '&4This save Id doesn''t exist!'
     Deleted: '&eSaved inventory was successfully deleted!'
     Restored: '&eYou have restored &e[sourcename] &einventory for &e[targetname] &euser.'
-    GotRestored: '&eYour inventory was restored from &e[sourcename] &esaved inventory
-      on &e[time]'
+    GotRestored: '&eYour inventory was restored from &e[sourcename] &esaved inventory on &e[time]'
     LoadForSelf: '&eLoad this inventory for your self'
     LoadForOwner: '&eLoad this inventory for owner'
     NextInventory: '&eNext inventory'
@@ -739,8 +726,7 @@ modify:
   listLimit: '&eList can''t be bigger than &6[amount] &eentries'
   commandEditInfoHover: '&eClick to paste old text'
 teleportation:
-  relocation: '!actionbar!&4Your teleport location was obstructed. You have been teleported
-    to a safe location.'
+  relocation: '!actionbar!&4Your teleport location was obstructed. You have been teleported to a safe location.'
 econ:
   noMoney: '&cYou have no money'
   charged: '!actionbar!&fCharged: &6[amount]'
