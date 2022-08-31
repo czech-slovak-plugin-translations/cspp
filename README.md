@@ -22,6 +22,10 @@ Zprávám, které jej mají používat stačí na začátek vložit tuto proměn
 #### Neúspěch
 > &c
 
+#### Speciální
+Zprávy v GUI, hover zprávy, actionbar zprávy, apod.
+> &d
+
 ### Proměnné
 
 #### Neutrální
