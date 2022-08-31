@@ -56,7 +56,7 @@
 info:
   # Use !prefix! in any locale line to automatically include this prefix
   prefix: '&8[&cSystém&8] '
-  NoPermission: '!prefix! &cNemáš dostatečné oprávnění!'
+  NoPermission: '!prefix! &cK tomuto nemáš dostatečné oprávnění!'
   CantHavePermission: '!prefix! &cNemůžeš mít toto oprávnění!'
   WrongGroup: '!prefix! &cPro toto jsi ve špatné skupině!' #TODO - Potřeba kontext použití. Jedná se o permission group?
   NoPlayerPermission: '!prefix! &3[playerName] &cnemá dostatečná oprávnění pro: &3[permission]'
@@ -122,12 +122,12 @@ info:
   cantRename: '!prefix! &cNelze použít toto jméno!' #TODO - Původně se zde používal !actionbar!.
   confirmRedefine: '!prefix! &bKlikni pro potvrzení předefinování. '
   cantEdit: '!prefix! &cToto nemůžeš upravit!'
-  wrongName: '!prefix! &cŠpatný název!'
+  wrongName: '!prefix! &cNeplatný název!'
   unknown: neznámý #TODO - Původní hodnota nebyla v uvozovkách. 
   invalidName: '!prefix! &cNeplatné jméno!'
   alreadyexist: '!prefix! &cToto jméno je již zabrané!'
-  dontexist: '!prefix! &cNic nebylo nalezeno pod tímto jménem.'
-  worldDontExist: '!prefix! &cCílový svět již není přístupný. Nemůžu tě tam teleportovat!'
+  dontexist: '!prefix! &cToto jméno nebylo nalezeno.'
+  worldDontExist: '!prefix! &cCílový svět již není přístupný. Nemůžu Tě tam teleportovat!'
   notSet: nenastaveno #TODO - Původní hodnota nebyla v uvozovkách.
   lookAtSign: '!prefix! &bPodívej se na cedulku.'
   lookAtBlock: '!prefix! &bPodívej se na block.' #TODO - Mám překládat block jako blok? ugh
@@ -151,24 +151,24 @@ info:
     'False': '&4False'
     Enabled: '&2Enabled'
     Disabled: '&4Disabled'
-    survival: '&bSurvival' #TODO - Nejsem si jistý barvou. To stejné u dalších 3 řádků.
-    creative: '&bCreative'
-    adventure: '&bAdventure'
-    spectator: '&bSpectator'
+    survival: '&3Survival' #TODO - Nejsem si jistý barvou. To stejné u dalších 3 řádků.
+    creative: '&3Creative'
+    adventure: '&3Adventure'
+    spectator: '&3Spectator'
     flying: '&2Létá'
     notflying: '&4Nelétá'
   Inventory: #TO-DO - Tady jsem skončil.
     Full: '!prefix! &cTvůj inventář je plný, nelze přidat další předmět.' #TODO - Tady jsem začal.
     FullDrop: '!prefix! &7Všechny předměty se nevešly do tvého inventáře, byly vyhozeny kolem tebe.'
   TimeNotRecorded: '&e-Žádný záznam-'
-  years: '&e[years] &6let ' #TODO - Potřeba kontext použití.
-  oneYear: '&e[years] &6rok '
-  day: '&e[days] &6dnů ' #TODO - Potřeba kontext použití.
-  oneDay: '&e[days] &6den '
-  hour: '&e[hours] &6hodin ' #TODO - Potřeba kontext použití.
-  oneHour: '&e[hours] &6hodina ' #TODO - Potřeba kontext použití.
-  min: '&e[mins] &6minut ' #TODO - Potřeba kontext použití.
-  sec: '&e[secs] &6sekund '
+  years: '&3[years] let ' #TODO - Potřeba kontext použití.
+  oneYear: '&3[years] rok '
+  day: '&3[days] dnů ' #TODO - Potřeba kontext použití.
+  oneDay: '&3[days] den '
+  hour: '&3[hours] hodin ' #TODO - Potřeba kontext použití.
+  oneHour: '&3[hours] hodina ' #TODO - Potřeba kontext použití.
+  min: '&3[mins] minut ' #TODO - Potřeba kontext použití.
+  sec: '&3[secs] sekund '
   nextPageConsole: '&fPro další stranu použij &5[command]' #TODO - Použít dvojtečku? Prefix, barvy?
   prevPage: '&2----<< &6Zpět '
   prevPageGui: '&6Předchozí strana '
@@ -186,8 +186,8 @@ info:
   pageCountHover: '&3[totalEntries] &fpoložek' #TODO - Barvy
   skullOwner: '!actionbar!&7Owner:&r [playerName]' #TODO - Vypíše se po right-clicku na položenou hlavu. Barvy
   circle: '&3Kruh'
-  square: '&5Čtverec'
-  clear: '&7Clear' #TODO - Potřeba kontext použití.
+  square: '&3Čtverec'
+  clear: '&3Clear' #TODO - Potřeba kontext použití.
   protectedArea: '!prefix! &cToto zde nemůžeš provést, jedná se o chráněnou oblast.' #TODO - Potřeba kontext použití.
   valueToLong: '!prefix! &cHodnota je příliš vysoká. Max: &3[max]' #TODO - Potřeba kontext použití. Nechat neutrální barvu?
   valueToShort: '!prefix! &cHodnota je příliš nízká. Min: &3[min]' #TODO - Potřeba kontext použití. Nechat neutrální barvu?
@@ -195,8 +195,8 @@ info:
   # Following locale lines got moved to CMI folder and will be removed in future updates from this file. If you want to modify those lines check CMI locale directory
   Same: '!prefix! &cNemůžeš si otevřít svůj vlastní inventář pro jeho úpravu!' #TODO - Tady jsem skončil
   cantLoginWithDifCap: '&cNelze se přihlásit s rozdílně velkými znaky ve jméně!/n Staré jméno: &3[oldName]&c. Povolené jméno: &3[currentName]' #TODO - Tady jsem začal | Nejedná se o kick message? Myslím, že ano, tak jsem to rozdělil na 2 řádky a nepřidával prefix.
-  Searching: '!prefix! &bProbíhá vyhledávání dat hráčů, prosím počkej, toto může chvíli trvat!'
-  NoCommandWhileSleeping: '!prefix! &cNelze použít tento příkaz, zatímco ležíš v posteli!'
+  Searching: '!prefix! &bProbíhá vyhledávání dat hráčů, prosím vyčkej, může to chvíli trvat!'
+  NoCommandWhileSleeping: '!prefix! &cTento příkaz nelze použít, zatímco ležíš v posteli!'
   PurgeNotEnabled: '!prefix! &cFunkce čištění není povolená!'
   TeamManagementDisabled: '!prefix! &cTato funkce bude mít omezenou funkčnost, jelikož je povolený DisableTeamManagement.'
   NoGameMode: '!prefix! &cPoužij prosím hodnotu &30/1/2/3 &cnebo &3Survival/Creative/Adventure/Spectator &cnebo &3s/c/a/sp&c!' #TODO - Barvy cajk?
@@ -219,7 +219,7 @@ info:
     created: '!prefix! &aVytvořena cedulka výtahu.'
   CantPlaceSpawner: '!prefix! &cNelze položit Spawner tak blízko jinému. &8(&3[range]&8)'
   ChunksLoading: '!prefix! &cData chunků světa se stále načítají. Zkus to prosím znovu později.'
-  CantUseNonEncrypted: '!actionbar!&cPříkazy na tomto předmětu nejsou šifrované. Nelze je tedy použít!' #TODO - Tady jsem skončil | Chceme tady použít ActionBar?
+  CantUseNonEncrypted: '!actionbar!&dPříkazy na tomto předmětu nejsou šifrované. Nelze je tedy použít!' #TODO - Tady jsem skončil | Chceme tady použít ActionBar?
   CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong key for this task. Inform server administration about this'
   CantTeleport: '&eYou can''t teleport because you have too many limited items. Scroll over this line to see the maximum amount of items allowed.'
   BlackList: '&e[material] [amount] &6Max: [max]'
