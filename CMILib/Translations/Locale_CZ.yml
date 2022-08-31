@@ -753,14 +753,12 @@ Location:
   Z: '&eZ: &6[z]'
   Pitch: '&ePitch: &6[pitch]'
   Yaw: '&eYaw: &6[yaw]'
-  WorldNames:
-  - world-&2World
-  - world_nether-&2World Nether
-  - world_the_end-&2World The End
-  - newprirodaspawn-&2Newprirodaspawn
-  - prirodaspawn-&2Prirodaspawn
-  - minespawn-&2Minespawn
-  - world_spawn-&2World Spawn
+  WorldNames: #Uživatel - Toto nastavení je individuální
+  - world-&dWorld
+  - world_nether-&dWorld Nether
+  - world_the_end-&dWorld The End
+  - world_spawn-&dWorld Spawn
+  - mine-&dMine
 Locations: '&7Locations: '
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
