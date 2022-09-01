@@ -14,41 +14,41 @@ Zprávám, které jej mají používat stačí na začátek vložit tuto proměn
 ### Prostý text
 
 #### Neutrální
-> &b
+> <t>
 
 #### Úspěch
-> &a
+> <ts>
 
 #### Neúspěch
-> &c
+> <tf>
 
 #### Speciální
-Zprávy v GUI, hover zprávy, actionbar zprávy, apod.
-> &d
+Zprávy v GUI, progressbary, hover zprávy, actionbar zprávy, apod.
+> <tspecial>
 
 ### Proměnné
 
 #### Neutrální
 Použití příkazů, počet a název itemů, jména hráčů,...
-> &3
+> <var>
 
 #### Kladné
 Přičtení peněz po prodeji, online status hráče,...
-> &2
+> <vars>
 
 #### Záporné
 Odečtení peněz po nákupu, offline status hráče,...
-> &4
+> <varf>
 
 ### Závorky
 Použití závorek se týká hlavně proměnných, nacházejících se uprostřed vět.
-> &8
+> <misc>
 
 ## Příklady formátu
-> !prefix! &bPoužití: &3%usage%<br/>
-> !prefix! &cNemůžeš se teleportovat na hráče, který není online!<br/>
-> !prefix! &aÚspěšně jsi zakoupil/a &3%quantity%x %item%&a! &8(&4- %price% $&8)<br/>
-> !prefix! &aÚspěšně jsi prodal/a &3%quantity%x item&a! &8(&2+ %price% $&8)<br/>
-> !prefix! &aGamemode cílového hráče byl změněn na &3%gamemode%&a! &8(&3%player% │ %status%&8)<br/>
+> !prefix! <t>Použití: <var>%usage%<br/>
+> !prefix! <tf>Nemůžeš se teleportovat na hráče, který není online!<br/>
+> !prefix! <ts>Úspěšně jsi zakoupil/a <var>%quantity%x %item%<ts>! <misc>(<varf>- %price% $<misc>)<br/>
+> !prefix! <ts>Úspěšně jsi prodal/a <var>%quantity%x item<ts>! <misc>(<vars>+ %price% $&<misc>)<br/>
+> !prefix! <ts>Gamemode cílového hráče byl změněn na <var>%gamemode%<ts>! <misc>(<var>%player% │ %status%<misc>)<br/>
 
 *** POZOR! U posledního příkladu není barevné označení u proměnné %status%! Barevnost stavu Offline a Online je potřeba definovat v souboru překladu CMILib. Podobných vyjímek se v překladu může nacházet několik. ***
