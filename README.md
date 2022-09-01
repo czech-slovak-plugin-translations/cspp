@@ -3,8 +3,9 @@
 
 ## Formát
 Následující formát bude používán po celou dobu překládání.<br/>
-Nejen barevné kódy, ale i některé celé části, si lze po stažení dle libosti upravit, pomocí funkce nahrazování.<br/>
-Díky použití širokého rozčlenění barev, je tento překlad univerzální a přizpůsobitelný.
+Díky použití širokého rozčlenění barev, je tento překlad univerzální a přizpůsobitelný.<br/>
+Značky si lze po stažení dle libosti nahradit za barevné kódy, dle vlastního výběru.
+
 
 ### Prefix
 Prefix je již definován v souboru [CMILib/Translations/Locale_CZ.yml](CMILib/Translations/Locale_CZ.yml)<br/>
