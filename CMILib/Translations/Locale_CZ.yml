@@ -55,171 +55,171 @@
 
 info:
   # Use !prefix! in any locale line to automatically include this prefix
-  prefix: '&8[&cSystém&8] '
-  NoPermission: '!prefix! &cK tomuto nemáš dostatečné oprávnění!'
-  CantHavePermission: '!prefix! &cNemůžeš mít toto oprávnění!'
-  WrongGroup: '!prefix! &cPro toto jsi ve špatné skupině!' #TODO - Potřeba kontext použití. Jedná se o permission group?
-  NoPlayerPermission: '!prefix! &3[playerName] &cnemá dostatečná oprávnění pro: &3[permission]'
-  Ingame: '!prefix! &cTento příkaz lze použít pouze ve hře!'
-  NoInformation: '!prefix! &cŽádná informace nenalezena!'
-  Console: '&3Konzole' #TODO - Jediný výskyt tohoto textu je při obdržení /msg z konzole. Možná jsou i další.
-  FromConsole: '!prefix! &cTento příkaz lze použít pouze v konzoli!'
-  NotOnline: '!prefix! &cTento hráč není online!'
-  NobodyOnline: '!prefix! &cŽádný hráč není online!'
-  NoPlayer: '!prefix! &cNelze nalézt hráče s tímto jménem!'
-  NoCommand: '!prefix! &cTento příkaz neexistuje!'
-  cantFindCommand: '!prefix! &cNelze nalézt příkaz &3[%1]&c, neměl/a jsi na mysli &3[%2]&c?'
-  nolocation: '!prefix! &cNelze nalézt vhodnou lokaci!'
-  FeatureNotEnabled: '!prefix! &cTato funkce není zapnutá!'
-  ModuleNotEnabled: '!prefix! &cTento modul není zapnutý!'
-  versionNotSupported: '!prefix! &cVerze serveru není podporovaná!'
-  spigotNotSupported: '!prefix! &cAby toto fungovalo, je zapotřebí použít větev PaperSpigotu!'
-  bungeeNoGo: '!prefix! &cTato funkce nebude fungovat na serverech založených na Bungee!'
-  clickToTeleport: '!prefix! &bKlikni pro teleportování.'
-  UseMaterial: '!prefix! &cPoužij prosím název materiálu.'
-  IncorrectMaterial: '!prefix! &cNeplatný název materiálu!'
-  UseInteger: '!prefix! &cPoužij pouze čísla!'
-  UseBoolean: '!prefix! &cPoužij pouze hodnoty &2True &cnebo &4False&c!'
-  NoLessThan: '!prefix! &cČíslo nemůže být nižší než &3[amount]&c!'
-  NoMoreThan: '!prefix! &cČíslo nemůže být vyšší než &3[amount]&c!'
-  NoWorld: '!prefix! &cSvět s tímto názvem nebyl nalezený!'
-  IncorrectLocation: '!prefix! &cChybně zadaná lokace!'
-  Show: '&dUkázat' #TODO - Nejsem si jistý barvou. Týká se to i následujících 9 řádků.
-  Remove: '&dOdebrat'
-  Back: '&dZpět'
-  Forward: '&dForward' #TODO - Potřeba kontext použití.
-  Update: '&dAktualizovat'
-  Save: '&dUložit'
-  Delete: '&dSmazat'
-  Click: '&dKlikni' #TODO - A nebo Klik? Ach ten overthinking.
-  Preview: '&dNáhled'
-  PasteOld: '&dVložit původní' #TODO - Původní text: Paste Old
-  ClickToPaste: '&dKlikni pro vložení do textového pole'
-  CantTeleportWorld: '!prefix! &cNelze teleportovat do cílového světa!'
-  CantTeleportNoWorld: '!prefix! &cCílový svět neexistuje! Teleport byl zrušený.'
-  ClickToConfirmDelete: '!prefix! &bKlikni pro potvrzení smazání &3[name]'
-  teleported: '!prefix! &bByl/a jsi teleportovan/a.'
+  prefix: '<misc>[<tf>Systém<misc>] '
+  NoPermission: '!prefix! <tf>K tomuto nemáš dostatečné oprávnění!'
+  CantHavePermission: '!prefix! <tf>Nemůžeš mít toto oprávnění!'
+  WrongGroup: '!prefix! <tf>Pro toto jsi ve špatné skupině!' #TODO - Potřeba kontext použití. Jedná se o permission group?
+  NoPlayerPermission: '!prefix! <var>[playerName] <tf>nemá dostatečná oprávnění pro: <var>[permission]'
+  Ingame: '!prefix! <tf>Tento příkaz lze použít pouze ve hře!'
+  NoInformation: '!prefix! <tf>Žádná informace nenalezena!'
+  Console: '<var>Konzole' #TODO - Jediný výskyt tohoto textu je při obdržení /msg z konzole. Možná jsou i další.
+  FromConsole: '!prefix! <tf>Tento příkaz lze použít pouze v konzoli!'
+  NotOnline: '!prefix! <tf>Tento hráč není online!'
+  NobodyOnline: '!prefix! <tf>Žádný hráč není online!'
+  NoPlayer: '!prefix! <tf>Nelze nalézt hráče s tímto jménem!'
+  NoCommand: '!prefix! <tf>Tento příkaz neexistuje!'
+  cantFindCommand: '!prefix! <tf>Nelze nalézt příkaz <var>[%1]<tf>, neměl/a jsi na mysli <var>[%2]<tf>?'
+  nolocation: '!prefix! <tf>Nelze nalézt vhodnou lokaci!'
+  FeatureNotEnabled: '!prefix! <tf>Tato funkce není zapnutá!'
+  ModuleNotEnabled: '!prefix! <tf>Tento modul není zapnutý!'
+  versionNotSupported: '!prefix! <tf>Verze serveru není podporovaná!'
+  spigotNotSupported: '!prefix! <tf>Aby toto fungovalo, je zapotřebí použít větev PaperSpigotu!'
+  bungeeNoGo: '!prefix! <tf>Tato funkce nebude fungovat na serverech založených na Bungee!'
+  clickToTeleport: '!prefix! <t>Klikni pro teleportování.'
+  UseMaterial: '!prefix! <tf>Použij prosím název materiálu.'
+  IncorrectMaterial: '!prefix! <tf>Neplatný název materiálu!'
+  UseInteger: '!prefix! <tf>Použij pouze čísla!'
+  UseBoolean: '!prefix! <tf>Použij pouze hodnoty <vars>True <tf>nebo <varf>False<tf>!'
+  NoLessThan: '!prefix! <tf>Číslo nemůže být nižší než <var>[amount]<tf>!'
+  NoMoreThan: '!prefix! <tf>Číslo nemůže být vyšší než <var>[amount]<tf>!'
+  NoWorld: '!prefix! <tf>Svět s tímto názvem nebyl nalezený!'
+  IncorrectLocation: '!prefix! <tf>Chybně zadaná lokace!'
+  Show: '<tspecial>Ukázat' #TODO - Nejsem si jistý barvou. Týká se to i následujících 9 řádků.
+  Remove: '<tspecial>Odebrat'
+  Back: '<tspecial>Zpět'
+  Forward: '<tspecial>Forward' #TODO - Potřeba kontext použití.
+  Update: '<tspecial>Aktualizovat'
+  Save: '<tspecial>Uložit'
+  Delete: '<tspecial>Smazat'
+  Click: '<tspecial>Klikni' #TODO - A nebo Klik? Ach ten overthinking.
+  Preview: '<tspecial>Náhled'
+  PasteOld: '<tspecial>Vložit původní' #TODO - Původní text: Paste Old
+  ClickToPaste: '<tspecial>Klikni pro vložení do textového pole'
+  CantTeleportWorld: '!prefix! <tf>Nelze teleportovat do cílového světa!'
+  CantTeleportNoWorld: '!prefix! <tf>Cílový svět neexistuje! Teleport byl zrušený.'
+  ClickToConfirmDelete: '!prefix! <t>Klikni pro potvrzení smazání <var>[name]'
+  teleported: '!prefix! <t>Byl/a jsi teleportovan/a.'
   PlayerSpliter: '&e----- &6[playerDisplayName] &e-----' #TODO - Vytvoříme pro splittery vlastní barvu?
   Spliter: '&e--------------------------------------------------' #TODO
   SpliterValue: '&e------------------ &6[value] &e------------------' #TODO
   singleSpliter: '&e-' #TODO
   SpliterMiddle: ' &6[value] ' #TODO
   ListSpliter: ', '
-  ProgressBarFill: '&d▏' #Uživatel - Zde si nastav barvu baru postupu.
+  ProgressBarFill: '<tspecial>▏' #Uživatel - Zde si nastav barvu baru postupu.
   ProgressBarEmpty: '&7▏' #TODO - Použití barvy &7 z důvodu, že je volná a sedne k prázdnému progress baru.
-  nothingInHand: '!prefix! &cMusíš držet předmět v hlavní ruce!' #TODO - Původně se zde používal !actionbar!. Přidané přidavné jméno. Myslím, že se sekundární rukou nespolupracuje.
-  nothingInHandLeather: '!prefix! &cMusíš držet kožený předmět v hlavní ruce!' #TODO - To stejné co výše, kromě !actionbar!.
-  nothingToShow: '!prefix! &cNic k vidění.'
-  noItem: '!prefix! &cNelze nalézt předmět!'
-  dontHaveItem: '!prefix! &cNemáš &3[amount]x [itemName] &cve svém inventáři!'
-  wrongWorld: '!prefix! &cToto nelze provést v tomto světě!'
-  differentWorld: '!prefix! &bRůzné světy' #TODO - Doslovný překlad. Nejsem si jistý barvou.
-  HaveItem: '!prefix! &aMáš &3[amount]x [itemName] &ave svém inventáři.'
-  cantDoInGamemode: '!prefix! &cToto nemůžeš provést v tvém herním módu!'
-  cantDoForPlayer: '!prefix! &cToto nemůžeš udělat hráči &3[playerDisplayName]&c!'
-  cantDoForYourSelf: '!prefix! &cToto nemůžeš udělat sobě!'
-  cantDetermineMobType: '!prefix! &cNelze určit moba z &3[type] &cproměnné.'
-  cantRename: '!prefix! &cNelze použít toto jméno!' #TODO - Původně se zde používal !actionbar!.
-  confirmRedefine: '!prefix! &bKlikni pro potvrzení předefinování. '
-  cantEdit: '!prefix! &cToto nemůžeš upravit!'
-  wrongName: '!prefix! &cNeplatný název!'
+  nothingInHand: '!prefix! <tf>Musíš držet předmět v hlavní ruce!' #TODO - Původně se zde používal !actionbar!. Přidané přidavné jméno. Myslím, že se sekundární rukou nespolupracuje.
+  nothingInHandLeather: '!prefix! <tf>Musíš držet kožený předmět v hlavní ruce!' #TODO - To stejné co výše, kromě !actionbar!.
+  nothingToShow: '!prefix! <tf>Nic k vidění.'
+  noItem: '!prefix! <tf>Nelze nalézt předmět!'
+  dontHaveItem: '!prefix! <tf>Nemáš <var>[amount]x [itemName] <tf>ve svém inventáři!'
+  wrongWorld: '!prefix! <tf>Toto nelze provést v tomto světě!'
+  differentWorld: '!prefix! <t>Různé světy' #TODO - Doslovný překlad. Nejsem si jistý barvou.
+  HaveItem: '!prefix! <ts>Máš <var>[amount]x [itemName] <ts>ve svém inventáři.'
+  cantDoInGamemode: '!prefix! <tf>Toto nemůžeš provést v tvém herním módu!'
+  cantDoForPlayer: '!prefix! <tf>Toto nemůžeš udělat hráči <var>[playerDisplayName]<tf>!'
+  cantDoForYourSelf: '!prefix! <tf>Toto nemůžeš udělat sobě!'
+  cantDetermineMobType: '!prefix! <tf>Nelze určit moba z <var>[type] <tf>proměnné.'
+  cantRename: '!prefix! <tf>Nelze použít toto jméno!' #TODO - Původně se zde používal !actionbar!.
+  confirmRedefine: '!prefix! <t>Klikni pro potvrzení předefinování. '
+  cantEdit: '!prefix! <tf>Toto nemůžeš upravit!'
+  wrongName: '!prefix! <tf>Neplatný název!'
   unknown: neznámý #TODO - Původní hodnota nebyla v uvozovkách. 
-  invalidName: '!prefix! &cNeplatné jméno!'
-  alreadyexist: '!prefix! &cToto jméno je již zabrané!'
-  dontexist: '!prefix! &cToto jméno nebylo nalezeno.'
-  worldDontExist: '!prefix! &cCílový svět již není přístupný. Nemůžu Tě tam teleportovat!'
+  invalidName: '!prefix! <tf>Neplatné jméno!'
+  alreadyexist: '!prefix! <tf>Toto jméno je již zabrané!'
+  dontexist: '!prefix! <tf>Toto jméno nebylo nalezeno.'
+  worldDontExist: '!prefix! <tf>Cílový svět již není přístupný. Nemůžu Tě tam teleportovat!'
   notSet: nenastaveno #TODO - Původní hodnota nebyla v uvozovkách.
-  lookAtSign: '!prefix! &bPodívej se na cedulku.'
-  lookAtBlock: '!prefix! &bPodívej se na block.' #TODO - Mám překládat block jako blok? ugh
-  lookAtEntity: '!prefix! &bPodívej se na entitu.'
-  noSpace: '!prefix! &cNedostatek volného místa!'
-  notOnGround: '!prefix! &cToto nelze použít, když lítáš!'
+  lookAtSign: '!prefix! <t>Podívej se na cedulku.'
+  lookAtBlock: '!prefix! <t>Podívej se na block.' #TODO - Mám překládat block jako blok? ugh
+  lookAtEntity: '!prefix! <t>Podívej se na entitu.'
+  noSpace: '!prefix! <tf>Nedostatek volného místa!'
+  notOnGround: '!prefix! <tf>Toto nelze použít, když lítáš!'
   bungee:
-    Online: '&2Online'
-    Offline: '&4Offline'
-    not: '!prefix! &cServer se nenachází na Bungee síti!'
-    noserver: '!prefix! &cNelze nalézt server s tímto jménem!'
-    server: '&bServer: &3[name]'
+    Online: '<vars>Online'
+    Offline: '<varf>Offline'
+    not: '!prefix! <tf>Server se nenachází na Bungee síti!'
+    noserver: '!prefix! <tf>Nelze nalézt server s tímto jménem!'
+    server: '<t>Server: <var>[name]'
   variables:
     am: '&eAM' #TODO - Toto stejně nepoužíváme.
     pm: '&ePM' #TODO - Toto stejně nepoužíváme.
-    Online: '&2Online'
-    Offline: '&4Offline'
-    TrueColor: '&2'
-    FalseColor: '&4'
-    'True': '&2True'
-    'False': '&4False'
-    Enabled: '&2Enabled'
-    Disabled: '&4Disabled'
-    survival: '&3Survival' #TODO - Nejsem si jistý barvou. To stejné u dalších 3 řádků.
-    creative: '&3Creative'
-    adventure: '&3Adventure'
-    spectator: '&3Spectator'
-    flying: '&2Létá'
-    notflying: '&4Nelétá'
+    Online: '<vars>Online'
+    Offline: '<varf>Offline'
+    TrueColor: '<vars>'
+    FalseColor: '<varf>'
+    'True': '<vars>True'
+    'False': '<varf>False'
+    Enabled: '<vars>Enabled'
+    Disabled: '<varf>Disabled'
+    survival: '<var>Survival' #TODO - Nejsem si jistý barvou. To stejné u dalších 3 řádků.
+    creative: '<var>Creative'
+    adventure: '<var>Adventure'
+    spectator: '<var>Spectator'
+    flying: '<vars>Létá'
+    notflying: '<varf>Nelétá'
   Inventory: #TO-DO - Tady jsem skončil.
-    Full: '!prefix! &cTvůj inventář je plný, nelze přidat další předmět.' #TODO - Tady jsem začal.
+    Full: '!prefix! <tf>Tvůj inventář je plný, nelze přidat další předmět.' #TODO - Tady jsem začal.
     FullDrop: '!prefix! &7Všechny předměty se nevešly do tvého inventáře, byly vyhozeny kolem tebe.'
   TimeNotRecorded: '&e-Žádný záznam-'
-  years: '&3[years] let ' #TODO - Potřeba kontext použití.
-  oneYear: '&3[years] rok '
-  day: '&3[days] dnů ' #TODO - Potřeba kontext použití.
-  oneDay: '&3[days] den '
-  hour: '&3[hours] hodin ' #TODO - Potřeba kontext použití.
-  oneHour: '&3[hours] hodina ' #TODO - Potřeba kontext použití.
-  min: '&3[mins] minut ' #TODO - Potřeba kontext použití.
-  sec: '&3[secs] sekund '
+  years: '<var>[years] let ' #TODO - Potřeba kontext použití.
+  oneYear: '<var>[years] rok '
+  day: '<var>[days] dnů ' #TODO - Potřeba kontext použití.
+  oneDay: '<var>[days] den '
+  hour: '<var>[hours] hodin ' #TODO - Potřeba kontext použití.
+  oneHour: '<var>[hours] hodina ' #TODO - Potřeba kontext použití.
+  min: '<var>[mins] minut ' #TODO - Potřeba kontext použití.
+  sec: '<var>[secs] sekund '
   nextPageConsole: '&fPro další stranu použij &5[command]' #TODO - Použít dvojtečku? Prefix, barvy?
-  prevPage: '&2----<< &6Zpět '
+  prevPage: '<vars>----<< &6Zpět '
   prevPageGui: '&6Předchozí strana '
   prevPageClean: '&6Zpět '
-  prevPageOff: '&2----<< &7Zpět '
+  prevPageOff: '<vars>----<< &7Zpět '
   prevPageHover: '&7<<<'
   firstPageHover: '&7|<'
-  nextPage: '&6 Další &2>>----'
+  nextPage: '&6 Další <vars>>>----'
   nextPageGui: '&6Další strana'
   nextPageClean: '&6 Další'
-  nextPageOff: '&7 Další &2>>----'
+  nextPageOff: '&7 Další <vars>>>----'
   nextPageHover: '&7>>>'
   lastPageHover: '&7>|'
-  pageCount: '&2[current]&7/&2[total]' #TODO - Přeskočený řádek
-  pageCountHover: '&3[totalEntries] &fpoložek' #TODO - Barvy
+  pageCount: '<vars>[current]&7/<vars>[total]' #TODO - Přeskočený řádek
+  pageCountHover: '<var>[totalEntries] &fpoložek' #TODO - Barvy
   skullOwner: '!actionbar!&7Owner:&r [playerName]' #TODO - Vypíše se po right-clicku na položenou hlavu. Barvy
-  circle: '&3Kruh'
-  square: '&3Čtverec'
-  clear: '&3Clear' #TODO - Potřeba kontext použití.
-  protectedArea: '!prefix! &cToto zde nemůžeš provést, jedná se o chráněnou oblast.' #TODO - Potřeba kontext použití.
-  valueToLong: '!prefix! &cHodnota je příliš vysoká. Max: &3[max]' #TODO - Potřeba kontext použití. Nechat neutrální barvu?
-  valueToShort: '!prefix! &cHodnota je příliš nízká. Min: &3[min]' #TODO - Potřeba kontext použití. Nechat neutrální barvu?
-  pickIcon: '&8Vyber ikonu'
+  circle: '<var>Kruh'
+  square: '<var>Čtverec'
+  clear: '<var>Clear' #TODO - Potřeba kontext použití.
+  protectedArea: '!prefix! <tf>Toto zde nemůžeš provést, jedná se o chráněnou oblast.' #TODO - Potřeba kontext použití.
+  valueToLong: '!prefix! <tf>Hodnota je příliš vysoká. Max: <var>[max]' #TODO - Potřeba kontext použití. Nechat neutrální barvu?
+  valueToShort: '!prefix! <tf>Hodnota je příliš nízká. Min: <var>[min]' #TODO - Potřeba kontext použití. Nechat neutrální barvu?
+  pickIcon: '<special>Vyber ikonu'
   # Following locale lines got moved to CMI folder and will be removed in future updates from this file. If you want to modify those lines check CMI locale directory
-  Same: '!prefix! &cNemůžeš si otevřít svůj vlastní inventář pro jeho úpravu!' #TODO - Tady jsem skončil
-  cantLoginWithDifCap: '&cNelze se přihlásit s rozdílně velkými znaky ve jméně!/n Staré jméno: &3[oldName]&c. Povolené jméno: &3[currentName]' #TODO - Tady jsem začal | Nejedná se o kick message? Myslím, že ano, tak jsem to rozdělil na 2 řádky a nepřidával prefix.
-  Searching: '!prefix! &bProbíhá vyhledávání dat hráčů, prosím vyčkej, může to chvíli trvat!'
-  NoCommandWhileSleeping: '!prefix! &cTento příkaz nelze použít, zatímco ležíš v posteli!'
-  PurgeNotEnabled: '!prefix! &cFunkce čištění není povolená!'
-  TeamManagementDisabled: '!prefix! &cTato funkce bude mít omezenou funkčnost, jelikož je povolený DisableTeamManagement.'
-  NoGameMode: '!prefix! &cPoužij prosím hodnotu &30/1/2/3 &cnebo &3Survival/Creative/Adventure/Spectator &cnebo &3s/c/a/sp&c!' #TODO - Barvy cajk?
-  NameChange: '&3[playerDisplayName] &bse přihlásil, také známý jako: &3[namelist]'
-  Cooldowns: '!prefix! &cTento příkaz je možné znovu použít za: &3[time]'
-  specializedCooldowns: '!prefix! &cTento příkaz je možné znovu použít za: &3[time]'
-  specializedRunning: '!prefix! &cPříkaz se stále vykonává. Prosím počkej: &3[time]'
-  CooldownOneTime: '!prefix! &cTento příkaz může být použitý pouze jednou!'
+  Same: '!prefix! <tf>Nemůžeš si otevřít svůj vlastní inventář pro jeho úpravu!' #TODO - Tady jsem skončil
+  cantLoginWithDifCap: '<tf>Nelze se přihlásit s rozdílně velkými znaky ve jméně!/n Staré jméno: <var>[oldName]<tf>. Povolené jméno: <var>[currentName]' #TODO - Tady jsem začal | Nejedná se o kick message? Myslím, že ano, tak jsem to rozdělil na 2 řádky a nepřidával prefix.
+  Searching: '!prefix! <t>Probíhá vyhledávání dat hráčů, prosím vyčkej, může to chvíli trvat!'
+  NoCommandWhileSleeping: '!prefix! <tf>Tento příkaz nelze použít, zatímco ležíš v posteli!'
+  PurgeNotEnabled: '!prefix! <tf>Funkce čištění není povolená!'
+  TeamManagementDisabled: '!prefix! <tf>Tato funkce bude mít omezenou funkčnost, jelikož je povolený DisableTeamManagement.'
+  NoGameMode: '!prefix! <tf>Použij prosím hodnotu <var>0/1/2/3 <tf>nebo <var>Survival/Creative/Adventure/Spectator <tf>nebo <var>s/c/a/sp<tf>!' #TODO - Barvy cajk?
+  NameChange: '<var>[playerDisplayName] <t>se přihlásil, také známý jako: <var>[namelist]'
+  Cooldowns: '!prefix! <tf>Tento příkaz je možné znovu použít za: <var>[time]'
+  specializedCooldowns: '!prefix! <tf>Tento příkaz je možné znovu použít za: <var>[time]'
+  specializedRunning: '!prefix! <tf>Příkaz se stále vykonává. Prosím počkej: <var>[time]'
+  CooldownOneTime: '!prefix! <tf>Tento příkaz může být použitý pouze jednou!'
   WarmUp:
-    canceled: '!prefix! &cPříkaz byl zrušený z důvodu pohybu!'
-    counter: '!actionbar!&6--> &bPočkej &3[time]s <--' #TODO - Barvy
-    DontMove: '!title!&cNehýbej se!subtitle!&7Vyčkej: &3[time]s' #TODO - Barvy
+    canceled: '!prefix! <tf>Příkaz byl zrušený z důvodu pohybu!'
+    counter: '!actionbar!&6--> <t>Počkej <var>[time]s <--' #TODO - Barvy
+    DontMove: '!title!<tf>Nehýbej se!subtitle!&7Vyčkej: <var>[time]s' #TODO - Barvy
     Boss:
-      DontMove: '!prefix! &cNehýbej se po dobu: &3[autoTimeLeft]s&c!' #TODO - WarmUp.Boss? O tom vůbec nevím lol
-      WaitFor: '!prefix! &cVyčkej po dobu: &3[autoTimeLeft]s&c!' #TODO - ^^
+      DontMove: '!prefix! <tf>Nehýbej se po dobu: <var>[autoTimeLeft]s<tf>!' #TODO - WarmUp.Boss? O tom vůbec nevím lol
+      WaitFor: '!prefix! <tf>Vyčkej po dobu: <var>[autoTimeLeft]s<tf>!' #TODO - ^^
   Spawner: '&r[type] Spawner' #TODO
-  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance' #TODO - Necháme to v ActionBaru?
+  FailedSpawnerMine: '!actionbar!<tf>Failed to mine spawner. &7[percent]% <tf>drop chance' #TODO - Necháme to v ActionBaru?
   ClickSpawner: '!actionbar!&7[percent]% &eDrop chance' #TODO - To stejné ^^
   Elevator:
-    created: '!prefix! &aVytvořena cedulka výtahu.'
-  CantPlaceSpawner: '!prefix! &cNelze položit Spawner tak blízko jinému. &8(&3[range]&8)'
-  ChunksLoading: '!prefix! &cData chunků světa se stále načítají. Zkus to prosím znovu později.'
-  CantUseNonEncrypted: '!actionbar!&dPříkazy na tomto předmětu nejsou šifrované. Nelze je tedy použít!' #TODO - Tady jsem skončil | Chceme tady použít ActionBar?
+    created: '!prefix! <ts>Vytvořena cedulka výtahu.'
+  CantPlaceSpawner: '!prefix! <tf>Nelze položit Spawner tak blízko jinému. <misc>(<var>[range]<misc>)'
+  ChunksLoading: '!prefix! <tf>Data chunků světa se stále načítají. Zkus to prosím znovu později.'
+  CantUseNonEncrypted: '!actionbar!<tspecial>Příkazy na tomto předmětu nejsou šifrované. Nelze je tedy použít!' #TODO - Tady jsem skončil | Chceme tady použít ActionBar?
   CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong key for this task. Inform server administration about this'
   CantTeleport: '&eYou can''t teleport because you have too many limited items. Scroll over this line to see the maximum amount of items allowed.'
   BlackList: '&e[material] [amount] &6Max: [max]'
