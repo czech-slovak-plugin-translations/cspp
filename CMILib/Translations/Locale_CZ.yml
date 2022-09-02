@@ -55,7 +55,7 @@
 
 info:
   # Use !prefix! in any locale line to automatically include this prefix
-  prefix: '<misc>[<tf>Systém<misc>] '
+  prefix: '&8[&cSystém&8] '
   NoPermission: '!prefix! <tf>K tomuto nemáš dostatečné oprávnění!'
   CantHavePermission: '!prefix! <tf>Nemůžeš mít toto oprávnění!'
   WrongGroup: '!prefix! <tf>Pro toto jsi ve špatné skupině!' #TODO - Potřeba kontext použití. Jedná se o permission group?
@@ -814,32 +814,32 @@ Chat:
   LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
   shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
   # Use \n to add new line
-  publicHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  privateHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  staffHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  helpopHover: '&eSent time: &6%server_time_hh:mm:ss%'
+  publicHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%'
+  privateHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%'
+  staffHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%'
+  helpopHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%'
   link: '&l&4[&7LINK&4]'
   item: '&7[%cmi_iteminhand_realname%[amount]&7]'
-  itemAmount: ' x[amount]'
-  itemEmpty: '&7[Mighty fist]'
+  itemAmount: ' [amount]x'
+  itemEmpty: '&7[Mighty fist]' #TODO - Co barvy? Jaké slovo použít?
 command:
   help:
     output:
-      usage: '&eUsage: &7%usage%'
-      cmdInfoFormat: '[command] &f- &e[description]'
-      cmdFormat: '&6/[command]&f[arguments]'
-      helpPageDescription: '&e* [description]'
-      explanation: '&e * [explanation]'
-      title: '&e------ ======= &6Help&e &e======= ------'
+      usage: '!prefix! <t>Použití: <var>%usage%'
+      cmdInfoFormat: '[command] &f- &e[description]' #TODO - Co barvy?
+      cmdFormat: '&6/[command]&f[arguments]' #TODO - Co barvy?
+      helpPageDescription: '&e* [description]' #TODO - Co barvy?
+      explanation: '&e * [explanation]' #TODO - Co barvy?
+      title: '&e------ ===== &6Nápověda&e &e===== ------' #TODO - Co barvy?
   nocmd:
     help:
-      info: '&eShows all available commands'
+      info: '<tspecial>Zobrazí všechny dostupné příkazy' 
       args: ''
   reload:
     help:
-      info: '&eReloads plugins config and locale files'
+      info: '<tspecial>Znovunačte konfigurační a jazykové soubory pluginu'
       args: ''
     info:
-      feedback: '&6CMIL Configs and locale files reloaded! Took [ms]ms'
-      failedConfig: '&4Failed to load config file! Check spelling!'
-      failedLocale: '&4Failed to load locale file! Check spelling!'
+      feedback: '!prefix! <ts>Znovunačtení konfiguračních a jazykových souborů pluginu <var>CMILib <ts>proběhlo úspěšně! Doba: <var>[ms] ms'
+      failedConfig: '!prefix! <tf>Načítání konfiguračních souborů se nezdařilo!' #TODO - Jak přeložit Check spelling do češtiny?
+      failedLocale: '!prefix! <tf>Načítání jazykových souborů se nezdařilo!'
