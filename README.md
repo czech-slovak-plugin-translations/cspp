@@ -30,15 +30,15 @@ Je normální, že si občas nevzpomenete, jak vlastně máte přeložit někter
 
 ### Prefix
 Prefix je již definován v souboru [CMILib/Translations/Locale_CZ.yml](CMILib/Translations/Locale_CZ.yml)<br/>
-Zprávám, které jej mají používat stačí na začátek vložit tuto proměnnou:
-> !prefix!
+Zprávám, které jej mají používat stačí na začátek vložit tuto proměnnou: `!prefix!`
 
 ## Příklady formátu
-> !prefix! \<t>Použití: \<var>%usage%<br/> #INFO - Takto se používá komentář INFO.
-> !prefix! \<tf>Nemůžeš se teleportovat na hráče, který není online!<br/> #TODO - Zde je potřeba něco udělat, proto je zde komentář TODO.
-> !prefix! \<ts>Úspěšně jsi zakoupil/a \<var>%quantity%x %item%\<ts>! \<misc>(\<varf>- %price% $\<misc>)<br/> #Uživatel - Zde si může uživatel něco nastavit.
-> !prefix! \<ts>Úspěšně jsi prodal/a \<var>%quantity%x item\<ts>! \<misc>(\<vars>+ %price% $\<misc>)<br/>
-> !prefix! \<ts>Gamemode cílového hráče byl změněn na \<var>%gamemode%\<ts>! \<misc>(\<var>%player% │ %status%\<misc>)<br/>
-
+```
+!prefix! <t>Použití: <var>%usage%<br/> #INFO - Takto se používá komentář INFO.  
+!prefix! <tf>Nemůžeš se teleportovat na hráče, který není online! #TODO - Zde je potřeba něco udělat, proto je zde komentář TODO.  
+!prefix! <ts>Úspěšně jsi zakoupil/a <var>%quantity%x %item%<ts>! <misc>(<varf>- %price% $<misc>) #Uživatel - Zde si může uživatel něco nastavit.  
+!prefix! <ts>Úspěšně jsi prodal/a <var>%quantity%x item<ts>! <misc>(<vars>+ %price% $<misc>)  
+!prefix! <ts>Gamemode cílového hráče byl změněn na <var>%gamemode%<ts>! <misc>(<var>%player% │ %status%<misc>)
+```
+Komentáře v příkladech formátu jsou pouze informativního charakteru, jak je vlastně použít.  
 **POZOR! U posledního příkladu není barevné označení u proměnné %status%! Barevnost stavu Offline a Online je potřeba definovat v souboru překladu CMILib. Podobných vyjímek se v překladu může nacházet několik.**
-Komentáře v příkladech formátu jsou pouze informativního charakteru, jak je vlastně použít.
