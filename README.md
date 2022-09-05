@@ -37,7 +37,7 @@ Je normální, že si občas nevzpomenete, jak vlastně máte přeložit někter
 Prefix je již definován v souboru [CMILib/Translations/Locale_CZ.yml](CMILib/Translations/Locale_CZ.yml)<br/>
 Zprávám, které jej mají používat stačí na začátek vložit tuto proměnnou: `!prefix!`
 
-## Příklady formátu
+### Příklady formátu
 ```
 !prefix! <t>Použití: <var>%usage%<br/> #INFO - Takto se používá komentář INFO.  
 !prefix! <tf>Nemůžeš se teleportovat na hráče, který není online! #TODO - Zde je potřeba něco udělat, proto je zde komentář TODO.  
@@ -47,3 +47,11 @@ Zprávám, které jej mají používat stačí na začátek vložit tuto proměn
 ```
 Komentáře v příkladech formátu jsou pouze informativního charakteru, jak je vlastně použít.  
 **POZOR! U posledního příkladu není barevné označení u proměnné %status%! Barevnost stavu Offline a Online je potřeba definovat v souboru překladu CMILib. Podobných vyjímek se v překladu může nacházet několik.**
+
+## Instalace překladu
+> Je potřeba vypracovat.
+
+## Závěrečná slova
+Děkujeme za používání našeho překladu.
+Překlad za žádnou cenu není perfektní, a proto potřebujeme přímo Vás. Najdete-li jakoukoliv chybu v překladu, tak je nejvhodnější otevřít problém (Issue) zde na GitHubu a nebo se nám ozvat na [Discordu (odkaz)](https://discord.gg/2w2mZyDvWz). Zde také najdete naše další překlady a máte možnost přímého spojení s překladateli.  
+Jsi spokojený s naší prací? Podpoř nás finančně na [Patreonu (odkaz)](https://example.com/) pro exkluzivní výhody.
