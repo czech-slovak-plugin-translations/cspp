@@ -6,6 +6,17 @@ Následující formát bude používán po celou dobu překládání.<br/>
 Díky použití širokého rozčlenění barev, je tento překlad univerzální a přizpůsobitelný.<br/>
 Značky si lze po stažení dle libosti nahradit za barevné kódy, dle vlastního výběru.
 
+### Tabulka
+| Druh textu | Tag |
+| --- | :---: |
+| Neutrální Text | `<t>` |
+| Úspěšný Text | `<ts>` |
+| Neúspěšný Text | `<tf>` |
+| Speciální Text | `<tspecial>` |
+| Neutrální Proměnná | `<var>` |
+| Kladná Proměnná | `<vars>` |
+| Záporná Proměnná | `<varf>` |
+| Ostatní (závorky) | `<misc>` |   
 
 ### Prefix
 Prefix je již definován v souboru [CMILib/Translations/Locale_CZ.yml](CMILib/Translations/Locale_CZ.yml)<br/>
