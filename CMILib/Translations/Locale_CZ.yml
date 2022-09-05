@@ -261,29 +261,29 @@ info:
     warmup: '<t>Efekt totemu: <var>[time]' #TODO - Nejedná se o bossbar zprávu?
     cantConsume: '!prefix! <tf>Použití totemu bylo zakázáno z důvodu, že nevypršel časovač.' #TODO - Nejedná se o bossbar zprávu? Možná to chce lépe naformulovat.
   InventorySave: #TODO - Tady jsem skončil. Frodo
-    info: '&8Info: &8[playerDisplayName]'
-    saved: '&e[time] &eInventory saved with id: &e[id]'
-    NoSavedInv: '&eThis player doesn''t have any saved inventories'
-    NoEntries: '&4File exists, but no inventories were found!'
-    CantFind: '&eCan''t find inventory with this id'
-    TopLine: '&e----------- &6[playerDisplayName] saved inventory &e-----------'
-    List: '&eid: &6[id]&e. &6[time]'
-    KillerSymbol: '&c ☠'
-    Click: '&eClick to check ([id]) saved inventory'
-    IdDontExist: '&4This save Id doesn''t exist!'
-    Deleted: '&eSaved inventory was successfully deleted!'
-    Restored: '&eYou have restored &e[sourcename] &einventory for &e[targetname] &euser.'
-    GotRestored: '&eYour inventory was restored from &e[sourcename] &esaved inventory on &e[time]'
-    LoadForSelf: '&eLoad this inventory for your self'
-    LoadForOwner: '&eLoad this inventory for owner'
-    NextInventory: '&eNext inventory'
-    PreviousInventory: '&ePrevious inventory'
-    Editable: '&eEdit mode enabled'
-    NonEditable: '&eEdit mode disabled'
-  vanishSymbolOn: '&8[&7H&8]&r'
+    info: '&8Info: &8[playerDisplayName]' #TODO - Tady jsem začal. Frodo | Myslím, že se jedná o nadpis inventory GUI. Nepoužijeme nový tag <guititle> ? playerDisplayName taky nedává moc smysl. Použil bych jen playerName.
+    saved: '!prefix! <var>[time] <ts>Inventář uložen s ID: <var>[id]'
+    NoSavedInv: '!prefix! <tf>Tento hráč nemá žádné uložené inventáře!'
+    NoEntries: '!prefix! <tf>Soubor existuje, ale žádné inventáře nebyly nalezeny.'
+    CantFind: '!prefix! <tf>Nelze nalézt inventář s tímto ID.'
+    TopLine: '&e----------- &6[playerDisplayName] saved inventory &e-----------' #TODO - Další splitter
+    List: '<t>id: <var>[id]<t>. <var>[time]'
+    KillerSymbol: ' <tf>☠'
+    Click: '!prefix! <t>Klikni pro náhlednutí do uloženého inventáře s ID: <var>[id]'
+    IdDontExist: '!prefix! <tf>Toto ID neexistuje!'
+    Deleted: '!prefix!<ts>Uložený inventář byl úspěšně smazaný.'
+    Restored: '!prefix! <t>You have restored <var>[sourcename] <t>inventory for <var>[targetname] <t>user.' #TODO - Z tohohle jsem confused.
+    GotRestored: '&eYour inventory was restored from &e[sourcename] &esaved inventory on &e[time]' #TODO
+    LoadForSelf: '!prefix! <t>Načti tento inventář pro sebe.'
+    LoadForOwner: '!prefix! <t>Načti tento inventář pro majitele.' #TODO - Formulace OK?
+    NextInventory: '<tspecial>Další inventář'
+    PreviousInventory: '<tspecial>Předchozí inventář'
+    Editable: '<t>Mód úprav je nyní <ts>zapnutý.'
+    NonEditable: '<t>Mód úprav je nyní <tf>vypnutý.'
+  vanishSymbolOn: '[Vanish]&r' #Uživatel - Zde si nastav obsah placeholderu %cmi_user_vanished_symbol% (Prefix není přesný. Musím jej upřesnit.)
   vanishSymbolOff: ''
-  afkSymbolOn: '&8[&7Afk&8]&r'
-  afkSymbolOff: ''
+  afkSymbolOn: '[AFK]&r' #Uživatel - Zde si nastav obsah placeholderu %cmi_user_afk_symbol% (Prefix není přesný. Musím jej upřesnit.)
+  afkSymbolOff: '' #TODO - Tady jsem skončil. Frodo
   beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
   pvp:
     noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
