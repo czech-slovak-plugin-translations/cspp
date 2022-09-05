@@ -735,12 +735,12 @@ econ:
   disabled: '!prefix! <tf>Tento příkaz nelze použít, když je vypnutá ekonomika.' #TODO - Zachovat takhle?
   commandCost: '!prefix! <t>Cena tohoto příkazu je: <var>[cost]<t>. Klikni sem a nebo jej zopakuj.'
 Selection: #INFO - Tady jsem skončil. Frodo
-  SelectPoints: '&cSelect 2 points with selection tool! AKA: &6[tool]'
-  PrimaryPoint: '&ePlaced &6Primary &eSelection Point [point]'
-  SecondaryPoint: '&ePlaced &6Secondary &eSelection Point [point]'
-  CoordsTop: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
-  CoordsBottom: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
-  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
+  SelectPoints: '!prefix! <t>Zvol 2 protilehlé body nástrojem: <var>[tool]'
+  PrimaryPoint: '!prefix! <t>Zvolený primární selekční bod: <var>[point]' #TODO - Obarvíme slovo primární?
+  SecondaryPoint: '!prefix! <tZvolený sekundární selekční bod>: <var>[point]' #TODO - Obarvíme slovo sekundární?
+  CoordsTop: '<tspecial>X:<var>[x] <tspecial>Y:<var>[y] <tspecial>Z:<var>[z]' #TODO - Kontext použití
+  CoordsBottom: '<tspecial>X:<var>[x] <tspecial>Y:<var>[y] <tspecial>Z:<var>[z]' #TODO - Kontext použití
+  Area: '<var>[world] <misc>(<var>[x1]<misc>:<var>[y1]<misc>:<var>[z1] [x2]<misc>:<var>[y2]<misc>:<var>[z2]<misc>)'
 Location:
   Title: '&8Players location'
   Killer: '&eKiller: &6[killer]'
@@ -753,93 +753,90 @@ Location:
   Z: '&eZ: &6[z]'
   Pitch: '&ePitch: &6[pitch]'
   Yaw: '&eYaw: &6[yaw]'
-  WorldNames: #Uživatel - Toto nastavení je individuální
-  - world-&dWorld
-  - world_nether-&dWorld Nether
-  - world_the_end-&dWorld The End
-  - world_spawn-&dWorld Spawn
-  - mine-&dMine
-Locations: '&7Locations: '
+  WorldNames: #Uživatel - Toto nastavení je individuální. Formát je: "<název_složky_světa>-<váš_alias>" | Zde si musíte nastavit i vlastní barvy.
+  - world-&aOverworld
+  - world_nether-&cNether
+  - world_the_end-&dEnd
+Locations: '<tspecial>Lokality: ' #TODO - Barva okay?
 warp:
-  list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
+  list: '<var>[pos]. <var>[warpName] <splitter>- <var>[worldName] <misc>(<var>[x]<misc>:<var>[y]<misc>:<var>[z]<misc>)'
 afk:
-  'off': '&7Playing'
-  MayNotRespond: '&ePlayer is AFK and may not respond'
-  MayNotRespondStaff: '&eStaff member is AFK and may not respond. Try contacting us
-    through discord'
+  'off': '<vars>Právě hraje' #TODO - Barva okay?
+  MayNotRespond: '!prefix! <t>Hráč je momentálně AFK a nemusí odpovědět.'
+  MayNotRespondStaff: '!prefix! <t>Člen Admin-Teamu je momentálně AFK a nemusí odpovědět.'
 BossBar:
-  hpBar: '&f[victim] &e[current]&f/&e[max] &f(&c-[damage]&f)'
+  hpBar: '<var>[victim] [current]<misc>/<var>[max] <misc>(<varf>-[damage]<misc>)'
 Potion:
-  Effects: '&8Potion effects'
-  List: '&e[PotionName] [PotionAmplifier] &eDuration: &e[LeftDuration] &esec'
-  NoPotions: '&eNone'
+  Effects: '<tspecial>Efekty lektvaru' #TODO - Barva okay?
+  List: '<var>[PotionName] [PotionAmplifier] <t>Délka: <var>[LeftDuration]s' #TODO - Barva okay?
+  NoPotions: '<tspecial>Žádné'
 Information:
-  Title: '&8Players information'
-  Health: '&eHealth: &6[Health]/[maxHealth]'
-  Hunger: '&eHunger: &6[Hunger]'
-  Saturation: '&eSaturation: &6[Saturation]'
-  Exp: '&eExp: &6[Exp]'
-  NotEnoughExp: '&eNot enough exp: &6[Exp]'
-  NotEnoughExpNeed: '&eNot enough exp: &6[Exp]/[need]'
-  tooMuchExp: '&eToo much exp: &6[Exp]/[need]'
-  NotEnoughVotes: '&eNot enough votes: &6[votes]'
-  TooMuchVotes: '&eToo many votes: &6[votes]'
-  BadGameMode: '&cYou can''t do this in your current game mode'
-  BadArea: '&cYou can''t perform this action in this area'
-  GameMode: '&eGameMode: &6[GameMode]'
-  Flying: '&eFlying: &6[Flying]'
-  Uuid: '&6[uuid]'
-  FirstConnection: '&eFirst connection: &6[time]'
-  Lastseen: '&eLast seen: &6[time]'
-  Onlinesince: '&eOnline since: &6[time]'
-  Money: '&eBalance: &6[money]'
-  Group: '&eGroup: &6[group]'
-Elytra:
-  Speed: '&eSpeed: &6[speed]&ekm/h'
-  SpeedBoost: ' &a+ '
-  SpeedSuperBoost: ' &2+ '
-  CanUse: '&cCan''t equip elytra without permission!'
-  CantGlide: '&cCan''t use elytra here!'
-  Charging: '&eCharging &f[percentage]&e%'
+  Title: '<tspecial>Hráčské informace' #TODO - Pro nadpis GUI je vhodná &8 ngl 
+  Health: '<t>Zdraví: <varf>[Health]<misc>/<varf>[maxHealth]'
+  Hunger: '<t>Hlad: <var>[Hunger]'
+  Saturation: '<t>Nasycení: <vars>[Saturation]'
+  Exp: '<t>XP: <var>[Exp]'
+  NotEnoughExp: '<t>Nedostatek XP: <var>[Exp]'
+  NotEnoughExpNeed: '<t>Nedostatek XP: <var>[Exp]<misc>/<var>[need]'
+  tooMuchExp: '<t>Nedostatek XP: <var>[Exp]<misc>/<var>[need]'
+  NotEnoughVotes: '<t>Nedostatek hlasů: <var>[votes]'
+  TooMuchVotes: '<t>Příliš mnoho hlasů: <var>[votes]'
+  BadGameMode: '!prefix! <tf>Toto udělat nemůžeš v tvém aktuálním herním módu!'
+  BadArea: '!prefix! <tf>Toto udělat nemůžeš v aktuální oblasti!'
+  GameMode: '<t>Herní Mód: <var>[GameMode]'
+  Flying: '<t>Létání: <var>[Flying]'
+  Uuid: '<var>[uuid]'
+  FirstConnection: '<t>První připojení: <var>[time]'
+  Lastseen: '<t>Naposledy viděn: <var>[time]'
+  Onlinesince: '<t>Online od: <var>[time]'
+  Money: '<t>Peníze: <var>[money]'
+  Group: '<t>Skupina: <var>[group]'
+Elytra: #TODO - Tohle je ActionBar / BossBar dle configu.
+  Speed: '<tspecial>Rychlost: <var>[speed]km/h'
+  SpeedBoost: ' <vars>+ '
+  SpeedSuperBoost: ' <vars>+ '
+  CanUse: '<tspecial>Nemáš oprávnění na oblečení Elytry!'
+  CantGlide: '<tspecial>Zde Elytru nelze použít!'
+  Charging: '<tspecial>Status nabití: <var>[percentage]%'
 NetherPortal:
-  ToHigh: '&cPortal is to big, max height is &6[max]&c!'
-  ToWide: '&cPortal is to wide, max width is &6[max]&c!'
-  Creation: '!actionbar!&7Created [height]x[width] nether portal!'
-  Disabled: '&cPortal creation disabled!'
+  ToHigh: '!prefix! <tf>Portál je příliš vysoký. Maximální výška: <var>&6[max]<tf>!'
+  ToWide: '!prefix! <tf>Portál je přílíš šíroký. Maximální šířka: <var>[max]<tf>!'
+  Creation: '!actionbar! <tspecial>Úspěšně vytvořený: <var>[height]x[width] <tspecial>Nether Portál!'
+  Disabled: '<tf>Tvorba portálů je vypnutá!' #TODO - Kde se zpráva vyskytuje?
 Ender:
-  Title: '&7Open ender chest'
+  Title: '<tspecial>Otevřít <var>Ender Chest' #TODO - Barva oukej?
 Chat:
   localPrefix: ''
-  shoutPrefix: '&c[S]&r'
-  LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
-  shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
+  shoutPrefix: '<var>[S]&r'
+  LocalNoOne: '!actionbar! <tspecial>Nikdo tě neslyší! Napiš <misc>"<var>!<misc>" <tspecial>na začátku zprávy pro globální chat.'
+  shoutDeduction: '!actionbar! <tspecial>Utratil/a jsi: <varf>[amount] <tspecial>za řvaní.'  #TODO - Překlad je cajk?
   # Use \n to add new line
-  publicHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%'
-  privateHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%'
-  staffHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%'
-  helpopHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%'
-  link: '&l&4[&7LINK&4]'
-  item: '&7[%cmi_iteminhand_realname%[amount]&7]'
-  itemAmount: ' [amount]x'
-  itemEmpty: '&7[Mighty fist]' #TODO - Co barvy? Jaké slovo použít?
+  publicHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%' #Uživatel - Toto si můžete nastavit dle sebe. Podporuje to PlaceholderAPI & MVdWPlaceholderApi. Lze přidat i více řádků pomocí "\n".
+  privateHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%' #Uživatel - Toto si můžete nastavit dle sebe. Podporuje to PlaceholderAPI & MVdWPlaceholderApi. Lze přidat i více řádků pomocí "\n".
+  staffHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%' #Uživatel - Toto si můžete nastavit dle sebe. Podporuje to PlaceholderAPI & MVdWPlaceholderApi. Lze přidat i více řádků pomocí "\n".
+  helpopHover: '<tspecial>Čas odeslání: <var>%server_time_hh:mm:ss%' #Uživatel - Toto si můžete nastavit dle sebe. Podporuje to PlaceholderAPI & MVdWPlaceholderApi. Lze přidat i více řádků pomocí "\n".
+  link: '<var>[ODKAZ]' #Uživatel - Toto nastavení je individuální.
+  item: '<var>[%cmi_iteminhand_realname%[amount]x]'
+  itemAmount: ' <var>[amount]x'
+  itemEmpty: '<var>[Prázdná Ruka]' #TODO - Takhle bych to nechal.
 command:
   help:
     output:
-      usage: '!prefix! <t>Použití: <var>%usage%'
-      cmdInfoFormat: '[command] &f- &e[description]' #TODO - Co barvy?
-      cmdFormat: '&6/[command]&f[arguments]' #TODO - Co barvy?
-      helpPageDescription: '&e* [description]' #TODO - Co barvy?
-      explanation: '&e * [explanation]' #TODO - Co barvy?
-      title: '&e------ ===== &6Nápověda&e &e===== ------' #TODO - Co barvy?
+      usage: '!prefix! <t>Použití: <var>%usage%' #TODO - Tady je %usage% ? Čekal bych formát v hranatých závorkách.
+      cmdInfoFormat: '<var>[command] <splitter>- <t>[description]' #TODO - Co barvy?
+      cmdFormat: '<var>/[command][arguments]' #TODO - Co barvy?
+      helpPageDescription: '<tspecial>* <var>[description]' #TODO - Co barvy?
+      explanation: '<tspecial>* <var>[explanation]' #TODO - Co barvy?
+      title: '<splitter>------ ===== <splitterh>Nápověda <splitter>===== ------' #TODO - Co barvy?
   nocmd:
     help:
-      info: '<tspecial>Zobrazí všechny dostupné příkazy' 
+      info: '<tspecial>Zobrazí všechny dostupné příkazy' #TODO - Kontext použití. Nemá zde být !prefix! ?
       args: ''
   reload:
     help:
-      info: '<tspecial>Znovunačte konfigurační a jazykové soubory pluginu'
+      info: '<tspecial>Znovunačte konfigurační a jazykové soubory pluginu' #TODO - Kontext použití. Nemá zde být !prefix! ?
       args: ''
     info:
-      feedback: '!prefix! <ts>Znovunačtení konfiguračních a jazykových souborů pluginu <var>CMILib <ts>proběhlo úspěšně! Doba: <var>[ms] ms'
-      failedConfig: '!prefix! <tf>Načítání konfiguračních souborů se nezdařilo!' #TODO - Jak přeložit Check spelling do češtiny?
+      feedback: '!prefix! <ts>Znovunačtení konfiguračních a jazykových souborů pluginu <var>CMILib <ts>proběhlo úspěšně! Doba: <var>[ms]ms/n!prefix! <ts>Děkujeme za používání CZ překladu <var>CMILib <ts>od: <var>Rush <misc>& <var>El_Frod0/n<t>GitHub Link: <var>https://github.com/rushboe/cmi-preklad' #TODO - Necháme zde tohle? Aspoň někde se bude zobrazovat GitHub link a můžeme sem pak dodat verzi překladu, aby si mohli uživatelé zjistit zda je novější verze překladu.
+      failedConfig: '!prefix! <tf>Načítání konfiguračních souborů se nezdařilo!'
       failedLocale: '!prefix! <tf>Načítání jazykových souborů se nezdařilo!'
