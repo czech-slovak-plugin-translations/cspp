@@ -220,47 +220,47 @@ info:
   CantPlaceSpawner: '!prefix! <tf>Nelze položit Spawner tak blízko jinému. <misc>(<var>[range]<misc>)'
   ChunksLoading: '!prefix! <tf>Data chunků světa se stále načítají. Zkus to prosím znovu později.'
   CantUseNonEncrypted: '!actionbar!<tspecial>Příkazy na tomto předmětu nejsou šifrované. Nelze je tedy použít!' #TODO - Tady jsem skončil | Chceme tady použít ActionBar?
-  CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong key for this task. Inform server administration about this'
-  CantTeleport: '&eYou can''t teleport because you have too many limited items. Scroll over this line to see the maximum amount of items allowed.'
-  BlackList: '&e[material] [amount] &6Max: [max]'
-  wrongPortal: '&cYou are in incorrect area of effect'
-  ItemWillBreak: '!actionbar!&eYour item (&6[itemName]&e) will break soon! &e[current]&6/&e[max]'
-  ArmorWillBreak: '!actionbar!&eYour [itemName] will break soon! &e[current]&6/&e[max]'
-  flyingToHigh: '&cYou can''t fly so high, max height is &6[max]&c!'
-  specializedItemFail: '&cCan''t determine specialized item requirement by value: &7[value]'
-  sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
+  CantDecode: '!prefix! <tf>Nelze dekódovat zprávu<misc>/<tf>příkaz. Šifrovací klíč neobsahuje správný klíč. Kontaktuj prosím serverového administrátora.' #TODO - Tady jsem začal. Frodo
+  CantTeleport: '!prefix! <tf>Nelze tě teleportovat z důvodu, že máš u sebe mnoho omezených předmětů. Níže se dozvíš maximální počet povolených předmětů.'
+  BlackList: '<var>[material] [amount]x <t>Povolené množství: <var>[max]'
+  wrongPortal: '!prefix! <tf>Nacházíš se v nesprávné oblasti působení.' #TODO - Možná by to chtělo lépe naformulovat AoE (Oblast působení / Area of Effect) 
+  ItemWillBreak: '!actionbar!<tspecial>Tvůj <misc>(<var>[itemName]<misc>) se brzy rozbije! <var>[current]<misc>/<var>[max]'
+  ArmorWillBreak: '!actionbar!<tspecial>Tvůj <var>[itemName] <tspecial>se brzy rozbije! <var>[current]<misc>/<var>[max]'
+  flyingToHigh: '!prefix! <tf>Nemůžeš létat tak vysoko! Maximální povolená výška: <var>[max]<tf>!'
+  specializedItemFail: '!prefix! <tf>Nelze určit specialované požadavky předmětu dle hodnoty: <var>[value]'
+  sunSpeeding: 'Aktuálně spí [count] z [total] [hour] [speed]X rychlost' #TODO - Původně zpráva nebyla v uvozovkách a neobsahovala barvy.
   sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required for night time speedup'
   sunSpeedingTitle: '&7[hour]'
-  skippingNight: '!title!&7Skipping entire night'
-  sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
-  repairConfirm: '&eClick to confirm &7[items] &eitem repair for &7[cost]'
-  bookDate: '&7Written at &f[date]'
-  maintenance: '&7Maintenance mode'
-  mapLimit: '&cCant go beyond 30 000 000 blocks'
-  startedEditingPainting: '&eYou started editing painting. Click any other block to cancel.'
-  canceledEditingPainting: '&eYou canceled painting editing mode'
-  changedPainting: '!actionbar!&eChanged painting to &6[name] &ewith id of &6[id]'
-  noSpam: '!title!&cNo spamming!'
-  noCmdSpam: '!title!&cNo command spamming!'
-  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter with:&r [message]'
+  skippingNight: '!title!<tspecial>Přeskakování celé noci'
+  sunSpeedingSubTitle: '<var>[count]<misc>/<var>[total] <misc>(<var>[speed]x<misc>)'
+  repairConfirm: '<t>Klikni pro potvrzení opravení předmětu <var>[items] <t>za <var>[cost]' #TODO - <t> ? Jedná se o zprávu na kterou se dá kliknout v chatu.
+  bookDate: '<tspecial>Napsáno <var>[date]' #TODO - Jedná se o book lore? 
+  maintenance: '<tspecial>Mód Údržby' #TODO - Jedná se o boss bar.
+  mapLimit: '!prefix! <tf>Nelze jít za 30 000 000 blocků.'
+  startedEditingPainting: '!prefix! <t>Nyní upravuješ zobraz. Klikni na jakýkoliv jiný block pro ukončení úprav.'
+  canceledEditingPainting: '!prefix! <t>Ukončil jsi mód úprav obrazů.'
+  changedPainting: '!actionbar!<tspecial>Změněný obraz na: <var>[name] <tspecial>s ID: <var>[id]'
+  noSpam: '!title!<tf>Nespamuj!'
+  noCmdSpam: '!title!<tf>Nespamuj příkazy!'
+  spamConsoleInform: '!prefix! <tf>Hráč <misc>(<var>[playerName]<misc>) aktivoval <misc>(<var>[rules]<misc>) chatový filtr zprávou: <var>[message]' #TODO - Chceme zde prefix? Jedná se o zprávu v konzoli.
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '&eWelcome &6[playerDisplayName] &eto our server!'
-  LogoutCustom: ' &6[playerDisplayName] &eleft the game'
-  LoginCustom: ' &6[playerDisplayName] &ejoined the game'
-  deathlocation: '&eYou died at x:&6[x]&e, y:&6[y]&e, z:&6[z]&e in &6[world]'
+  FirstJoin: '<t>Vítej <var>[playerDisplayName] <t>na serveru!'
+  LogoutCustom: ' <var>[playerDisplayName] <t>se odpojil.' #TODO - Mezera na začátku zde byla i původně.
+  LoginCustom: ' <var>[playerDisplayName] <t>se připojil.' #TODO - Mezera na začátku zde byla i původně.
+  deathlocation: '!prefix! <t>Zemřel jsi na souřadnicích x:<var>[x]<misc>, <t>y:<var>[y]<misc>, <t>z:<var>[z] <t>ve světě <var>[world]'
   book:
-    exploit: '&cYou cant create book with more than [amount] pages'
+    exploit: '!prefix!<tf>Nelze vytvořit knihu, která má více než: <var>[amount] <tf>stránek.'
   combat:
-    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player. Wait: [time]'
-    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
-    bossBarPvp: '&cCombat mode [autoTimeLeft]'
-    bossBarPve: '&2Combat mode [autoTimeLeft]'
-  noSchedule: '&cSchedule by this name is not found'
+    CantUseShulkerBox: '!prefix! <tf>Nelze použít Shulker Box, zatímco jsi v souboji s jiným hráčem. Vyčkej: <var>[time]'
+    CantUseCommand: '!prefix! <tf>Nelže používat příkazy, zatímco jsi v souboji s jiným hráčem. Vyčkej: <var>[time]' #TODO - Původně byla v actionbaru. Imho sedí víc do chatu.
+    bossBarPvp: '<tspecial>Soubojový mód <var>[autoTimeLeft]' #TODO - Rozlišíme PVP/PVE zprávy?
+    bossBarPve: '<tspecial>Soubojový mód <var>[autoTimeLeft]' #TODO - Rozlišíme PVP/PVE zprávy?
+  noSchedule: '!prefix! <tf>Plánovaná událost s tímto jménem nebyla nalezena.' #TODO - Nejedná se o zprávu v konzoli? A nebo se daji pustit schedules.yml přes příkaz?
   totem:
-    cooldown: '&eTotem cooldown: [time]'
-    warmup: '&eTotem effect: [time]'
-    cantConsume: '&eTotem usage was denied due to its cooldown time'
-  InventorySave:
+    cooldown: '<t>Totem lze znovu použít za: <var>[time]' #TODO - Nejedná se o bossbar zprávu?
+    warmup: '<t>Efekt totemu: <var>[time]' #TODO - Nejedná se o bossbar zprávu?
+    cantConsume: '!prefix! <tf>Použití totemu bylo zakázáno z důvodu, že nevypršel časovač.' #TODO - Nejedná se o bossbar zprávu? Možná to chce lépe naformulovat.
+  InventorySave: #TODO - Tady jsem skončil. Frodo
     info: '&8Info: &8[playerDisplayName]'
     saved: '&e[time] &eInventory saved with id: &e[id]'
     NoSavedInv: '&eThis player doesn''t have any saved inventories'
