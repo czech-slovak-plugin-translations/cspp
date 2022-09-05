@@ -1,11 +1,14 @@
-# CMI překlad
+# Překlad CMI & CMILib
 Český překlad pluginů CMILib a CMI.  
-> Status překladu CMI: 0%  
-> Status překladu CMILib: ±33%
+> Pro verzi pluginu CMI: **9.2.3.7**  
+> Pro verzi pluginu CMILib: **1.2.3.5**  
+  
+> Status překladu CMI: **0%**  
+> Status překladu CMILib: **75%**
 
 ## Formát
-Následující formát bude používán po celou dobu překládání.<br/>
-Díky použití širokého rozčlenění barev, je tento překlad univerzální a přizpůsobitelný.<br/>
+Následující formát bude používán po celou dobu překládání.  
+Díky použití širokého rozčlenění barev, je tento překlad univerzální a přizpůsobitelný.  
 Značky si lze po stažení dle libosti nahradit za barevné kódy, dle vlastního výběru.
 
 ### Tabulka
@@ -18,6 +21,8 @@ Značky si lze po stažení dle libosti nahradit za barevné kódy, dle vlastní
 | Neutrální Proměnná | `<var>` | Proměnné, počet a název itemů, jména hráčů, apod. |
 | Kladná Proměnná | `<vars>` | Přičtění peněz, online status hráče,... |
 | Záporná Proměnná | `<varf>` | Odečtení peněz, offline status hráče,... |
+| Oddělovač | `<splitter>` | Pouze pro oddělovače textu, nadpisu, atp.|
+| Nadpis oddělovače | `<splitterh>` | Pouze pro nadpisy oddělovače textu | 
 | Ostatní | `<misc>` | Závorky v textu. |
 
 ### Komentáře
