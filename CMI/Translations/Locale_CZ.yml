@@ -57,43 +57,44 @@
 #
 # ATTENTION! As of 9.0.0.0 CMI version some of the locale lines got moved to CMILib file. This is to centralize some of most used ones across multiple plugins.
 # After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
-
+INFO - Zde jsem začal -Houska
 info:
   Same: '&cNemůžeš otevřít svůj inventář pro úpravy!'
-  cantLoginWithDifCap: '&cCan''t login with different name capitalization! Old name:
-    &e[oldName]&c. Current: &e[currentName]'
+  cantLoginWithDifCap: '&cNemůžeš se přihlásit s různě velkými písmeny! Původní jméno:
+    &e[oldName]&c. Nyní: &e[currentName]'
   Searching: '&eHledám data hráče, tohle může chvíli trvat!'
   NoCommandWhileSleeping: '&cNemůžeš provádět příkazy když spíš!'
-  PurgeNotEnabled: '&cPurge function is not enabled in config file!'
-  TeamManagementDisabled: '&7This feature will have limited functionalaty while DisableTeamManagement
-    is set to true!'
-  NoGameMode: '&cPlease use 0/1/2/3 or Survival/Creative/Adventure/Spectator or s/c/a/sp!'
-  NameChange: '&6[playerDisplayName] &elogged in, also known as: &6[namelist]'
-  Cooldowns: '&eThis command is on cooldown for another &6[time]'
-  specializedCooldowns: '&eCooldown in motion for this command, please wait &6[time]'
-  specializedRunning: '&eCommand still running, please wait &6[time]'
-  CooldownOneTime: '&eThis command can only be used once!'
+  PurgeNotEnabled: '&cPurge není zapnutý v konfiguračním souboru!'
+  TeamManagementDisabled: '&7Tento příkaz bude mít omezenou funkčnost když je DisableTeamManagement
+    nastavený na true'
+  NoGameMode: '&cProsím použij 0/1/2/3 nebo Survival/Creative/Adventure/Spectator nebo s/c/a/sp!'
+  NameChange: '&6[playerDisplayName] &ese přihlásil, také zapamatovaný jako: &6[namelist]'
+  Cooldowns: '&eTento příkaz má cooldown na další &6[time]'
+  specializedCooldowns: '&eCooldown je aktivní pro tento příkaz, prosím počkej &6[time]'
+  specializedRunning: '&ePříkaz stále probíhá, prosím počkej &6[time]'
+  CooldownOneTime: '&eTento příkaz může být použitý pouze jednou!'
   WarmUp:
-    canceled: '&eCommand was cancelled due to your movement'
-    counter: '!actionbar!&6--> Wait &e[time] &6seconds <--'
-    DontMove: '!title!&6Don''t move!!subtitle!&7Wait &c[time] &7seconds'
+    canceled: '&ePříkaz byl zrušen kvůli tvému pohybu'
+    counter: '!actionbar!&6--> Počkej &e[time] &6sekund <--'
+    DontMove: '!title!&6Nehýbej se!!subtitle!&7Počkej &c[time] &7sekund'
     Boss:
-      DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
-      WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
+      DontMove: '&4Nehýbej se dalších &7[autoTimeLeft] &4sekund!'
+      WaitFor: '&4Počkej &7[autoTimeLeft] &4sekund!'
   Spawner: '&r[type] Spawner'
-  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
-  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
+  FailedSpawnerMine: '!actionbar!&cNepodařilo se vytěžit spawner. &7[percent]% &cdrop chance'
+  ClickSpawner: '!actionbar!&7[percent]% &eŠance na drop'
   Elevator:
-    created: '&eCreated elevator sign'
-  CantPlaceSpawner: '&eCan''t place spawner so close to another spawner (&6[range]&e)'
-  ChunksLoading: '&eWorld chunk data is still being loaded. Please wait a bit and
-    try again.'
-  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. Can''t
-    use them!'
-  CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong
-    key for this task. Inform server administration about this'
-  CantTeleport: '&eYou can''t teleport because you have too many limited items. Scroll
-    over this line to see the maximum amount of items allowed.'
+    created: '&eVytovřil jsem ceduli pro výtah'
+  CantPlaceSpawner: '&eNemůžu položit spawner tak blízko k jinému spawneru (&6[range]&e)'
+  ChunksLoading: '&eChunky světa se stále načítají. Chvíli počkej a
+  zkus to znovu'
+  CantUseNonEncrypted: '!actionbar!&cPříkazy na tomto předmětu nejsou šifrované. Nemohu 
+  je použít!'
+  CantDecode: '!actionbar!&cNelze dekódovat tento příkaz/zprávu. Klíčový soubor obsahuje špatný
+   Klíč pro tuto úlohu. Informuj administraci serveru o tomto'
+  CantTeleport: '&eNemůžeš se teleportovat, protože máš příliš limitovaných předmětů. Přejdi
+    přes tento řádek k maximálnímu počtu limitovaných předmětů.'
+ INFO - budeme potřebovat toto?
   BlackList: '&e[material] [amount] &6Max: [max]'
   wrongPortal: '&cYou are in incorrect area of effect'
   ItemWillBreak: '!actionbar!&eYour item (&6[itemName]&e) will break soon! &e[current]&6/&e[max]'
@@ -104,6 +105,7 @@ info:
   sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
   sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required
     for night time speedup'
+INFO - zde už v pohodě  
   sunSpeedingTitle: '&7[hour]'
   skippingNight: '!title!&7Skipping entire night'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
