@@ -59,12 +59,11 @@
 # After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
 
 info:
-  Same: '&cCan''t open your own inventory for editing!'
+  Same: '&cNemůžeš otevřít svůj inventář pro úpravy!'
   cantLoginWithDifCap: '&cCan''t login with different name capitalization! Old name:
     &e[oldName]&c. Current: &e[currentName]'
-  Searching: '&eSearching for player data, please wait, this can take some time to
-    finish!'
-  NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
+  Searching: '&eHledám data hráče, tohle může chvíli trvat!'
+  NoCommandWhileSleeping: '&cNemůžeš provádět příkazy když spíš!'
   PurgeNotEnabled: '&cPurge function is not enabled in config file!'
   TeamManagementDisabled: '&7This feature will have limited functionalaty while DisableTeamManagement
     is set to true!'
