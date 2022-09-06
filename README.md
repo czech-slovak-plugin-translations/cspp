@@ -1,6 +1,6 @@
 # České překlady pluginů
-CMI: **0%** přeloženo, pro verzi: **9.2.3.7**  
-CMILib: **75%** přeloženo, pro verzi pluginu: **1.2.3.5**  
+CMI: `0%` přeloženo, pro verzi: `9.2.3.7`  
+CMILib: `75%` přeloženo, pro verzi pluginu: `1.2.3.5`  
 
 ## Formát
 Následující formát bude používán ve všech překladech.
