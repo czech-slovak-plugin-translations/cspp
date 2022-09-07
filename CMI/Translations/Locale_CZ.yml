@@ -57,44 +57,36 @@
 #
 # ATTENTION! As of 9.0.0.0 CMI version some of the locale lines got moved to CMILib file. This is to centralize some of most used ones across multiple plugins.
 # After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
-INFO - Zde jsem začal -Houska
-info:
-  Same: '&cNemůžeš otevřít svůj inventář pro úpravy!'
-  cantLoginWithDifCap: '&cNemůžeš se přihlásit s různě velkými písmeny! Původní jméno:
-    &e[oldName]&c. Nyní: &e[currentName]'
-  Searching: '&eHledám data hráče, tohle může chvíli trvat!'
-  NoCommandWhileSleeping: '&cNemůžeš provádět příkazy když spíš!'
-  PurgeNotEnabled: '&cPurge není zapnutý v konfiguračním souboru!'
-  TeamManagementDisabled: '&7Tento příkaz bude mít omezenou funkčnost když je DisableTeamManagement
-    nastavený na true'
-  NoGameMode: '&cProsím použij 0/1/2/3 nebo Survival/Creative/Adventure/Spectator nebo s/c/a/sp!'
-  NameChange: '&6[playerDisplayName] &ese přihlásil, také zapamatovaný jako: &6[namelist]'
-  Cooldowns: '&eTento příkaz má cooldown na další &6[time]'
-  specializedCooldowns: '&eCooldown je aktivní pro tento příkaz, prosím počkej &6[time]'
-  specializedRunning: '&ePříkaz stále probíhá, prosím počkej &6[time]'
-  CooldownOneTime: '&eTento příkaz může být použitý pouze jednou!'
+info: #INFO - Zde jsem začal -Houska
+  Same: '!prefix! <tf>Nemůžeš otevřít svůj inventář pro úpravy!'
+  cantLoginWithDifCap: '!prefix! <tf>Nemůžeš se přihlásit s různě velkými písmeny! Původní jméno: <vars>[oldName]<tf>. Aktuální jméno: <varf>[currentName]'
+  Searching: '!prefix! <t>Vyhledávání data hráčů, tohle může chvíli trvat!'
+  NoCommandWhileSleeping: '!prefix! <tf>Nemůžeš provádět příkazy, když spíš!'
+  PurgeNotEnabled: '!prefix! <tf>Funkce čistění není povolená!'
+  TeamManagementDisabled: '!prefix! <tf>Tato funkce bude mít omezenou funkčnost, jelikož je povolený DisableTeamManagement.'
+  NoGameMode: '!prefix! <tf>Použij prosím hodnotu <var>0/1/2/3 <tf>nebo <var>Survival/Creative/Adventure/Spectator <tf>nebo <var>s/c/a/sp<tf>!'
+  NameChange: '<var>[playerDisplayName] <t>se přihlásil, také známý jako: <var>[namelist]'
+  Cooldowns: '!prefix! <tf>Tento příkaz je možné znovu použít za: <var>[time]'
+  specializedCooldowns: '!prefix! <tf>Tento příkaz je možné znovu použít za: <var>[time]'
+  specializedRunning: '!prefix! <tf>Příkaz se stále vykonává. Prosím počkej: <var>[time]'
+  CooldownOneTime: '!prefix! <tf>Tento příkaz může být použitý pouze jednou!'
   WarmUp:
-    canceled: '&ePříkaz byl zrušen kvůli tvému pohybu'
-    counter: '!actionbar!&6--> Počkej &e[time] &6sekund <--'
-    DontMove: '!title!&6Nehýbej se!!subtitle!&7Počkej &c[time] &7sekund'
+    canceled: '!prefix! <tf>Příkaz byl zrušený z důvodu pohybu!'
+    counter: '!actionbar!<tspecial>--> <t>Počkej <var>[time]s <tspecial><--'
+    DontMove: '!title!<tf>Nehýbej se!!subtitle!<t>Vyčkej: <var>[time]s'
     Boss:
-      DontMove: '&4Nehýbej se dalších &7[autoTimeLeft] &4sekund!'
-      WaitFor: '&4Počkej &7[autoTimeLeft] &4sekund!'
+      DontMove: '<tf>Nehýbej se po dobu: <var>[autoTimeLeft]s<tf>!' #TODO - Potřeba více kontextu. Jedná se o bossbar?
+      WaitFor: '<tf>Vyčkej po dobu: <var>[autoTimeLeft]s<tf>!' #TODO - Potřeba více kontextu. Jedná se o bossbar?
   Spawner: '&r[type] Spawner'
-  FailedSpawnerMine: '!actionbar!&cNepodařilo se vytěžit spawner. &7[percent]% &cdrop chance'
-  ClickSpawner: '!actionbar!&7[percent]% &eŠance na drop'
+  FailedSpawnerMine: '!actionbar!<tspecial>Nepodařilo se vytěžit spawner. Šance na vytěžení: <var>[percent]%'
+  ClickSpawner: '!actionbar!<tspecial>Šance na vytěžení: <var>[percent]%'
   Elevator:
-    created: '&eVytovřil jsem ceduli pro výtah'
-  CantPlaceSpawner: '&eNemůžu položit spawner tak blízko k jinému spawneru (&6[range]&e)'
-  ChunksLoading: '&eChunky světa se stále načítají. Chvíli počkej a
-  zkus to znovu'
-  CantUseNonEncrypted: '!actionbar!&cPříkazy na tomto předmětu nejsou šifrované. Nemohu 
-  je použít!'
-  CantDecode: '!actionbar!&cNelze dekódovat tento příkaz/zprávu. Klíčový soubor obsahuje špatný
-   Klíč pro tuto úlohu. Informuj administraci serveru o tomto'
-  CantTeleport: '&eNemůžeš se teleportovat, protože máš příliš limitovaných předmětů. Přejdi
-    přes tento řádek k maximálnímu počtu limitovaných předmětů.'
- INFO - budeme potřebovat toto?
+    created: '<ts>Vytvořena cedulka výtahu.'
+  CantPlaceSpawner: '!prefix! <tf>Nelze položit Spawner tak blízko jinému. <misc>(<var>[range]<misc>)'
+  ChunksLoading: '!prefix! <tf>Data chunků světa se stále načítají. Zkus to prosím znovu později.'
+  CantUseNonEncrypted: '!actionbar!<tspecial>Příkazy na tomto předmětu nejsou šifrované. Nelze je tedy použít!' #TODO - Zachováme zde actionbar?
+  CantDecode: '!prefix! <tf>Nelze dekódovat zprávu<misc>/<tf>příkaz. Šifrovací klíč neobsahuje správný klíč. Kontaktuj prosím serverového administrátora.'
+  CantTeleport: '!prefix! <tf>Nelze tě teleportovat z důvodu, že máš u sebe mnoho omezených předmětů. Níže se dozvíš maximální počet povolených předmětů.' #INFO - Tady jsem skončil. -Houska 
   BlackList: '&e[material] [amount] &6Max: [max]'
   wrongPortal: '&cYou are in incorrect area of effect'
   ItemWillBreak: '!actionbar!&eYour item (&6[itemName]&e) will break soon! &e[current]&6/&e[max]'
@@ -102,10 +94,8 @@ info:
   flyingToHigh: '&cYou can''t fly so high, max height is &6[max]&c!'
   specializedItemFail: '&cCan''t determine specialized item requirement by value:
     &7[value]'
-  sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
-  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required
-    for night time speedup'
-INFO - zde už v pohodě  
+  sunSpeeding: 'Sleeping [count] of [total] [hour] hour [speed]X speed' #INFO - Původně zpráva nebyla v uvozovkách.
+  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required for night time speedup'
   sunSpeedingTitle: '&7[hour]'
   skippingNight: '!title!&7Skipping entire night'
   sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
