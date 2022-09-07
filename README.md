@@ -23,11 +23,11 @@ Tagy si lze po stažení dle libosti nahradit za barevné kódy, dle vlastního 
 
 ### Komentáře
 Je normální, že si občas nevzpomenete, jak vlastně máte přeložit některé fráze. Proto v průběhu celého překladu používáme komentáře. Ty jsou:
-> **INFO** - Důležitá informace na kterou si nemusíte příště vzpomenout. Radši si všechno zapište. Komentáře jsou především pro nás, překladatele. 
+> `#INFO` - Důležitá informace na kterou si nemusíte příště vzpomenout. Radši si všechno zapište. Komentáře jsou především pro nás, překladatele. 
    
-> **TODO** - Tímto komentářem značíte, že je na daném řádku ještě potřeba něco dodělat. Např. Barvy (resp. Tagy), překlad, atp.
+> `#TODO` - Tímto komentářem značíte, že je na daném řádku ještě potřeba něco dodělat. Např. Barvy (resp. Tagy), překlad, atp.
    
-> **Uživatel** - Toto je především pro lidi co použijí náš překlad. Překlad nemůže být 100% univerzální a uživatel si tedy bude muset donastavit detaily. Perfektní případ použití je na řádku s prefixem, který se používá v celém překladu. Uživatel si tak může jednoduše nastavit, který prefix chce pluginu přidělit.
+> `#Uživatel` - Toto je především pro lidi co použijí náš překlad. Překlad nemůže být 100% univerzální a uživatel si tedy bude muset donastavit detaily. Perfektní případ použití je na řádku s prefixem, který se používá v celém překladu. Uživatel si tak může jednoduše nastavit, který prefix chce pluginu přidělit.
 
 ### Prefix
 Nastavení prefixu pluginu vždycky posuneme na 1. řádek (Případně hned pod komentáře od vývojáře pluginu.).
@@ -46,7 +46,21 @@ Komentáře v příkladech formátu jsou pouze informativního charakteru, jak j
 **POZOR!** U posledního příkladu není barevné označení u proměnné `%status%`! Z důvodu, že se v průběhu překladu deklarují barvy online/offline hráče. Přidání tagu (barvy) ničemu neuškodí, ale nebude mít žádný vliv na barvu výstupu. Těchto vyjímek se může objevovat i více, proto v překladech nepřidávejte barvy k např. proměnným, když tam původně žádné nebyly.
 
 ## Instalace překladu
-> Je potřeba vypracovat.
+1. Stáhněte / Zkopírujte si překlad daného pluginu.
+2. Vypněte server (Doporučeno) | Lze použít i příkaz reload některých pluginů.
+3. Nahrajte překlad do složky pluginu. Cesta je vždy uvedena v repozitáři souborů. (např. `CMILib/Translations`)
+4. Otevřete překlad v softwaru, který umožňuje použití funkce "Najít & Nahradit" (defaultně pod kombinací tlačítek: `CTRL+F`).  
+Doporučený software: [Notepad++](https://notepad-plus-plus.org)
+5. Nahraďte **všechny** Tagy v překladu pomocí funkce "Najít & Nahradit" za Vámi zvolenou barvu.  
+>**Příklad:**  
+> Najít: `<var>`  
+> Nahradit: `&6`  
+*Nahradí všechny tagy `<var>` za Vámi zvolenou barvu. A všechny barvy budou jednotné v celém překladu.*
+6. Uložte Vámi provedené změny.
+7. Zapněte server případně proveďte pouze reload např. `/cmil reload`
+8. Hodně štěstí s našim překladem!  
+*Po každém reloadu pluginu se vypíše aktuální verze překladu ve formátu: `X.X.X.X-Y` | `X` je verze pluginu; `Y` je verze překladu*  
+*Verze překladu je taky vypsaná úplně na začátku každého souboru. Jsou tam i doplňující informace (GitHub link, Contributors).*
 
 ## Závěrečná slova
 Děkujeme za používání našeho překladu.  
