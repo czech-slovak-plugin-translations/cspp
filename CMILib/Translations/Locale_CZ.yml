@@ -844,6 +844,8 @@ command:
       info: '<tspecial>Znovunačte konfigurační a jazykové soubory pluginu' #TODO - Kontext použití. Nemá zde být !prefix! ?
       args: ''
     info:
-      feedback: '!prefix! <ts>Znovunačtení konfiguračních a jazykových souborů pluginu <var>CMILib <ts>proběhlo úspěšně! Doba: <var>[ms]ms/n!prefix! <ts>Děkujeme za používání CZ překladu <var>CMILib <ts>od: <var>Rush <misc>& <var>El_Frod0/n<t>GitHub Link: <var>https://github.com/rushboe/cmi-preklad' #TODO - Necháme zde tohle? Aspoň někde se bude zobrazovat GitHub link a můžeme sem pak dodat verzi překladu, aby si mohli uživatelé zjistit zda je novější verze překladu.
+      feedback: '!prefix! <ts>Znovunačtení konfiguračních a jazykových souborů pluginu <var>CMILib <ts>proběhlo úspěšně! Uplynulý čas: <var>[ms]ms/n!
+        !prefix! <ts>Používáte český překlad pluginu CMILib verze: 1.2.3.5-0/n
+        !prefix! <T><t>Odkaz na GitHub </T><T><t>ČSSP</T><H>České Překlady Pluginů</H><T>: </T><T><var>[ODKAZ]</T><H><tspecial>https://github.com/czech-slovak-plugin-translations</H><URL>https://github.com/czech-slovak-plugin-translations</URL>'
       failedConfig: '!prefix! <tf>Načítání konfiguračních souborů se nezdařilo!'
       failedLocale: '!prefix! <tf>Načítání jazykových souborů se nezdařilo!'
