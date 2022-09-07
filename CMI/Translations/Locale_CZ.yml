@@ -2849,13 +2849,15 @@ command:
       page: ' &0[current]&7/&0[total]'
       noRecipes: '&cCant find any recipes for this item'
   reload:
-    help:
-      info: '&eReloads plugins config and locale files'
+    help:      
+      info: '<tspecial>Znovunačte konfigurační a jazykové soubory pluginu'
       args: ''
     info:
-      feedback: '&6CMI Configs and locale files reloaded! Took [ms]ms'
-      failedConfig: '&4Failed to load config file! Check spelling!'
-      failedLocale: '&4Failed to load locale file! Check spelling!'
+      feedback: '!prefix! <ts>Znovunačtení konfiguračních a jazykových souborů pluginu <var>CMI<ts>proběhlo úspěšně! Uplynulý čas: <var>[ms]ms/n!
+        !prefix! <ts>Používáte český překlad pluginu CMILib verze: 9.2.3.7-0/n
+        !prefix! <T><t>Odkaz na GitHub </T><T><t>ČSSP</T><H>České Překlady Pluginů</H><T>: </T><T><var>[ODKAZ]</T><H><tspecial>https://github.com/czech-slovak-plugin-translations</H><URL>https://github.com/czech-slovak-plugin-translations</URL>'
+      failedConfig: '!prefix! <tf>Načítání konfiguračních souborů se nezdařilo!'
+      failedLocale: '!prefix! <tf>Načítání jazykových souborů se nezdařilo!'
   removehome:
     help:
       info: '&eRemove home'
