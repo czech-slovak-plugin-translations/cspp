@@ -59,6 +59,7 @@ Doporučený software: [Notepad++](https://notepad-plus-plus.org)
 6. Uložte Vámi provedené změny.
 7. Zapněte server případně proveďte pouze reload např. `/cmil reload`
 8. Hodně štěstí s našim překladem!  
+
 *Po každém reloadu pluginu se vypíše aktuální verze překladu ve formátu: `X.X.X.X-Y` | `X` je verze pluginu; `Y` je verze překladu*  
 *Verze překladu je taky vypsaná úplně na začátku každého souboru. Jsou tam i doplňující informace (GitHub link, Contributors).*
 
