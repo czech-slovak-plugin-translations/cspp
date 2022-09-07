@@ -55,10 +55,11 @@ Doporučený software: [Notepad++](https://notepad-plus-plus.org)
 >**Příklad:**  
 > Najít: `<var>`  
 > Nahradit: `&6`  
-*Nahradí všechny tagy `<var>` za Vámi zvolenou barvu. A všechny barvy budou jednotné v celém překladu.*
-6. Uložte Vámi provedené změny.
-7. Zapněte server případně proveďte pouze reload např. `/cmil reload`
-8. Hodně štěstí s našim překladem!  
+*Nahradí všechny tagy `<var>` za barvu `&6 (Oranžová)`. A všechny barvy budou jednotné v celém překladu.*
+6. Následně v překladu vyhledejte komentáře `#Uživatel`. Budete tam mít napsané co je od Vás potřeba.
+7. Uložte Vámi provedené změny.
+8. Zapněte server případně proveďte pouze reload např. `/cmil reload`.
+9. Hodně štěstí s našim překladem!  
 
 *Po každém reloadu pluginu se vypíše aktuální verze překladu ve formátu: `X.X.X.X-Y` | `X` je verze pluginu; `Y` je verze překladu*  
 *Verze překladu je taky vypsaná úplně na začátku každého souboru. Jsou tam i doplňující informace (GitHub link, Contributors).*
