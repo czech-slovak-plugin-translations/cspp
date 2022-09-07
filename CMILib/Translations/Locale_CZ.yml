@@ -1,3 +1,10 @@
+# Překlad vytvořený týmem ČSPP
+# Podporována verze CMILib: v1.2.3.5
+# Revize překladu: 0 (07/09/2022)
+# Autoři překladu: @ElFrod0, @rushboe
+# GitHub link: https://github.com/czech-slovak-plugin-translations/cspp
+# Copyright ©️ 2022 / License MIT
+#
 # Full color code support and some variables
 # Keep in mind that variables wont work for some lines, when it will for anothers :)
 # Just keep them where there are now and everything will be ok :)
