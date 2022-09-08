@@ -62,7 +62,7 @@
 
 info:
   # Use !prefix! in any locale line to automatically include this prefix
-  prefix: '&8[&cSystém&8] '
+  prefix: '&8[&eCMILib&8] ' #Uživatel - Zde si nastav vlastní prefix pluginu. Je vhodné zachovat název pluginu z důvodu, že se později mohou objevit různé chyby (jak v překladu, tak v pluginu.), tak to alespoň usnadní nález.
   NoPermission: '!prefix! <tf>K tomuto nemáš dostatečné oprávnění!'
   CantHavePermission: '!prefix! <tf>Nemůžeš mít toto oprávnění!'
   WrongGroup: '!prefix! <tf>Nacházíš se ve špatné skupině!'
@@ -268,46 +268,46 @@ info:
     warmup: '<t>Efekt totemu: <var>[time]' #TODO - Potřeba více kontextu pro správnou formulaci. 
     cantConsume: '!prefix! <tf>Použití totemu bylo zakázáno z důvodu, že nevypršel časovač.' #TODO - Kde se zpráva používá? Bude to chtit lepší formulaci.
   InventorySave: #INFO - Tady jsem skončil s korekcí. Frodo
-    info: '&8Info: &8[playerDisplayName]' #TODO - Myslím, že se jedná o nadpis inventory GUI. Nepoužijeme nový tag <guititle> ? playerDisplayName taky nedává moc smysl. Použil bych jen playerName.
+    info: '&8Info: &8[playerDisplayName]' #Uživatel - Zde si nastav barvu nadpisu v GUI. Doporučená: &8 (Tmavě šedá) | U hráče lze použít proměnné [playerName] & [playerDisplayName]
     saved: '!prefix! <var>[time] <ts>Inventář uložen s ID: <var>[id]'
     NoSavedInv: '!prefix! <tf>Tento hráč nemá žádné uložené inventáře!'
     NoEntries: '!prefix! <tf>Soubor existuje, ale žádné inventáře nebyly nalezeny.'
     CantFind: '!prefix! <tf>Nelze nalézt inventář s tímto ID.'
-    TopLine: '&e----------- &6[playerDisplayName] saved inventory &e-----------' #TODO - Další splitter
-    List: '<t>id: <var>[id]<t>. <var>[time]'
+    TopLine: '<splitter>----------- <var>[playerDisplayName] <tspecial>uložený inventář <splitter>-----------'
+    List: '<t>ID: <var>[id]<t> <var>[time]'
     KillerSymbol: ' <tf>☠'
     Click: '!prefix! <t>Klikni pro náhlednutí do uloženého inventáře s ID: <var>[id]'
     IdDontExist: '!prefix! <tf>Toto ID neexistuje!'
     Deleted: '!prefix!<ts>Uložený inventář byl úspěšně smazaný.'
-    Restored: '!prefix! <t>You have restored <var>[sourcename] <t>inventory for <var>[targetname] <t>user.' #TODO - Z tohohle jsem confused.
-    GotRestored: '&eYour inventory was restored from &e[sourcename] &esaved inventory on &e[time]' #TODO
-    LoadForSelf: '!prefix! <t>Načti tento inventář pro sebe.'
-    LoadForOwner: '!prefix! <t>Načti tento inventář pro majitele.' #TODO - Formulace OK?
+    Restored: '!prefix! <t>Obnovil/a jsi inventář hráči: <var>[targetname] <t>z dat inventáře hráče: <var>[sourcename]<t>.'
+    GotRestored: '!prefix! <t>Tvůj inventář byl obnovený z dat hráče: <var>[sourcename] <t>čas uložení: <var>[time]'
+    LoadForSelf: '!prefix! <t>Načíst tento inventář pro sebe.'
+    LoadForOwner: '!prefix! <t>Načíst tento inventář majiteli.'
     NextInventory: '<tspecial>Další inventář'
     PreviousInventory: '<tspecial>Předchozí inventář'
     Editable: '<t>Mód úprav je nyní <ts>zapnutý.'
     NonEditable: '<t>Mód úprav je nyní <tf>vypnutý.'
-  vanishSymbolOn: '[Vanish]&r' #Uživatel - Zde si nastav obsah placeholderu %cmi_user_vanished_symbol% (Prefix není přesný. Musím jej upřesnit.)
+  vanishSymbolOn: '[Vanish]&r' #Uživatel - Zde si nastav obsah placeholderu %cmi_user_vanished_symbol%. Může se zobrazovat např. v tabulce před jménem.
   vanishSymbolOff: ''
-  afkSymbolOn: '[AFK]&r' #Uživatel - Zde si nastav obsah placeholderu %cmi_user_afk_symbol% (Prefix není přesný. Musím jej upřesnit.)
-  afkSymbolOff: '' #TODO - Tady jsem skončil. Frodo
-  beeinfo: '!actionbar!<tspecial>Úroveň medu: <var>[level]<misc>/<var>[maxlevel] <tspecial>Počet včel: <var>[count]<misc>/<var>[maxcount]' #INFO - Tady jsem začal. Frodo
+  afkSymbolOn: '[AFK]&r' #Uživatel - Zde si nastav obsah placeholderu %cmi_user_afk_symbol%.
+  afkSymbolOff: ''
+  beeinfo: '!actionbar!<tspecial>Úroveň medu: <var>[level]<misc>/<var>[maxlevel] <tspecial>Počet včel: <var>[count]<misc>/<var>[maxcount]'
   pvp:                                               
     noGodDamage: '!actionbar!<tf>Nemůžeš ubližovat ostatním hráčům, zatímco jsi nesmrtelný.'
   pve:
     noGodDamage: '!actionbar!<tf>Nemůžeš ubližovat entitám, zatímco jsi nesmrtelný.'
   InvEmpty:
-    armor: '<t>Neměl by jsi na sobě mít žádnou zbroj!' #TODO - Kde se tyto zprávy využívají?
-    hand: '<t>Neměl by jsi mít nic v ruce!' #TODO - Kde se tyto zprávy využívají?
-    maininv: '<t>Tvůj inventář by měl být prázdný!' #TODO - Kde se tyto zprávy využívají?
-    maininvslots: '<t>Tvůj inventář má: <var>[count] <t>volných míst!' #TODO - Kde se tyto zprávy využívají?
-    inv: '<t>Tvůj inventář by měl být prázdný!' #TODO - Kde se tyto zprávy využívají?
-    offhand: '<t>Neměl by jsi mít nic v druhé ruce!' #TODO - Kde se tyto zprávy využívají?
-    quickbar: '<t>Tvé quick sloty by měly být prázdné!' #TODO - Kde se tyto zprávy využívají? Jak přeložit Quick Sloty?
-    quickbarslots: '<t>Tvé quick sloty mají: <var>[count] <t>volného místa!' #TODO - Kde se tyto zprávy využívají?
-    subinv: '&eYour sub inventory should be empty!' #TODO - Kde se tyto zprávy využívají? O jaký inventář se jedná?
-    subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!' #TODO - Kde se tyto zprávy využívají? O jaký inventář se jedná?
-  DamageCause: #TODO - Tohle nebudeme překládat ne?
+    armor: '<t>Neměl by jsi na sobě mít žádnou zbroj!' #TODO - Potřeba kontext použití.
+    hand: '<t>Neměl by jsi mít nic v ruce!' #TODO - Potřeba kontext použití.
+    maininv: '<t>Tvůj inventář by měl být prázdný!' #TODO - Potřeba kontext použití.
+    maininvslots: '<t>Tvůj inventář má: <var>[count] <t>volných míst!' #TODO - Potřeba kontext použití.
+    inv: '<t>Tvůj inventář by měl být prázdný!' #TODO - Potřeba kontext použití.
+    offhand: '<t>Neměl by jsi mít nic v druhé ruce!' #TODO - Potřeba kontext použití.
+    quickbar: '<t>Tvé rychlé sloty by měly být prázdné!' #TODO - Potřeba kontext použití. Přeložíme Quick Sloty jako Rychlé Sloty?
+    quickbarslots: '<t>Tvé rychlé sloty mají: <var>[count] <t>volného místa!' #TODO - Potřeba kontext použití.
+    subinv: '<t>Tvůj podinventář by měl být prázdný!' #TODO - Potřeba více kontextu i kontext použití.
+    subinvslots: '<t>Tvůj podinventář má: <var>[count] <t>volných míst!' #TODO - Potřeba více kontextu i kontext použití.
+  DamageCause:
     block_explosion: Explosion
     contact: Block Damage
     cramming: cramming
@@ -403,7 +403,7 @@ info:
     WINDSWEPT_HILLS: Windswept hills
     WINDSWEPT_SAVANNA: Windswept savanna
     WOODED_BADLANDS: Wooded badlands
-  EntityType: #TODO - Tohle nebudeme překládat ne?
+  EntityType:
     allay: Allay
     area_effect_cloud: Area effect cloud
     armor_stand: Armor stand
@@ -523,7 +523,7 @@ info:
     zombie_horse: Zombie horse
     zombie_villager: Zombie villager
     zombified_piglin: Zombified piglin
-  EnchantAliases: #TODO - Tohle nebudeme překládat ne?
+  EnchantAliases:
     protection_fire:
     - FireProtection
     damage_all:
@@ -603,7 +603,7 @@ info:
     - Power
     arrow_infinite:
     - Infinity
-  PotionEffectAliases: #TODO - Tohle nebudeme překládat ne?
+  PotionEffectAliases:
     speed:
     - Speed
     slow:
@@ -679,15 +679,15 @@ direction:
   sw: Jihozápad
   w: Západ
   nw: Severozápad
-modify: #TODO - Tady si vůbec nejsem jistý přidáním !prefix!
+modify:
   middlemouse: '<tspecial>Zmáčkni kolečko pro úpravy.'
   qButtonEdit: '<tspecial>Zmáčkni tlačítko Q pro úpravy.'
   newItem: '<tspecial>Zde polož nový předmět.'
-  newLine: '<var><NewLine>' #TODO - Kontext použití?
+  newLine: '<var><NewLine>' #TODO - Potřeba více kontextu.
   newLineHover: '<tspecial>Přidá nový řádek.'
-  newPage: '<var><NewPage>' #TODO - Kontext použití?
+  newPage: '<var><NewPage>' #TODO - Potřeba více kontextu.
   newPageHover: '<tspecial>Vytvoří novou stránku'
-  removePage: '<var><RemovePage>' #TODO - Kontext použití?
+  removePage: '<var><RemovePage>' #TODO - Potřeba více kontextu.
   removePageHover: '<tspecial>Smaže stránku.'
   deleteSymbol: '<varf>[X]'
   deleteSymbolHover: '<tspecial>Smaže: <var>[text]'
@@ -702,37 +702,37 @@ modify: #TODO - Tady si vůbec nejsem jistý přidáním !prefix!
   denySymbolHover: '<tspecial>Zakázat'
   enabledSymbol: '<vars>[+]'
   disabledSymbol: '<varf>[-]'
-  enabled: '<vars>Zapnuto' #TODO - Kontext použití
-  disabled: '<varf>Vypnuto' #TODO - Kontext použití
-  running: '<var>Spuštěno' #TODO - Kontext použití
-  paused: '<var>Pozastaveno' #TODO - Kontext použití
+  enabled: '<vars>Zapnuto'
+  disabled: '<varf>Vypnuto'
+  running: '<var>Spuštěno'
+  paused: '<var>Pozastaveno'
   editSymbol: '<var>✎'
   editSymbolHover: '<tspecial>Upravení: <var>[text]'
-  editLineColor: '&f' #TODO - Kontext použití
+  editLineColor: '<t>'
   listUpSymbol: '<var>⇑'
   listUpSymbolHover: '<tspecial>Nahoru'
   listDownSymbol: '<var>⇓'
   listDownSymbolHover: '<tspecial>Dolů'
   listNumbering: '<var>[number]. '
-  listAlign: '&80' #TODO - Kontext použití
+  listAlign: '&80' #Uživatel - Zde můžeš zachovat barvu &8 (Tmavě šedá) nebo ji zaměnit za <var>.
   ChangeHover: '<tspecial>Klikni pro změnění'
   ChangeCommands: '<tspecial>Příkazy'
   enabledColor: '<vars>'
   disabledColor: '<varf>'
-  commandTitle: ' &e--- &6[name] &e---' #TODO - Další splitter
+  commandTitle: ' <splitter>--- <splitterh>[name] <splitter>---'
   commandList: ' <var>[command]  '
-  emptyLine: '<var>[Empty line]'
+  emptyLine: '<var>[Prázdný Řádek]' #INFO - IMHO to původně nebyla proměnná "[Empty line]". 
   commandEdit: '<tspecial>Upravit seznam'
   nameAddInfo: '!prefix! <t>Zadej nové jméno. Pro zrušení napiš: <var>cancel'
   lineAddInfo: '!prefix! <t>Zadej nový řádek. Pro zrušení napiš: <var>cancel'
   commandAddInfo: '<t>Zadej nový příkaz. Pro zrušení napiš: <var>cancel'
-  commandAddInformationHover: "&e[playerName] can be used to get player name \n&eTo\ #TODO
+  commandAddInformationHover: '&e[playerName] can be used to get player name \n&eTo\
     \ include delay in commands: \n&edelay! 5 \n&eSpecialized commands are supported.\
-    \ More info at \n&ehttps://www.zrips.net/cmi/commands/specialized/" 
-  commandEditInfo: '<tspecial>Klikni sem pro otevření původního textu. Pro zrušení napiš: <var>cancel'
+    \ More info at \n&ehttps://www.zrips.net/cmi/commands/specialized/' #TODO - Přeložit
+  commandEditInfo: '<tspecial>Klikni sem pro otevření původního textu. Pro zrušení napiš: <var>cancel' #INFO - Cancel nepřekládat!
   listLimit: '<tf>Seznam nemůže mít více než: <var>[amount] <tf>položek!'
   commandEditInfoHover: '<tspecial>Klikni pro vložení původního textu.'
-teleportation:
+teleportation: #INFO - Tady jsem skončil s korekcí.
   relocation: '!actionbar!&4Your teleport location was obstructed. You have been teleported to a safe location.' #TODO
 econ:
   noMoney: '!prefix! <tf>Nemáš žádné peníze.'
