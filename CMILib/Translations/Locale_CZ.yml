@@ -732,19 +732,19 @@ modify:
   commandEditInfo: '<tspecial>Klikni sem pro otevření původního textu. Pro zrušení napiš: <var>cancel' #INFO - Cancel nepřekládat!
   listLimit: '<tf>Seznam nemůže mít více než: <var>[amount] <tf>položek!'
   commandEditInfoHover: '<tspecial>Klikni pro vložení původního textu.'
-teleportation: #INFO - Tady jsem skončil s korekcí.
-  relocation: '!actionbar!&4Your teleport location was obstructed. You have been teleported to a safe location.' #TODO
+teleportation: #INFO - Tady jsem skončil s korekcí. #INFO - Tady jsem začal s korekcí.
+  relocation: '!actionbar!&4Plánované místo Tvého teleportu bylo vyhodnoceno jako nebezpečné. Teleport byl přesměrován na vhodnější lokaci.'
 econ:
   noMoney: '!prefix! <tf>Nemáš žádné peníze.'
-  charged: '!actionbar!<tspecial>Utratil/a jsi: <varf>[amount]' #TODO - Zachovat takhle?
-  notEnoughMoney: '!prefix! <tf>Nemáš dostatek peněz. Potřebuješ: <var>[amount]' #TODO - var nebo varf? :/
+  charged: '!actionbar!<tspecial>Utratil/a jsi: <varf>[amount]'
+  notEnoughMoney: '!prefix! <tf>Nemáš dostatek peněz. Potřebuješ: <varf>[amount]'
   tooMuchMoney: '!prefix! <tf>Máš příliš mnoho peněz.'
-  disabled: '!prefix! <tf>Tento příkaz nelze použít, když je vypnutá ekonomika.' #TODO - Zachovat takhle?
-  commandCost: '!prefix! <t>Cena tohoto příkazu je: <var>[cost]<t>. Klikni sem a nebo jej zopakuj.'
+  disabled: '!prefix! <tf>Tuto akci nelze provést, když je vypnuta ekonomika.'
+  commandCost: '!prefix! <t>Cena tohoto příkazu je <var>[cost]<t>. Klikni sem a nebo jej zopakuj.'
 Selection: #INFO - Tady jsem skončil. Frodo
-  SelectPoints: '!prefix! <t>Zvol 2 protilehlé body nástrojem: <var>[tool]'
-  PrimaryPoint: '!prefix! <t>Zvolený primární selekční bod: <var>[point]' #TODO - Obarvíme slovo primární?
-  SecondaryPoint: '!prefix! <tZvolený sekundární selekční bod>: <var>[point]' #TODO - Obarvíme slovo sekundární?
+  SelectPoints: '!prefix! <t>Zvol 2 protilehlé body nástrojem <var>[tool]<t>.'
+  PrimaryPoint: '!prefix! <t>Vybrán <var>primární <t>výběrový bod: <var>[point]'
+  SecondaryPoint: '!prefix! <t>Vybrán <var>sekundární <t>výběrový bod>: <var>[point]'
   CoordsTop: '<tspecial>X:<var>[x] <tspecial>Y:<var>[y] <tspecial>Z:<var>[z]' #TODO - Kontext použití
   CoordsBottom: '<tspecial>X:<var>[x] <tspecial>Y:<var>[y] <tspecial>Z:<var>[z]' #TODO - Kontext použití
   Area: '<var>[world] <misc>(<var>[x1]<misc>:<var>[y1]<misc>:<var>[z1] [x2]<misc>:<var>[y2]<misc>:<var>[z2]<misc>)'
