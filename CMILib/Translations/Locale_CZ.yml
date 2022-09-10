@@ -63,19 +63,19 @@
 info:
   # Use !prefix! in any locale line to automatically include this prefix
   prefix: '&8[&eCMILib&8] ' #Uživatel - Zde si nastav vlastní prefix pluginu. Je vhodné zachovat název pluginu z důvodu, že se později mohou objevit různé chyby (jak v překladu, tak v pluginu.), tak to alespoň usnadní nález.
-  NoPermission: '!prefix! <tf>K tomuto nemáš dostatečné oprávnění!'
+  NoPermission: '!prefix! <tf>K provedení této akce nemáš dostatečná oprávnění!'
   CantHavePermission: '!prefix! <tf>Nemůžeš mít toto oprávnění!'
   WrongGroup: '!prefix! <tf>Nacházíš se ve špatné skupině!'
   NoPlayerPermission: '!prefix! <var>[playerName] <tf>nemá dostatečná oprávnění pro: <var>[permission]'
   Ingame: '!prefix! <tf>Tento příkaz lze použít pouze ve hře!'
   NoInformation: '!prefix! <tf>Žádná informace nenalezena!'
-  Console: '<var>Konzole' #TODO - Potřeba více kontextu. Imho to takhle můžeme nechat.
+  Console: '<var>Konzole'
   FromConsole: '!prefix! <tf>Tento příkaz lze použít pouze v konzoli!'
   NotOnline: '!prefix! <tf>Tento hráč není online!'
   NobodyOnline: '!prefix! <tf>Žádný hráč není online!'
   NoPlayer: '!prefix! <tf>Nelze nalézt hráče s tímto jménem!'
   NoCommand: '!prefix! <tf>Tento příkaz neexistuje!'
-  cantFindCommand: '!prefix! <tf>Nelze nalézt příkaz: <var>[%1]<tf>, neměl/a jsi na mysli: <var>[%2]<tf>?'
+  cantFindCommand: '!prefix! <tf>Nelze nalézt příkaz <var>[%1]<tf>, neměl/a jsi na mysli <var>[%2]<tf>?'
   nolocation: '!prefix! <tf>Nelze nalézt vhodnou lokaci!'
   FeatureNotEnabled: '!prefix! <tf>Tato funkce není zapnutá!'
   ModuleNotEnabled: '!prefix! <tf>Tento modul není zapnutý!'
@@ -84,14 +84,14 @@ info:
   bungeeNoGo: '!prefix! <tf>Tato funkce nebude fungovat na serverech založených na Bungee!'
   clickToTeleport: '!prefix! <t>Klikni pro teleportování.'
   UseMaterial: '!prefix! <tf>Použij prosím název materiálu.'
-  IncorrectMaterial: '!prefix! <tf>Neplatný název materiálu!'
-  UseInteger: '!prefix! <tf>Použij pouze čísla!'
+  IncorrectMaterial: '!prefix! <tf>Neplatný název materiálu.'
+  UseInteger: '!prefix! <tf>Použij pouze čísla.'
   UseBoolean: '!prefix! <tf>Použij pouze hodnoty <vars>True <tf>nebo <varf>False<tf>!'
-  NoLessThan: '!prefix! <tf>Číslo nemůže být nižší než: <var>[amount]<tf>!'
-  NoMoreThan: '!prefix! <tf>Číslo nemůže být vyšší než: <var>[amount]<tf>!'
+  NoLessThan: '!prefix! <tf>Číslo nemůže být nižší než <var>[amount]<tf>!'
+  NoMoreThan: '!prefix! <tf>Číslo nemůže být vyšší než <var>[amount]<tf>!'
   NoWorld: '!prefix! <tf>Svět s tímto názvem nebyl nalezený!'
   IncorrectLocation: '!prefix! <tf>Chybně zadaná lokace!'
-  Show: '<tspecial>Ukázat'
+  Show: '<tspecial>Zobrazit'
   Remove: '<tspecial>Odebrat'
   Back: '<tspecial>Zpět'
   Forward: '<tspecial>Forward'
@@ -100,11 +100,11 @@ info:
   Delete: '<tspecial>Smazat'
   Click: '<tspecial>Klikni'
   Preview: '<tspecial>Náhled'
-  PasteOld: '<tspecial>Vložit Původní'
-  ClickToPaste: '<tspecial>Klikni pro vložení do textového pole'
+  PasteOld: '<tspecial>Vložit původní'
+  ClickToPaste: '<tspecial>Klikni pro vložení do textového pole.'
   CantTeleportWorld: '!prefix! <tf>Nelze teleportovat do cílového světa!'
   CantTeleportNoWorld: '!prefix! <tf>Cílový svět neexistuje! Teleport byl zrušený.'
-  ClickToConfirmDelete: '!prefix! <t>Klikni pro potvrzení smazání <var>[name]'
+  ClickToConfirmDelete: '!prefix! <t>Klikni pro potvrzení smazání <var>[name]<t>.'
   teleported: '!prefix! <t>Byl/a jsi teleportovan/a.'
   PlayerSpliter: '<splitter>----- <splitterh>[playerDisplayName] <splitter>-----'
   Spliter: '<splitter>--------------------------------------------------'
@@ -115,17 +115,17 @@ info:
   ProgressBarFill: '&a▏' #Uživatel - Zde si nastav barvu baru postupu. Doporučeno: &a (světle zelená), &2 (tmavě zelená) 
   ProgressBarEmpty: '&7▏' #Uživatel - Zde si nastav barvu baru postupu. Doporučeno: &7 (šedá), &c (světle červená)
   nothingInHand: '!prefix! <tf>Musíš držet předmět v ruce!'
-  nothingInHandLeather: '!prefix! <tf>Musíš držet kožený předmět v ruce!'
+  nothingInHandLeather: '!prefix! <tf>Musíš v ruce držet kožený předmět!'
   nothingToShow: '!prefix! <tf>Nic k vidění.'
   noItem: '!prefix! <tf>Nelze nalézt předmět!'
-  dontHaveItem: '!prefix! <tf>Nemáš: <var>[amount]x [itemName] <tf>ve svém inventáři!'
+  dontHaveItem: '!prefix! <tf>Nemáš <var>[amount]x [itemName] <tf>ve svém inventáři!'
   wrongWorld: '!prefix! <tf>Toto nelze provést v tomto světě!'
-  differentWorld: '!prefix! <t>Různé světy'
-  HaveItem: '!prefix! <ts>Máš: <var>[amount]x [itemName] <ts>ve svém inventáři.'
-  cantDoInGamemode: '!prefix! <tf>Toto nemůžeš provést v tvém herním módu!'
-  cantDoForPlayer: '!prefix! <tf>Toto nemůžeš udělat hráči: <var>[playerDisplayName]<tf>!'
+  differentWorld: '!prefix! <t>Různé světy' #TODO - Je toto zpráva do chatu?
+  HaveItem: '!prefix! <ts>Máš <var>[amount]x [itemName] <ts>ve svém inventáři.'
+  cantDoInGamemode: '!prefix! <tf>Toto nemůžeš provést v Tvém herním módu!'
+  cantDoForPlayer: '!prefix! <tf>Toto nemůžeš udělat hráči <var>[playerDisplayName]<tf>!'
   cantDoForYourSelf: '!prefix! <tf>Toto nemůžeš udělat sobě!'
-  cantDetermineMobType: '!prefix! <tf>Nelze určit moba z: <var>[type] <tf>proměnné.'
+  cantDetermineMobType: '!prefix! <tf>Nelze určit moba z proměnné <var>[type] <tf>.'
   cantRename: '!prefix! <tf>Nelze použít toto jméno!' #INFO - Původně se zde byl !actionbar!
   confirmRedefine: '!prefix! <t>Klikni pro potvrzení předefinování. '
   cantEdit: '!prefix! <tf>Toto nemůžeš upravit!'
@@ -134,7 +134,7 @@ info:
   invalidName: '!prefix! <tf>Neplatné jméno!'
   alreadyexist: '!prefix! <tf>Toto jméno je již zabrané!'
   dontexist: '!prefix! <tf>Toto jméno nebylo nalezeno.'
-  worldDontExist: '!prefix! <tf>Cílový svět již není přístupný. Nemůžu Tě tam teleportovat!'
+  worldDontExist: '!prefix! <tf>Cílový svět již není přístupný. Nemohu Tě tam teleportovat!'
   notSet: nenastaveno
   lookAtSign: '!prefix! <t>Podívej se na cedulku.'
   lookAtBlock: '!prefix! <t>Podívej se na block.'
@@ -144,7 +144,7 @@ info:
   bungee:
     Online: '<vars>Online'
     Offline: '<varf>Offline'
-    not: '!prefix! <tf>Server se nenachází na BungeeCord<misc>/<tf>Velocity proxy síti!'
+    not: '!prefix! <tf>Server se nenachází na BungeeCord/Velocity proxy síti!'
     noserver: '!prefix! <tf>Nelze nalézt server s tímto jménem!'
     server: '<t>Server: <var>[name]'
   variables:
@@ -191,7 +191,7 @@ info:
   lastPageHover: '<splitter>>|'
   pageCount: '<var>[current]<misc>/<var>[total]'
   pageCountHover: '<var>[totalEntries] <tspecial>položek'
-  skullOwner: '!actionbar!<tspecial>Hlava nebožtíka: <var>[playerName]' #TODO - Potřeba více kontextu. Jedná se o majitele, kdo tu hlavu položil či komu ta hlava patří?
+  skullOwner: '!actionbar!<tspecial>Hlava nebožtíka <var>[playerName]' #TODO - Potřeba více kontextu. Jedná se o majitele, kdo tu hlavu položil či komu ta hlava patří?
   circle: '<var>Kruh'
   square: '<var>Čtverec'
   clear: '<varf>Smazat'
@@ -208,19 +208,19 @@ info:
   TeamManagementDisabled: '!prefix! <tf>Tato funkce bude mít omezenou funkčnost, jelikož je povolený DisableTeamManagement.'
   NoGameMode: '!prefix! <tf>Použij prosím hodnotu: <var>0/1/2/3 <tf>nebo: <var>Survival/Creative/Adventure/Spectator <tf>nebo: <var>s/c/a/sp<tf>!'
   NameChange: '<var>[playerDisplayName] <t>se přihlásil, také známý jako: <var>[namelist]'
-  Cooldowns: '!prefix! <tf>Tento příkaz je možné znovu použít za: <var>[time]'
-  specializedCooldowns: '!prefix! <tf>Tento příkaz je možné znovu použít za: <var>[time]'
-  specializedRunning: '!prefix! <tf>Příkaz se stále vykonává. Prosím počkej: <var>[time]'
+  Cooldowns: '!prefix! <tf>Tento příkaz je možné znovu použít za <var>[time]<tf>.'
+  specializedCooldowns: '!prefix! <tf>Tento příkaz je možné znovu použít za <var>[time]<tf>.'
+  specializedRunning: '!prefix! <tf>Příkaz se stále provádí. Prosím vyčkej <var>[time]<tf>.'
   CooldownOneTime: '!prefix! <tf>Tento příkaz můžeš použít pouze jednou!'
   WarmUp:
-    canceled: '!prefix! <tf>Příkaz byl zrušený z důvodu pohybu!'
-    counter: '!actionbar!<splitter>--> <t>Počkej <var>[time]s <splitter><--'
-    DontMove: '!title!<tf>Nehýbej se!subtitle!<t>Počkej: <var>[time]s'
+    canceled: '!prefix! <tf>Příkaz byl zrušen z důvodu pohybu!'
+    counter: '!actionbar!<splitter>--> <t>Vyčkej <var>[time]s<t>. <splitter><--' #Uživatel - Nejspíš si zde budeš chtít změnit barvu.
+    DontMove: '!title!<tf>Nehýbej se!subtitle!<t>Vyčkej <var>[time]s<tf>.' #Uživatel - Nejspíš si zde budeš chtít změnit barvu.
     Boss:
-      DontMove: '!prefix! <tf>Nehýbej se po dobu: <var>[autoTimeLeft]s<tf>!'
-      WaitFor: '!prefix! <tf>Počkej prosím: <var>[autoTimeLeft]s<tf>!'
+      DontMove: '<tf>Nehýbej se po dobu <var>[autoTimeLeft]s<tf>!' #Uživatel - Nejspíš si zde budeš chtít změnit barvu.
+      WaitFor: '<tf>Vyčkej prosím <var>[autoTimeLeft]s<tf>!' #Uživatel - Nejspíš si zde budeš chtít změnit barvu.
   Spawner: '<vars>[type] <var>Spawner' #TODO - Zachováme tagy? Jedná se o název itemu.
-  FailedSpawnerMine: '!actionbar!<tf>Nepodařilo se vytěžit Spawner. <tspecial>Šance na získání: <var>[percent]%' #TODO - Zachováme !actionbar! ?
+  FailedSpawnerMine: '!actionbar!<tf>Nepodařilo se vytěžit Spawner. <tspecial>Šance na získání: <var>[percent]%' #TODO - Zachováme !actionbar! ? #Uživatel - Nejspíš si zde budeš chtít změnit barvu.
   ClickSpawner: '!actionbar!<tspecial>Šance na získání: [percent]%' #TODO - Zachováme !actionbar! ?
   Elevator:
     created: '!prefix! <ts>Vytvořena cedulka výtahu.'
@@ -228,38 +228,38 @@ info:
   ChunksLoading: '!prefix! <tf>Data chunků světa se stále načítají. Zkus to prosím znovu později.'
   CantUseNonEncrypted: '!actionbar!<tspecial>Příkazy na tomto předmětu nejsou šifrované. Nelze je tedy použít!' #TODO - Zachováme !actionbar! ?
   CantDecode: '!prefix! <tf>Nelze dekódovat zprávu<misc>/<tf>příkaz. Šifrovací klíč neobsahuje správný klíč. Kontaktuj prosím serverového administrátora.'
-  CantTeleport: '!prefix! <tf>Nelze tě teleportovat z důvodu, že máš u sebe mnoho omezených předmětů. Níže se dozvíš maximální počet povolených předmětů.'
+  CantTeleport: '!prefix! <tf>Nelze Tě teleportovat, protože máš u sebe mnoho omezených předmětů. Níže se dozvíš jejich maximální počet.'
   BlackList: '<var>[material] [amount]x <t>Povolené množství: <var>[max]'
   wrongPortal: '!prefix! <tf>Nacházíš se v nesprávné oblasti působení.' #TODO - Zachováme formulaci AoE (Oblast působení / Area of Effect) ?
   ItemWillBreak: '!actionbar!<tspecial>Tvůj <misc>(<var>[itemName]<misc>) se brzy rozbije! <var>[current]<misc>/<var>[max]'
   ArmorWillBreak: '!actionbar!<tspecial>Tvůj <var>[itemName] <tspecial>se brzy rozbije! <var>[current]<misc>/<var>[max]'
   flyingToHigh: '!prefix! <tf>Nemůžeš létat tak vysoko! Maximální povolená výška: <var>[max]<tf>!'
   specializedItemFail: '!prefix! <tf>Nelze určit specialované požadavky předmětu dle hodnoty: <var>[value]'
-  sunSpeeding: <tspecial>Aktuálně spí: <var>[count] <tspecial>z: <var>[total] <tspecial>hráčů [hour] [speed]x <tspecial>rychlost
-  sleepersRequired: '!actionbar!<tspecial>Aktuálně spí: <var>[sleeping] <tspecial>z: <var>[required] <tspecial>požadovaných hráčů pro přeskočení noci'
+  sunSpeeding: <tspecial>Aktuálně spí <var>[count] <tspecial>z <var>[total] <tspecial>hráčů. [hour] [speed]x <tspecial>rychlost #TODO - Lépe poskládat věty?
+  sleepersRequired: '!actionbar!<tspecial>Aktuálně spí <var>[sleeping] <tspecial>z <var>[required] <tspecial>požadovaných hráčů pro přeskočení noci'
   sunSpeedingTitle: '<var>[hour]'
   skippingNight: '!title!<tspecial>Přeskakování noci'
   sunSpeedingSubTitle: '<var>[count]<misc>/<var>[total] <misc>(<var>[speed]x<misc>)'
   repairConfirm: '<t>Klikni pro potvrzení opravení předmětu <var>[items] <t>za <var>[cost]'
   bookDate: '<tspecial>Napsáno: <var>[date]'
-  maintenance: '<tspecial>Mód Údržby'
+  maintenance: '<tspecial>Režim údržby'
   mapLimit: '!prefix! <tf>Nelze jít za hranici 30 000 000 blocků.'
   startedEditingPainting: '!prefix! <t>Nyní upravuješ obraz. Klikni na jakýkoliv jiný block pro ukončení úprav.'
   canceledEditingPainting: '!prefix! <t>Ukončil/a jsi mód úprav obrazů.'
-  changedPainting: '!actionbar!<tspecial>Změněný obraz na: <var>[name] <tspecial>s ID: <var>[id]'
+  changedPainting: '!actionbar!<tspecial>Změněný obraz na <var>[name] <tspecial>s ID <var>[id]<tspecial>.'
   noSpam: '!title!<tf>Nespamuj!'
   noCmdSpam: '!title!<tf>Nespamuj příkazy!'
   spamConsoleInform: '!prefix! <tf>Hráč <misc>(<var>[playerName]<misc>) aktivoval <misc>(<var>[rules]<misc>) chatový filtr zprávou: <var>[message]' #TODO - Zachovat prefix? Jedná se o zprávu v konzoli. 
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '<t>Vítej <var>[playerDisplayName] <t>na serveru!' #Uživatel - Zde si můžeš upravit zprávu co se zobrazí po prvním připojení. Lze použít i proměnné [totalUsers] a [onlinePlayers].
+  FirstJoin: '<var>[playerDisplayName] <t>, vítej na serveru!' #Uživatel - Zde si můžeš upravit zprávu co se zobrazí po prvním připojení. Lze použít i proměnné [totalUsers] a [onlinePlayers].
   LogoutCustom: ' <var>[playerDisplayName] <t>se odpojil/a.' #Uživatel - Zde si můžeš upravit zprávu co se zobrazí po každém odpojení. Lze použít i proměnné [totalUsers] a [onlinePlayers].
   LoginCustom: ' <var>[playerDisplayName] <t>se připojil/a.' #Uživatel - Zde si můžeš upravit zprávu co se zobrazí po každém (jiném než prvním) přihlášení. Lze použít i proměnné [totalUsers] a [onlinePlayers].
   deathlocation: '!prefix! <t>Zemřel/a jsi na souřadnicích x:<var>[x]<misc>, <t>y:<var>[y]<misc>, <t>z:<var>[z] <t>ve světě <var>[world]'
   book:
-    exploit: '!prefix!<tf>Nelze vytvořit knihu, která má více než: <var>[amount] <tf>stránek.'
+    exploit: '!prefix!<tf>Nelze vytvořit knihu, která má více než <var>[amount] <tf>stránek.'
   combat:
-    CantUseShulkerBox: '!prefix! <tf>Nelze použít Shulker Box, zatímco jsi v souboji s jiným hráčem. Vyčkej: <var>[time]'
-    CantUseCommand: '!prefix! <tf>Nelze používat příkazy, zatímco jsi v souboji s jiným hráčem. Vyčkej: <var>[time]' #TODO - Původně byla v actionbaru. Imho sedí víc do chatu.
+    CantUseShulkerBox: '!prefix! <tf>Nelze použít Shulker Box, zatímco jsi v souboji s jiným hráčem. Vyčkej <var>[time]<tf>.'
+    CantUseCommand: '!prefix! <tf>Nelze používat příkazy, zatímco jsi v souboji s jiným hráčem. Vyčkej <var>[time]<tf>.' #TODO - Původně byla v actionbaru. Imho sedí víc do chatu.
     bossBarPvp: '<tspecial>Soubojový mód skončí za: <var>[autoTimeLeft]' #TODO - Rozlišíme PVP/PVE zprávy?
     bossBarPve: '<tspecial>Soubojový mód skončí za: <var>[autoTimeLeft]' #TODO - Rozlišíme PVP/PVE zprávy?
   noSchedule: '!prefix! <tf>Plánovaná událost s tímto jménem nebyla nalezena.'
@@ -269,18 +269,18 @@ info:
     cantConsume: '!prefix! <tf>Použití totemu bylo zakázáno z důvodu, že nevypršel časovač.' #TODO - Kde se zpráva používá? Bude to chtit lepší formulaci.
   InventorySave: #INFO - Tady jsem skončil s korekcí. Frodo
     info: '&8Info: &8[playerDisplayName]' #Uživatel - Zde si nastav barvu nadpisu v GUI. Doporučená: &8 (Tmavě šedá) | U hráče lze použít proměnné [playerName] & [playerDisplayName]
-    saved: '!prefix! <var>[time] <ts>Inventář uložen s ID: <var>[id]'
+    saved: '!prefix! <var>[time] <ts>Inventář uložen s ID <var>[id]<ts>.'
     NoSavedInv: '!prefix! <tf>Tento hráč nemá žádné uložené inventáře!'
     NoEntries: '!prefix! <tf>Soubor existuje, ale žádné inventáře nebyly nalezeny.'
     CantFind: '!prefix! <tf>Nelze nalézt inventář s tímto ID.'
     TopLine: '<splitter>----------- <var>[playerDisplayName] <tspecial>uložený inventář <splitter>-----------'
     List: '<t>ID: <var>[id]<t> <var>[time]'
     KillerSymbol: ' <tf>☠'
-    Click: '!prefix! <t>Klikni pro náhlednutí do uloženého inventáře s ID: <var>[id]'
+    Click: '!prefix! <t>Klikni pro náhlednutí do uloženého inventáře s ID <var>[id]<t>.'
     IdDontExist: '!prefix! <tf>Toto ID neexistuje!'
-    Deleted: '!prefix!<ts>Uložený inventář byl úspěšně smazaný.'
-    Restored: '!prefix! <t>Obnovil/a jsi inventář hráči: <var>[targetname] <t>z dat inventáře hráče: <var>[sourcename]<t>.'
-    GotRestored: '!prefix! <t>Tvůj inventář byl obnovený z dat hráče: <var>[sourcename] <t>čas uložení: <var>[time]'
+    Deleted: '!prefix!<ts>Uložený inventář byl úspěšně smazán.'
+    Restored: '!prefix! <t>Obnovil/a jsi inventář hráči <var>[targetname] <t>z dat inventáře hráče <var>[sourcename]<t>.'
+    GotRestored: '!prefix! <t>Tvůj inventář byl obnoven z dat hráče <var>[sourcename] <t>. Čas uložení: <var>[time]'
     LoadForSelf: '!prefix! <t>Načíst tento inventář pro sebe.'
     LoadForOwner: '!prefix! <t>Načíst tento inventář majiteli.'
     NextInventory: '<tspecial>Další inventář'
@@ -297,16 +297,16 @@ info:
   pve:
     noGodDamage: '!actionbar!<tf>Nemůžeš ubližovat entitám, zatímco jsi nesmrtelný.'
   InvEmpty:
-    armor: '<t>Neměl by jsi na sobě mít žádnou zbroj!' #TODO - Potřeba kontext použití.
-    hand: '<t>Neměl by jsi mít nic v ruce!' #TODO - Potřeba kontext použití.
+    armor: '<t>Neměl/a by jsi na sobě mít žádnou zbroj!' #TODO - Potřeba kontext použití.
+    hand: '<t>Neměl/a by jsi mít nic v ruce!' #TODO - Potřeba kontext použití.
     maininv: '<t>Tvůj inventář by měl být prázdný!' #TODO - Potřeba kontext použití.
-    maininvslots: '<t>Tvůj inventář má: <var>[count] <t>volných míst!' #TODO - Potřeba kontext použití.
+    maininvslots: '<t>Tvůj inventář má <var>[count] <t>volných míst!' #TODO - Potřeba kontext použití.
     inv: '<t>Tvůj inventář by měl být prázdný!' #TODO - Potřeba kontext použití.
     offhand: '<t>Neměl by jsi mít nic v druhé ruce!' #TODO - Potřeba kontext použití.
     quickbar: '<t>Tvé rychlé sloty by měly být prázdné!' #TODO - Potřeba kontext použití. Přeložíme Quick Sloty jako Rychlé Sloty?
-    quickbarslots: '<t>Tvé rychlé sloty mají: <var>[count] <t>volného místa!' #TODO - Potřeba kontext použití.
+    quickbarslots: '<t>Tvé rychlé sloty mají <var>[count] <t>volného místa!' #TODO - Potřeba kontext použití.
     subinv: '<t>Tvůj podinventář by měl být prázdný!' #TODO - Potřeba více kontextu i kontext použití.
-    subinvslots: '<t>Tvůj podinventář má: <var>[count] <t>volných míst!' #TODO - Potřeba více kontextu i kontext použití.
+    subinvslots: '<t>Tvůj podinventář má <var>[count] <t>volných míst!' #TODO - Potřeba více kontextu i kontext použití. #INFO - Tady jsem skončil s korekcí. Rush.
   DamageCause:
     block_explosion: Explosion
     contact: Block Damage
