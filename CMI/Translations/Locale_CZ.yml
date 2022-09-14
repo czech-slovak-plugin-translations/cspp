@@ -64,11 +64,11 @@
 #
 # ATTENTION! As of 9.0.0.0 CMI version some of the locale lines got moved to CMILib file. This is to centralize some of most used ones across multiple plugins.
 # After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
-info: #INFO - Zde jsem začal -Houska
-  Same: '!prefix! <tf>Nemůžeš otevřít svůj inventář pro úpravy!'
-  cantLoginWithDifCap: '!prefix! <tf>Nemůžeš se přihlásit s různě velkými písmeny! Původní jméno: <vars>[oldName]<tf>. Aktuální jméno: <varf>[currentName]'
-  Searching: '!prefix! <t>Vyhledávání data hráčů, tohle může chvíli trvat!'
-  NoCommandWhileSleeping: '!prefix! <tf>Nemůžeš provádět příkazy, když spíš!'
+info: #INFO - Začátek duplicitních řádků mezi CMILib <--> CMI
+  Same: '!prefix! <tf>Nemůžeš otevřít svůj vlastní inventář pro úpravy!'
+  cantLoginWithDifCap: '!prefix! <tf>Nemůžeš se přihlásit s různě velkými písmeny!/n Původní jméno: <vars>[oldName]<tf>. Aktuální jméno: <varf>[currentName]'
+  Searching: '!prefix! <t>Probíhá vyhledávání dat hráčů, prosím vyčkej, může to chvíli trvat!'
+  NoCommandWhileSleeping: '!prefix! <tf>Tento příkaz nelze použít, zatímco ležíš v posteli!'
   PurgeNotEnabled: '!prefix! <tf>Funkce čistění není povolená!'
   TeamManagementDisabled: '!prefix! <tf>Tato funkce bude mít omezenou funkčnost, jelikož je povolený DisableTeamManagement.'
   NoGameMode: '!prefix! <tf>Použij prosím hodnotu <var>0/1/2/3 <tf>nebo <var>Survival/Creative/Adventure/Spectator <tf>nebo <var>s/c/a/sp<tf>!'
@@ -76,15 +76,15 @@ info: #INFO - Zde jsem začal -Houska
   Cooldowns: '!prefix! <tf>Tento příkaz je možné znovu použít za: <var>[time]'
   specializedCooldowns: '!prefix! <tf>Tento příkaz je možné znovu použít za: <var>[time]'
   specializedRunning: '!prefix! <tf>Příkaz se stále vykonává. Prosím počkej: <var>[time]'
-  CooldownOneTime: '!prefix! <tf>Tento příkaz může být použitý pouze jednou!'
+  CooldownOneTime: '!prefix! <tf>Tento příkaz můžeš použít pouze jednou!'
   WarmUp:
-    canceled: '!prefix! <tf>Příkaz byl zrušený z důvodu pohybu!'
-    counter: '!actionbar!<tspecial>--> <t>Počkej <var>[time]s <tspecial><--'
-    DontMove: '!title!<tf>Nehýbej se!!subtitle!<t>Vyčkej: <var>[time]s'
+    canceled: '!prefix! <tf>Příkaz byl zrušen z důvodu pohybu!'
+    counter: '!actionbar!<splitter>--> <t>Počkej <var>[time]s <splitter><--'
+    DontMove: '!title!<tf>Nehýbej se!!subtitle!<t>Vyčkej <var>[time]s'
     Boss:
-      DontMove: '<tf>Nehýbej se po dobu: <var>[autoTimeLeft]s<tf>!' #TODO - Potřeba více kontextu. Jedná se o bossbar?
-      WaitFor: '<tf>Vyčkej po dobu: <var>[autoTimeLeft]s<tf>!' #TODO - Potřeba více kontextu. Jedná se o bossbar?
-  Spawner: '&r[type] Spawner'
+      DontMove: '<tf>Nehýbej se po dobu <var>[autoTimeLeft]s<tf>!' #TODO - Potřeba více kontextu. Jedná se o bossbar?
+      WaitFor: '<tf>Vyčkej <var>[autoTimeLeft]s<tf>!' #TODO - Potřeba více kontextu. Jedná se o bossbar?
+  Spawner: '<vars>[type] <var>Spawner'
   FailedSpawnerMine: '!actionbar!<tspecial>Nepodařilo se vytěžit spawner. Šance na vytěžení: <var>[percent]%'
   ClickSpawner: '!actionbar!<tspecial>Šance na vytěžení: <var>[percent]%'
   Elevator:
@@ -94,44 +94,40 @@ info: #INFO - Zde jsem začal -Houska
   CantUseNonEncrypted: '!actionbar!<tspecial>Příkazy na tomto předmětu nejsou šifrované. Nelze je tedy použít!' #TODO - Zachováme zde actionbar?
   CantDecode: '!prefix! <tf>Nelze dekódovat zprávu<misc>/<tf>příkaz. Šifrovací klíč neobsahuje správný klíč. Kontaktuj prosím serverového administrátora.'
   CantTeleport: '!prefix! <tf>Nelze tě teleportovat z důvodu, že máš u sebe mnoho omezených předmětů. Níže se dozvíš maximální počet povolených předmětů.' #INFO - Tady jsem skončil. -Houska 
-  BlackList: '&e[material] [amount] &6Max: [max]'
-  wrongPortal: '&cJsi v nesprávné zóně efektů'
-  ItemWillBreak: '!actionbar!&eTvůj předmět (&6[itemName]&e) se brzy rozbije! &e[current]&6/&e[max]'
-  ArmorWillBreak: '!actionbar!&eTvůj [itemName] se brzy rozbije! &e[current]&6/&e[max]'
-  flyingToHigh: '&cNelze letět tak vysoko, maximální výška je &6[max]&c!'
-  specializedItemFail: '&cCan''t determine specialized item requirement by value:
-    &7[value]'
-  sunSpeeding: 'Sleeping [count] of [total] [hour] hour [speed]X speed' #INFO - Původně zpráva nebyla v uvozovkách.
-  sleepersRequired: '!actionbar!&f[sleeping] &7of &f[required] &7sleeping from required for night time speedup'
-  sunSpeedingTitle: '&7[hour]'
-  skippingNight: '!title!&7Celá noc je přeskočena'
-  sunSpeedingSubTitle: '&f[count]&7/&f[total] &7(&f[speed]X&7)'
-  repairConfirm: '&eKlikni pro potvrzení &7[items] &opravu předmětu za &7[cost]'
-  bookDate: '&7Napsáno &f[date]'
-  maintenance: '&7Maintenance mode'
-  mapLimit: '&cNelze jít dál za 30 000 000 bloků'
-  startedEditingPainting: '&eYou started editing painting. Click any other block to
-    cancel.'
-  canceledEditingPainting: '&eYou canceled painting editing mode'
-  changedPainting: '!actionbar!&eChanged painting to &6[name] &ewith id of &6[id]'
-  noSpam: '!title!&cNo spamming!'
-  noCmdSpam: '!title!&cNo command spamming!'
-  spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
-    with:&r [message]'
+  BlackList: '<var>[material] [amount] <t>Povolené množství <var>[max]'
+  wrongPortal: '!prefix! <tf>Nacházíš se v nesprávné oblasti působení.'
+  ItemWillBreak: '!actionbar!<tspecial>Tvůj <misc>(<var>[itemName]<misc>) <tspecial>se brzy rozbije! <var>[current]<misc>/<var>[max]'
+  ArmorWillBreak: '!actionbar!<tspecial>Tvůj <var>[itemName] <tspecial>se brzy rozbije! <var>[current]<misc>/<var>[max]'
+  flyingToHigh: '!prefix! <tf>Nemůžeš létat tak vysoko! Maximální povolená výška <var>[max]<tf>!'
+  specializedItemFail: '!prefix! <tf>Nelze určit sepcializované požadavky předmětu dle hodnoty: <var>[value]'
+  sunSpeeding: <tspecial>Aktuálně spí <var>[count] <tspecial>z <var>[total] <tspecial> hráčů. <var>[hour] [speed]x <tspecial>speed' #INFO - Původně zpráva nebyla v uvozovkách.
+  sleepersRequired: '!actionbar!<tspecial>Aktuálně spí <var>[sleeping] <tspecial>z <var>[required] <tspecial>požadovaných hráčů pro přeskočení noci'
+  sunSpeedingTitle: '<var>[hour]'
+  skippingNight: '!title!<tspecial>Přeskakování noci'
+  sunSpeedingSubTitle: '<var>[count]<misc>/<var>[total] <misc>(<var>[speed]x<misc>)'
+  repairConfirm: '!prefix! <t>Klikni pro potvrzení opravení předmětu <var>[items] <t>za <var>[cost]' #TODO - Zachovat prefix?
+  bookDate: '<tspecial>Napsáno <var>[date]'
+  maintenance: '<tspecial>Režim údržby'
+  mapLimit: '!prefix! <tf>Nelze jít za hranici 30 000 000 blocků.'
+  startedEditingPainting: '!prefix! <t>Nyní upravuješ obraz. Klikni na jakýkoliv jiný block pro ukončení úprav.'
+  canceledEditingPainting: '!prefix! <t>Ukončil/a jsi mód úprav obrazů.'
+  changedPainting: '!actionbar!<tspecial>Změněný obraz na <var>[name] <tspecial>s ID <var>[id]<tspecial>.'
+  noSpam: '!title!<tf>Nespamuj!'
+  noCmdSpam: '!title!<tf>Nespamuj příkazy!'
+  spamConsoleInform: '!prefix! <tf>Hráč <misc>(<var>[playername]<misc>) <tf>aktivoval/a <misc>(<var>[rules]<misc>) <tf>chatový filtr zprávou: <var>[mesage]'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '&8[&a+&8] &a[playerDisplayName] &7se na náš server připojil/a poprvé!\nVítej u nás!'
-  LogoutCustom: '&8[&c-&8] &c[playerDisplayName] &7se odpojil/a.'
-  LoginCustom: '&8[&a+&8] &a[playerDisplayName] &7se připojil/a.'
-  deathlocation: '&eYou died at x:&6[x]&e, y:&6[y]&e, z:&6[z]&e in &6[world]'
+  FirstJoin: '<var>[playerDisplayName] <t>, vítej na serveru!'
+  LogoutCustom: '<var>[playerDisplayName] <t>se odpojil/a.'
+  LoginCustom: '<var>[playerDisplayName] <t>se připojil/a.'
+  deathlocation: '!prefix! <t>Zemřel/a jsi na souřadnicích x:<var>[x]<misc>, <t>y:<var>[y]<misc>, <t>z:<var>[z] <t>ve světě <var>[world]'
   book:
-    exploit: '&cYou cant create book with more than [amount] pages'
+    exploit: '!prefix! <tf>Nelze vytvořit knihu, která má více než <var>[amoun] <tf>stránek.'
   combat:
-    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
-      Wait: [time]'
-    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
-    bossBarPvp: '&cCombat mode [autoTimeLeft]'
-    bossBarPve: '&2Combat mode [autoTimeLeft]'
-  noSchedule: '&cSchedule by this name is not found'
+    CantUseShulkerBox: '!prefix! <tf>Nelze použít Shulker Box, zatímco jsi v souboji s jiným hráčem. Vyčkej <var>[time]<tf>.'
+    CantUseCommand: '!prefix! <tf>Nelze používat příkazy, zatímco jsi v soubojí s jiným hráčem. Vyčkej <var>[time]<tf>.'
+    bossBarPvp: '<tspecial>Soubojový mód skončí za <var>[autoTimeLeft]'
+    bossBarPve: '<tspecial>Soubojový mód skončí za <var>[autoTimeLeft]'
+  noSchedule: '!prefix! <tf>Plánovaná událost s tímto jménem nebyla nalezena.'
   totem:
     cooldown: '&eTotem cooldown: [time]'
     warmup: '&eTotem effect: [time]'
@@ -176,7 +172,7 @@ info: #INFO - Zde jsem začal -Houska
     quickbar: '&eYour quick bar should be empty!'
     quickbarslots: '&eYour quick bar should have atleast &6[count] &eempty slots!'
     subinv: '&eYour sub inventory should be empty!'
-    subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!'
+    subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!' #INFO - Konec duplicitních řádků mezi CMILib <--> CMI
   Relog: '&eRelog might be needed for change to take effect'
   time:
     # Mainly for placeholder playtime output
@@ -189,7 +185,7 @@ info: #INFO - Zde jsem začal -Houska
   CommandFormat: '&cIncorrect command format'
   ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
   ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
-warp:
+warp: #INFO - Začátek duplicitních řádků mezi CMILib <--> CMI
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
   'off': '&7Playing'
@@ -262,7 +258,7 @@ Spy:
     msg: '&5C&2Spy&7[&8[senderDisplayName]&7]&7: &f[command]'
   Sign:
     msg: '&5Sign&2Spy&7[&8[senderDisplayName]&7]&7: &f[text]'
-command:
+command: #INFO - Konec duplicitních řádků mezi CMILib <--> CMI
   help:
     output:
       usage: '&eUsage: &7%usage%'
